@@ -1,6 +1,7 @@
-zz='less'
-g='grep'
-gr='grep -R'
-gi='grep -i'
-gri='grep -i -R'
-
+alias zz='less'
+alias g='grep'
+alias gr='grep -R'
+alias gi='grep -i'
+alias gri='grep -i -R'
+alias s='source'
+alias gs='git status'
