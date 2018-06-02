@@ -17,6 +17,7 @@ vim:
     check the other plugins
     add vertical line
     add ctrl+s in vim--done
+    add ctrl+s in zsh support adding the same command in some .zsh file
 tmux:
     copy paste with and without mouse inside tmux
 
