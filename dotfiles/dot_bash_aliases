@@ -1,0 +1,6 @@
+zz='less'
+g='grep'
+gr='grep -R'
+gi='grep -i'
+gri='grep -i -R'
+
