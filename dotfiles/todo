@@ -1,8 +1,22 @@
 add shortcuts for git
-configure tmux with mouse and shorcut to ctrl+b
+configure tmux with mouse and shorcut to ctrl+b -- done
 write intsall script
 powerline
 config zsh
+    -see two last folders of a hierarchy
+    -aliases
+fidn replacement for gitk in console mode
 pyenv
 pyenv virtualenv plugin
 tensorflow
+copy paste --done
+basic git push -- done
+vim:
+    add my vim shortcuts (diff..)
+    learn to use the folder manager plugin in vim- merdtree
+    check the other plugins
+    add vertical line
+    add ctrl+s in vim--done
+tmux:
+    copy paste with and without mouse inside tmux
+

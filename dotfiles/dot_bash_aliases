@@ -1,3 +1,4 @@
+#my aliases
 alias zz='less'
 alias g='grep'
 alias gr='grep -R'
@@ -5,3 +6,12 @@ alias gi='grep -i'
 alias gri='grep -i -R'
 alias s='source'
 alias gs='git status'
+
+
+#general
+#this disables the flow control to terminal to enable using ctrl+s in vim (in general it freezes the term)
+stty -ixon
+
+  
+
+

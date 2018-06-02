@@ -127,3 +127,8 @@ if has("gui_running")
         colorscheme iceberg
     endif
 endif
+
+" Set ctrl+S as save
+inoremap <c-s> <c-o>:update<CR>
+ 
+ 
