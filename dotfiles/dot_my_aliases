@@ -1,0 +1,31 @@
+#This is the only place to set aliases
+#they go to bash and zsh
+#
+#my aliases
+alias zz='less'
+alias g='grep'
+alias gr='grep -R'
+alias gi='grep -i'
+alias gri='grep -i -R'
+alias s='source'
+alias gs='git status'
+alias gl='git log --graph --abbrev-commit --pretty=oneline --decorate'
+alias ll='ls -lha'
+
+
+#general
+#this disables the flow control to terminal to enable using ctrl+s in vim (in general it freezes the term)
+stty -ixon
+
+#git shortcuts
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+
+
+
+
+
+

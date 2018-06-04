@@ -19,6 +19,7 @@ vim:
     add ctrl+s in vim--done
     add ctrl+s in zsh support adding the same command in some .zsh file
     add plugin that helps to edit word like files : org mode in emacs
+    add vimmagit
 tmux:
     copy paste with and without mouse inside tmux
 git:
