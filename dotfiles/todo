@@ -21,4 +21,9 @@ vim:
     add plugin that helps to edit word like files : org mode in emacs
 tmux:
     copy paste with and without mouse inside tmux
+git:
+    do a shortcut "git prel" for git commit -a -m && git push
+    do a way to not have to write the cerdentials everytime
+
+
 
