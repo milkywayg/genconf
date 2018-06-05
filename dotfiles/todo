@@ -36,12 +36,13 @@ urgent:
     powerline
     git prel
     github credentials
-    vim highlight select
-    vim all my shortcuts
+    vim highlight select -- done
+    vim all my shortcuts --done
     chnage color of ll for folders
     share history
     vim reload
     copy paste with and without mouse inside tmux
     nerdtree see dot file hidden
+    vim buffer switching and displaying
 
 
