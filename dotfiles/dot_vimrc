@@ -28,6 +28,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'bling/vim-bufferline'
+Plugin 'jlanzarotta/bufexplorer'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -131,4 +133,135 @@ endif
 " Set ctrl+S as save
 inoremap <c-s> <c-o>:update<CR>
  
- 
+" my addings
+" Highlight search results
+set hlsearch
+
+" Mappings
+let mapleader=","
+" nnoremap <Leader>b :bp<CR>
+" nnoremap <Leader>f :bn<CR>
+" nnoremap     <M-l> : so %<CR>
+nnoremap     <M-R> : %s/
+nnoremap     <M-r> : .,$s/
+"nnoremap     <M-b> : b
+"nnoremap     <M-p> :b#<CR>
+nnoremap     <M-c> :Bclose<CR>
+nnoremap     <F5> :ls<CR>:b
+nnoremap     <Leader>u :noh<CR>
+nnoremap     <F8> :diffupdate<CR>
+nnoremap     <F6> :diffthis<CR>
+nnoremap     <F7> :diffoff<CR>
+
+nnoremap     <M-g> :%!grep 
+"comment-uncomment
+vnoremap <M-a> :norm i//<CR>
+vnoremap <M-d> :norm ^xx<CR>
+
+"remap moving around windows
+"noremap <M-h> <C-w>h
+"noremap <M-j> <C-w>j
+"noremap <M-k> <C-w>k
+"noremap <M-l> <C-w>l
+"
+" noremap <C-S-h> <C-w>h
+" noremap <C-S-j> <C-w>j
+" noremap <C-S-k> <C-w>k
+" noremap <C-S-l> <C-w>l
+
+
+noremap 8 *<S-n> 
+
+nnoremap     <F2> : /\<<C-r><C-w>\><CR>N
+" noremap <silent> <C-S>          :update<CR>
+" vnoremap <silent><C-S>         <C-C>:update<CR>
+" inoremap <silent><C-S>         <C-O>:update<CR>
+" nnoremap  <M-S> : .,$s/
+" nnoremap <silent> <Leader>n :call SwitchToNextBuffer(1)<CR>
+" nnoremap <silent> <Leader>p :call SwitchToNextBuffer(-1)<CR>
+
+" Command completion
+ " Wildmenu
+ if has("wildmenu")
+     set wildignore+=*.a,*.o
+     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+     set wildignore+=.DS_Store,.git,.hg,.svn
+     set wildignore+=*~,*.swp,*.tmp
+     set wildmenu
+     set wildmode=longest,list
+ endif
+
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+nnoremap <silent> <M-F12> :BufExplorer<CR>
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
+
+
+
+" " Helper fucntions
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => Helper functions
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" function! CmdLine(str)
+"     exe "menu Foo.Bar :" . a:str
+"     emenu Foo.Bar
+"     unmenu Foo
+" endfunction
+" 
+" function! VisualSelection(direction) range
+"     let l:saved_reg = @"
+"     execute "normal! vgvy"
+" 
+"     let l:pattern = escape(@", '\\/.*$^~[]')
+"     let l:pattern = substitute(l:pattern, "\n$", "", "")
+" 
+"     if a:direction == 'b'
+"         execute "normal ?" . l:pattern . "^M"
+"     elseif a:direction == 'gv'
+"         call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
+"     elseif a:direction == 'replace'
+"         call CmdLine("%s" . '/'. l:pattern . '/')
+"     elseif a:direction == 'f'
+"         execute "normal /" . l:pattern . "^M"
+"     endif
+" 
+"     let @/ = l:pattern
+"     let @" = l:saved_reg
+" endfunction
+" 
+" 
+" " Returns true if paste mode is enabled
+" function! HasPaste()
+"     if &paste
+"         return 'PASTE MODE  '
+"     en
+"     return ''
+" endfunction
+" 
+" " Don't close window, when deleting a buffer
+" command! Bclose call <SID>BufcloseCloseIt()
+" function! <SID>BufcloseCloseIt()
+"    let l:currentBufNum = bufnr("%")
+"    let l:alternateBufNum = bufnr("#")
+" 
+"    if buflisted(l:alternateBufNum)
+"      buffer #
+"    else
+"      bnext
+"    endif
+" 
+"    if bufnr("%") == l:currentBufNum
+"      new
+"    endif
+" 
+"    if buflisted(l:currentBufNum)
+"      execute("bdelete! ".l:currentBufNum)
+"    endif
+" endfunction
+
+
+
+
+
+
+

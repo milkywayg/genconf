@@ -1,0 +1,1 @@
+to install new packege with vundle, need to open vim with sudo vim, then :PlugInstall

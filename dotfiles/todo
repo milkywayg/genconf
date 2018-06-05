@@ -4,7 +4,7 @@ write intsall script
 powerline
 config zsh
     -see two last folders of a hierarchy
-    -aliases
+    -aliases --done
 fidn replacement for gitk in console mode
 pyenv
 pyenv virtualenv plugin
@@ -20,8 +20,13 @@ vim:
     add ctrl+s in zsh support adding the same command in some .zsh file
     add plugin that helps to edit word like files : org mode in emacs
     add vimmagit
+    nerdtree see dot file hidden
+    resize the panes with mouse
+    plug in markers
+    reload
 tmux:
     copy paste with and without mouse inside tmux
+    share history
 git:
     do a shortcut "git prel" for git commit -a -m && git push
     do a way to not have to write the cerdentials everytime
@@ -34,5 +39,9 @@ urgent:
     vim highlight select
     vim all my shortcuts
     chnage color of ll for folders
+    share history
+    vim reload
+    copy paste with and without mouse inside tmux
+    nerdtree see dot file hidden
 
 

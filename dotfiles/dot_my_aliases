@@ -12,6 +12,12 @@ alias gs='git status'
 alias gl='git log --graph --abbrev-commit --pretty=oneline --decorate'
 alias ll='ls -lha'
 alias vv='vim'
+alias h='history'
+alias wl='wc -l'
+alias py='python'
+alias ec='echo'
+
+
 
 
 #general
