@@ -280,4 +280,7 @@ set splitright
 " hyphen part of a word
 set iskeyword+=-
 
+" Yank in the system clipboard
+" set clipboard=unnamedplus
+
 
