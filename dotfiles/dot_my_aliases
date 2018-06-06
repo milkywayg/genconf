@@ -16,6 +16,7 @@ alias h='history'
 alias wl='wc -l'
 alias py='python'
 alias ec='echo'
+alias gitcred="git config credential.helper store && git config --global credential.helper 'cache --timeout 7200'"
 
 
 
