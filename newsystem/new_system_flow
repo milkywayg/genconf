@@ -1,6 +1,6 @@
 sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 after adding vundle -> open sudo vim and run PluginInstall
-
+in addition to dot file soft link, need to do a soft link to the prompt script in .oh-my-zsh/custom/theme
 
 
 
