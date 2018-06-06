@@ -259,12 +259,16 @@ nnoremap <silent> @ :bn<CR>
 "    endif
 " endfunction
 
+" Add possibility to resize the panes with mouse
 set mouse+=a
 if &term =~ '^screen'
     " tmux knows the extended mouse mode
     set ttymouse=xterm2
 endif
 
+"go to new pane after aplitting
+set splitbelow
+set splitright
 
 
 
