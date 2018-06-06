@@ -159,6 +159,12 @@ nnoremap     <M-g> :%!grep
 vnoremap <M-a> :norm i//<CR>
 vnoremap <M-d> :norm ^xx<CR>
 
+" toggle easily paste mode
+nnoremap <silent> # :set invpaste paste?<CR>
+" set pastetoggle=<F2>
+set showmode
+
+
 "remap moving around windows
 "noremap <M-h> <C-w>h
 "noremap <M-j> <C-w>j
