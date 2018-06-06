@@ -1,0 +1,6 @@
+:qa -> close all panes at once
+:wqa -> save and close all panes at once
+:sp -> split horiz
+:vsp -> split vertically
+f12 see buffers
+in normal mode: s-1 and s-2 -> to swicth between buffers

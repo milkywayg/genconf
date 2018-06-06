@@ -192,9 +192,9 @@ nnoremap     <F2> : /\<<C-r><C-w>\><CR>N
  endif
 
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-nnoremap <silent> <M-F12> :BufExplorer<CR>
-nnoremap <silent> <F12> :bn<CR>
-nnoremap <silent> <S-F12> :bp<CR>
+nnoremap <silent> <F12> :BufExplorer<CR>
+nnoremap <silent> ! :bp<CR>
+nnoremap <silent> @ :bn<CR>
 
 
 
