@@ -17,8 +17,15 @@ alias wl='wc -l'
 alias py='python'
 alias ec='echo'
 alias gcred="git config credential.helper store && git config --global credential.helper 'cache --timeout 7200'"
-
-
+function gprel() {
+    if [ "$1" != "" ] # or better, if [ -n "$1" ]
+    then
+        git commit -a -m "$1"
+    else
+        echo "need a message"
+    fi
+    git push
+}
 
 
 #general
