@@ -33,10 +33,10 @@ git:
     do a way to not have to write the cerdentials everytime
 urgent:
     prompt
-    copy paste tmux
+    copy paste tmux --done
     powerline--done
-    git prel
-    github credentials
+    git prel --done
+    github credentials --done
     vim highlight select -- done
     vim all my shortcuts --done
     chnage color of ll for folders
@@ -45,5 +45,6 @@ urgent:
     copy paste with and without mouse inside tmux
     nerdtree see dot file hidden
     vim buffer switching and displaying -- done
+    vim highlight line
 
 

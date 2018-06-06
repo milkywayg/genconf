@@ -7,7 +7,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="miki-theme"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -93,7 +94,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/genconf/dotfiles/dot_my_aliases
 
 #Customize the prompt a bit
-PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m ${PROMPT}"
+# PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m ${PROMPT}"
 
 # #Use vi mode
 # bindkey -v

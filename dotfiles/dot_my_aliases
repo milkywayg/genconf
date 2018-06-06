@@ -17,6 +17,7 @@ alias wl='wc -l'
 alias py='python'
 alias ec='echo'
 alias gcred="git config credential.helper store && git config --global credential.helper 'cache --timeout 7200'"
+alias rp='realpath'
 function gprel() {
     if [ "$1" != "" ] # or better, if [ -n "$1" ]
     then
