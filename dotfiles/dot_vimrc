@@ -143,11 +143,11 @@ let mapleader=","
 " nnoremap <Leader>b :bp<CR>
 " nnoremap <Leader>f :bn<CR>
 " nnoremap     <M-l> : so %<CR>
-nnoremap     <M-R> : %s/
-nnoremap     <M-r> : .,$s/
+nnoremap     <Leader>R : %s/
+nnoremap     <Leader>r : .,$s/
 "nnoremap     <M-b> : b
 "nnoremap     <M-p> :b#<CR>
-nnoremap     <M-c> :Bclose<CR>
+nnoremap     <Leader>c :bd<CR>
 nnoremap     <F5> :ls<CR>:b
 nnoremap     <Leader>u :noh<CR>
 nnoremap     <F8> :diffupdate<CR>
@@ -156,13 +156,20 @@ nnoremap     <F7> :diffoff<CR>
 
 nnoremap     <M-g> :%!grep 
 "comment-uncomment
-vnoremap <M-a> :norm i//<CR>
-vnoremap <M-d> :norm ^xx<CR>
+vnoremap <Leader>9 :norm i#<CR>
+vnoremap <Leader>8 :norm ^x<CR>
 
 " toggle easily paste mode
-nnoremap <silent> # :set invpaste paste?<CR>
-" set pastetoggle=<F2>
+nnoremap <silent><Leader>0:set invpaste paste?<CR>
+set pastetoggle=<Leader>0
 set showmode
+
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+nnoremap <silent> <F12> :BufExplorer<CR>
+nnoremap <silent> ! :bp<CR>
+nnoremap <silent> @ :bn<CR>
+nnoremap <silent> <Leader>1 :bp<CR>
+nnoremap <silent> <Leader>2 :bn<CR>
 
 
 "remap moving around windows
@@ -197,11 +204,6 @@ nnoremap     <F2> : /\<<C-r><C-w>\><CR>N
      set wildmenu
      set wildmode=longest,list
  endif
-
-" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-nnoremap <silent> <F12> :BufExplorer<CR>
-nnoremap <silent> ! :bp<CR>
-nnoremap <silent> @ :bn<CR>
 
 
 
@@ -281,6 +283,28 @@ set splitright
 set iskeyword+=-
 
 " Yank in the system clipboard
-" set clipboard=unnamedplus
+set clipboard=unnamedplus
+
+" in xterm to change the cursor in insert mode
+"
+"
+"let &t_SI = "\<Esc>[6 q"
+"let &t_SR = "\<Esc>[4 q"
+"let &t_EI = "\<Esc>[2 q"
+
+"if &term =~ "xterm\\|rxvt"
+"  " use an orange cursor in insert mode
+"  let &t_SI = "\<Esc>]12;orange\x7"
+"  " use a red cursor otherwise
+"  let &t_EI = "\<Esc>]12;red\x7"
+"  silent !echo -ne "\033]12;red\007"
+"  " reset cursor when vim exits
+"  autocmd VimLeave * silent !echo -ne "\033]112\007"
+"  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
+"endif
+
+
+
+
 
 
