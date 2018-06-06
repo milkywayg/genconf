@@ -1,1 +1,7 @@
+sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 after adding vundle -> open sudo vim and run PluginInstall
+
+
+
+
+

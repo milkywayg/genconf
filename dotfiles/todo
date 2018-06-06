@@ -40,9 +40,9 @@ urgent:
     vim all my shortcuts --done
     chnage color of ll for folders
     share history
-    vim reload
+    vim reload -- no need change is automatic -- done
     copy paste with and without mouse inside tmux
     nerdtree see dot file hidden
-    vim buffer switching and displaying
+    vim buffer switching and displaying -- done
 
 
