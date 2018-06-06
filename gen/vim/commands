@@ -31,4 +31,5 @@ nnoremap <silent> @ :bn<CR>
 nnoremap <silent> <Leader>1 :bp<CR>
 nnoremap <silent> <Leader>2 :bn<CR>
 
-
+, h: highlight a line
+,g: remove the highlight 

@@ -116,6 +116,9 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+"see hidden files in nerdtree
+let NERDTreeShowHidden=1
+
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
@@ -147,7 +150,8 @@ nnoremap     <Leader>R : %s/
 nnoremap     <Leader>r : .,$s/
 "nnoremap     <M-b> : b
 "nnoremap     <M-p> :b#<CR>
-nnoremap     <Leader>c :bd<CR>
+"nnoremap     <Leader>c :bd<CR>
+nnoremap <silent> <leader>c :lclose<bar>b#<bar>bd #<CR>
 nnoremap     <F5> :ls<CR>:b
 nnoremap     <Leader>u :noh<CR>
 nnoremap <silent> <Leader>h ml:execute 'match Search /\%'.line('.').'l/'<CR>
