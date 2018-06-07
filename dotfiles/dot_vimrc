@@ -38,9 +38,9 @@ call vundle#end()
 filetype plugin indent on
 
 set term=screen-256color
-colorscheme PaperColor
+" colorscheme PaperColor
 
-
+"=========== General config ========"
 let python_highlight_all=1
 
 set autoindent
@@ -72,6 +72,11 @@ set smartcase
 set softtabstop=4
 set undolevels=1000
 set nrformats-=octal
+set title
+" set background=dark
+set ttyfast
+" set lazyredraw
+
 
 highlight ColorColumn ctermbg=black
 set colorcolumn=80
@@ -177,102 +182,37 @@ nnoremap <silent> @ :bn<CR>
 nnoremap <silent> <Leader>1 :bp<CR>
 nnoremap <silent> <Leader>2 :bn<CR>
 
-
-"remap moving around windows
-"noremap <M-h> <C-w>h
-"noremap <M-j> <C-w>j
-"noremap <M-k> <C-w>k
-"noremap <M-l> <C-w>l
-"
-" noremap <C-S-h> <C-w>h
-" noremap <C-S-j> <C-w>j
-" noremap <C-S-k> <C-w>k
-" noremap <C-S-l> <C-w>l
-
-
+" quick select in normla mode with 8
 noremap 8 *<S-n> 
 
 nnoremap     <F2> : /\<<C-r><C-w>\><CR>N
 " noremap <silent> <C-S>          :update<CR>
 " vnoremap <silent><C-S>         <C-C>:update<CR>
 " inoremap <silent><C-S>         <C-O>:update<CR>
-" nnoremap  <M-S> : .,$s/
-" nnoremap <silent> <Leader>n :call SwitchToNextBuffer(1)<CR>
-" nnoremap <silent> <Leader>p :call SwitchToNextBuffer(-1)<CR>
+
 
 " Command completion
  " Wildmenu
- if has("wildmenu")
-     set wildignore+=*.a,*.o
-     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
-     set wildignore+=.DS_Store,.git,.hg,.svn
-     set wildignore+=*~,*.swp,*.tmp
-     set wildmenu
-     set wildmode=longest,list
- endif
-
-
-
-" " Helper fucntions
-" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" " => Helper functions
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" function! CmdLine(str)
-"     exe "menu Foo.Bar :" . a:str
-"     emenu Foo.Bar
-"     unmenu Foo
-" endfunction
-" 
-" function! VisualSelection(direction) range
-"     let l:saved_reg = @"
-"     execute "normal! vgvy"
-" 
-"     let l:pattern = escape(@", '\\/.*$^~[]')
-"     let l:pattern = substitute(l:pattern, "\n$", "", "")
-" 
-"     if a:direction == 'b'
-"         execute "normal ?" . l:pattern . "^M"
-"     elseif a:direction == 'gv'
-"         call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
-"     elseif a:direction == 'replace'
-"         call CmdLine("%s" . '/'. l:pattern . '/')
-"     elseif a:direction == 'f'
-"         execute "normal /" . l:pattern . "^M"
-"     endif
-" 
-"     let @/ = l:pattern
-"     let @" = l:saved_reg
-" endfunction
-" 
-" 
-" " Returns true if paste mode is enabled
-" function! HasPaste()
-"     if &paste
-"         return 'PASTE MODE  '
-"     en
-"     return ''
-" endfunction
-" 
-" " Don't close window, when deleting a buffer
-" command! Bclose call <SID>BufcloseCloseIt()
-" function! <SID>BufcloseCloseIt()
-"    let l:currentBufNum = bufnr("%")
-"    let l:alternateBufNum = bufnr("#")
-" 
-"    if buflisted(l:alternateBufNum)
-"      buffer #
-"    else
-"      bnext
-"    endif
-" 
-"    if bufnr("%") == l:currentBufNum
-"      new
-"    endif
-" 
-"    if buflisted(l:currentBufNum)
-"      execute("bdelete! ".l:currentBufNum)
-"    endif
-" endfunction
+set wildmenu
+set wildmode=longest,list
+if has("wildmenu")
+   set wildignore+=*.a,*.o
+   set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+   set wildignore+=.DS_Store,.git,.hg,.svn
+   set wildignore+=*~,*.swp,*.tmp
+   " set wildmode=list:longest
+   set wildignore+=.hg,.git,.svn " Version Controls"
+   set wildignore+=*.aux,*.out,*.toc "Latex Indermediate files"
+   set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg "Binary Imgs"
+   set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest "Compiled Object files"
+   set wildignore+=*.spl "Compiled speolling world list"
+   set wildignore+=*.sw? "Vim swap files"
+   set wildignore+=*.DS_Store "OSX SHIT"
+   set wildignore+=*.luac "Lua byte code"
+   set wildignore+=migrations "Django migrations"
+   set wildignore+=*.pyc "Python Object codes"
+   set wildignore+=*.orig,*.rej "Merge resolution files"
+endif
 
 " Add possibility to resize the panes with mouse
 set mouse+=a
@@ -308,6 +248,49 @@ set clipboard=unnamedplus
 "  autocmd VimLeave * silent !echo -ne "\033]112\007"
 "  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
 "endif
+
+
+
+
+
+" =========== Gvim Settings =============
+
+" Removing scrollbars
+if has("gui_running")
+    set guitablabel=%-0.12t%M
+    set guioptions-=T
+    set guioptions-=r
+    set guioptions-=L
+    set guioptions+=a
+    set guioptions-=m
+    colo badwolf
+    set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
+else
+    set t_Co=256
+    colorschem badwolf
+endif
+
+" ========== END Gvim Settings ==========
+
+"==========================================================================="
+" Set vim to save the file on focus out.
+au FocusLost * :wa
+"==========================================================================="
+" Redraw screen every time when focus gained
+" au FocusGained * :redraw!
+"==========================================================================="
+
+
+
+
+"==========================================================================="
+" Working with split screen nicely
+" Resize Split When the window is resized"
+au VimResized * :wincmd =
+
+"==========================================================================="
+
+
 
 
 

@@ -1,6 +1,13 @@
 sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 after adding vundle -> open sudo vim and run PluginInstall
 in addition to dot file soft link, need to do a soft link to the prompt script in .oh-my-zsh/custom/theme
+sudo apt-get install xorg openboxa # install x server on the linux machine-- i think it is not needed (try to not install it)
+sudo apt-get install firefox
+sudo apt-get install chromium-browser
+for x server: check that $DISPLAY and the display used by the xserver in windows is the same otherwise change it in the windows x server
+#add this if this does not work
+LC_ALL=C
+export LC_ALL
 
 
 
