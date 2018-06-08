@@ -25,6 +25,8 @@ vim:
     plug in markers
     reload
     code completion
+    align
+    org mode
 tmux:
     copy paste with and without mouse inside tmux
     share history

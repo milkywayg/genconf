@@ -60,7 +60,7 @@ set nowrap
 set number
 set relativenumber
 set ruler
-set scrolloff=5
+set scrolloff=15
 set showmatch
 set shiftwidth=4
 set shortmess=I
@@ -121,6 +121,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+
 "see hidden files in nerdtree
 let NERDTreeShowHidden=1
 
@@ -131,13 +132,6 @@ nnoremap <C-l> <C-w>l
 
 " Remove all trailing whitespace by pressing F4
 noremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-
-if has("gui_running")
-    if has("gui_gtk2")
-        set guifont=Inconsolata\ for\ Powerline\ Medium\ 16
-        colorscheme iceberg
-    endif
-endif
 
 " Set ctrl+S as save
 inoremap <c-s> <c-o>:update<CR>
@@ -151,21 +145,21 @@ let mapleader=","
 " nnoremap <Leader>b :bp<CR>
 " nnoremap <Leader>f :bn<CR>
 " nnoremap     <M-l> : so %<CR>
-nnoremap     <Leader>R : %s/
-nnoremap     <Leader>r : .,$s/
+nnoremap <Leader>R : %s/
+nnoremap <Leader>r : .,$s/
 "nnoremap     <M-b> : b
 "nnoremap     <M-p> :b#<CR>
 "nnoremap     <Leader>c :bd<CR>
 nnoremap <silent> <leader>c :lclose<bar>b#<bar>bd #<CR>
-nnoremap     <F5> :ls<CR>:b
-nnoremap     <Leader>u :noh<CR>
+nnoremap <F5> :ls<CR>:b
+nnoremap <Leader>u :noh<CR>
 nnoremap <silent> <Leader>h ml:execute 'match Search /\%'.line('.').'l/'<CR>
 nnoremap <silent> <Leader>g :call clearmatches()<CR>
-nnoremap     <F8> :diffupdate<CR>
-nnoremap     <F6> :diffthis<CR>
-nnoremap     <F7> :diffoff<CR>
+nnoremap <F8> :diffupdate<CR>
+nnoremap <F6> :diffthis<CR>
+nnoremap <F7> :diffoff<CR>
 
-nnoremap     <M-g> :%!grep 
+nnoremap <M-g> :%!grep
 "comment-uncomment
 vnoremap <Leader>9 :norm i#<CR>
 vnoremap <Leader>8 :norm ^x<CR>
@@ -175,23 +169,31 @@ nnoremap <silent><Leader>0:set invpaste paste?<CR>
 set pastetoggle=<Leader>0
 set showmode
 
+" remap :w save with Leader s
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <C-c>:w<cr>
+
+"Align Current Paragraph with Leader + a
+noremap <leader>a =ip
+
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
 nnoremap <silent> <F12> :BufExplorer<CR>
 nnoremap <silent> ! :bp<CR>
 nnoremap <silent> @ :bn<CR>
-nnoremap <silent> <Leader>1 :bp<CR>
-nnoremap <silent> <Leader>2 :bn<CR>
+nnoremap <silent> <Leader>q :bp<CR>
+nnoremap <silent> <Leader>w :bn<CR>
 
 " quick select in normla mode with 8
-noremap 8 *<S-n> 
+noremap  8 *<S-n>
+nnoremap <F2> : /\<<C-r><C-w>\><CR>N
 
-nnoremap     <F2> : /\<<C-r><C-w>\><CR>N
-" noremap <silent> <C-S>          :update<CR>
-" vnoremap <silent><C-S>         <C-C>:update<CR>
-" inoremap <silent><C-S>         <C-O>:update<CR>
+" noremap <silent> <C-S>      :update<CR>
+" vnoremap <silent><C-S>     <C-C>:update<CR>
+" inoremap <silent><C-S>     <C-O>:update<CR>
 
+" Map ESC to jj
+imap jj <ESC>
 
-" Command completion
  " Wildmenu
 set wildmenu
 set wildmode=longest,list
@@ -263,13 +265,23 @@ if has("gui_running")
     set guioptions-=L
     set guioptions+=a
     set guioptions-=m
-    colo badwolf
+    "colo badwolf
+    colo desert
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 else
     set t_Co=256
-    colorschem badwolf
+    " colorscheme desert 
+    colorscheme inkpot 
+    " colorschem badwolf
+    " colorscheme iceberg
 endif
 
+" if has("gui_running")
+"     if has("gui_gtk2")
+"         set guifont=Inconsolata\ for\ Powerline\ Medium\ 16
+"         colorscheme iceberg
+"     endif
+" endif
 " ========== END Gvim Settings ==========
 
 "==========================================================================="
@@ -279,8 +291,6 @@ au FocusLost * :wa
 " Redraw screen every time when focus gained
 " au FocusGained * :redraw!
 "==========================================================================="
-
-
 
 
 "==========================================================================="
