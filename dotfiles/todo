@@ -42,23 +42,23 @@ git:
     do a shortcut "git prel" for git commit -a -m && git push
     do a way to not have to write the cerdentials everytime
 urgent:
-    prompt--done
-    copy paste tmux --done
+    prompt                                        -- done
+    copy paste tmux                               -- done
     powerline
-    git prel --done
-    github credentials --done
-    vim highlight select -- done
-    vim all my shortcuts --done
-    chnage color of ll for folders --done
-    share history
-    vim reload -- no need change is automatic -- done
+    git prel                                      -- done
+    github credentials                            -- done
+    vim highlight select                          -- done
+    vim all my shortcuts                          -- done
+    chnage color of ll for folders                -- done
+    share history+++
+    vim reload                                    -- no need change is automatic               -- done
     copy paste with and without mouse inside tmux
-    nerdtree see dot file hidden--done
-    vim markers column--done
-    vim buffer switching and displaying -- done
-    vim highlight line--done
-    less problems -- no solutuon use vim key to go up/down --done
-    chck if we can remap esc to caps lock--add jj to move to normal mode from insert 
+    nerdtree see dot file hidden                  -- done
+    vim markers column                            -- done
+    vim buffer switching and displaying           -- done
+    vim highlight line                            -- done
+    less problems                                 -- no solutuon use vim key to go up/down     -- done
+    chck if we can remap esc to caps lock         -- add jj to move to normal mode from insert
     youcompleteme
     git plugin
     fix c-h in tmux
