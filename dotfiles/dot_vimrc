@@ -1,10 +1,10 @@
-" Wes Doyle vimrc
+" Michael Ganem vimrc
 " Last Update March 20 2018
 
 set nocompatible
-
 syntax on
 
+"========== Plug In management ========="
 " Vundle begins here; turn off filetype temporarily
 " set the runtime path to include Vundle and initialize
 filetype off
@@ -30,17 +30,22 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'bling/vim-bufferline'
 Plugin 'jlanzarotta/bufexplorer'
-
+Plugin 'Align'
+Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
+Plugin 'majutsushi/tagbar'    " Class/module browser
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
 call vundle#end()
+"========== End plug In management ======"
+
+
+"=========== General config ========"
 filetype plugin indent on
 
 set term=screen-256color
 " colorscheme PaperColor
 
-"=========== General config ========"
 let python_highlight_all=1
 
 set autoindent
@@ -134,7 +139,7 @@ nnoremap <C-l> <C-w>l
 noremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " Set ctrl+S as save
-inoremap <c-s> <c-o>:update<CR>
+" inoremap <c-s> <c-o>:update<CR>
 
 " my addings
 " Highlight search results
@@ -145,24 +150,24 @@ let mapleader=","
 " nnoremap <Leader>b :bp<CR>
 " nnoremap <Leader>f :bn<CR>
 " nnoremap     <M-l> : so %<CR>
-nnoremap <Leader>R : %s/
-nnoremap <Leader>r : .,$s/
-"nnoremap     <M-b> : b
-"nnoremap     <M-p> :b#<CR>
-"nnoremap     <Leader>c :bd<CR>
-nnoremap <silent> <leader>c :lclose<bar>b#<bar>bd #<CR>
-nnoremap <F5> :ls<CR>:b
-nnoremap <Leader>u :noh<CR>
-nnoremap <silent> <Leader>h ml:execute 'match Search /\%'.line('.').'l/'<CR>
-nnoremap <silent> <Leader>g :call clearmatches()<CR>
-nnoremap <F8> :diffupdate<CR>
-nnoremap <F6> :diffthis<CR>
-nnoremap <F7> :diffoff<CR>
+nnoremap <Leader>R             : %s/
+nnoremap <Leader>r             : .,$s/
+"nnoremap <M-b>                : b
+"nnoremap <M-p>                : b#<CR>
+"nnoremap <Leader>c            : bd<CR>
+nnoremap <silent> <leader>c    : lclose<bar>b#<bar>bd #<CR>
+nnoremap <F5>                  : ls<CR>: b
+nnoremap <Leader>u             : noh<CR>
+nnoremap <silent> <Leader>h ml : execute 'match Search /\%'.line('.').'l/'<CR>
+nnoremap <silent> <Leader>g    : call clearmatches()<CR>
+nnoremap <F8>                  : diffupdate<CR>
+nnoremap <F6>                  : diffthis<CR>
+nnoremap <F7>                  : diffoff<CR>
 
-nnoremap <M-g> :%!grep
+nnoremap <M-g>                 : %!grep
 "comment-uncomment
-vnoremap <Leader>9 :norm i#<CR>
-vnoremap <Leader>8 :norm ^x<CR>
+vnoremap <Leader>9             : norm i#<CR>
+vnoremap <Leader>8             : norm ^x<CR>
 
 " toggle easily paste mode
 nnoremap <silent><Leader>0:set invpaste paste?<CR>
@@ -177,11 +182,11 @@ inoremap <leader>s <C-c>:w<cr>
 noremap <leader>a =ip
 
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-nnoremap <silent> <F12> :BufExplorer<CR>
-nnoremap <silent> ! :bp<CR>
-nnoremap <silent> @ :bn<CR>
-nnoremap <silent> <Leader>q :bp<CR>
-nnoremap <silent> <Leader>w :bn<CR>
+nnoremap <silent> <F12>     : BufExplorer<CR>
+nnoremap <silent> !         : bp<CR>
+nnoremap <silent> @         : bn<CR>
+nnoremap <silent> <Leader>q : bp<CR>
+nnoremap <silent> <Leader>w : bn<CR>
 
 " quick select in normla mode with 8
 noremap  8 *<S-n>
@@ -251,10 +256,6 @@ set clipboard=unnamedplus
 "  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
 "endif
 
-
-
-
-
 " =========== Gvim Settings =============
 
 " Removing scrollbars
@@ -292,13 +293,69 @@ au FocusLost * :wa
 " au FocusGained * :redraw!
 "==========================================================================="
 
-
 "==========================================================================="
 " Working with split screen nicely
 " Resize Split When the window is resized"
 au VimResized * :wincmd =
+"==========================================================================="
 
 "==========================================================================="
+" Make Sure that Vim returns to the same line when we reopen a file"
+augroup line_return
+    au!
+    au BufReadPost *
+                \ if line("'\"") > 0 && line("'\"") <= line("$") |
+                \ execute 'normal! g`"zvzz' |
+                \ endif
+augroup END
+"==========================================================================="
+
+"
+"==========================================================================="
+" Map copy delete and paste to system clipboard
+"
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+"==========================================================================="
+" double leader for selection whole line
+nmap <leader>v v
+"==========================================================================="
+
+"=====================================================
+"" TagBar settings
+"=====================================================
+let g:tagbar_autofocus=0
+let g:tagbar_width=42
+autocmd BufEnter *.py :call tagbar#autoopen(0)
+autocmd BufWinLeave *.py :TagbarClose
+
+
+"================================
+" Fix color issue in tmux
+"================================
+" set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+" set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

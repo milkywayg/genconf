@@ -25,8 +25,15 @@ vim:
     plug in markers
     reload
     code completion
-    align
+    align-- done
     org mode
+    tabs
+    tags --done
+    snippets
+    go over the 2 vimrc file:
+        https://github.com/xmementoit/vim-ide/blob/master/vimrc#L131
+        https://github.com/ets-labs/python-vimrc/blob/master/vimrc
+    multiple cursors
 tmux:
     copy paste with and without mouse inside tmux
     share history
@@ -37,7 +44,7 @@ git:
 urgent:
     prompt--done
     copy paste tmux --done
-    powerline--done
+    powerline
     git prel --done
     github credentials --done
     vim highlight select -- done
@@ -47,10 +54,15 @@ urgent:
     vim reload -- no need change is automatic -- done
     copy paste with and without mouse inside tmux
     nerdtree see dot file hidden--done
-    vim markers column
+    vim markers column--done
     vim buffer switching and displaying -- done
     vim highlight line--done
     less problems -- no solutuon use vim key to go up/down --done
-    chck if we can remap esc to caps lock
+    chck if we can remap esc to caps lock--add jj to move to normal mode from insert 
+    youcompleteme
+    git plugin
+    fix c-h in tmux
+    minibuffer
+    vim git gutter
 
 

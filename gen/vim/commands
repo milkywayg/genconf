@@ -31,5 +31,30 @@ nnoremap <silent> @ :bn<CR>
 nnoremap <silent> <Leader>1 :bp<CR>
 nnoremap <silent> <Leader>2 :bn<CR>
 
-, h: highlight a line
-,g: remove the highlight 
+s-a : go end of line and insert
+,-s : save
+''  : go last location in file
+,-0 : paste mode
+,-r : replace
+,-q : buffer prec
+,-w : buffer next
+,-9 : comment
+,-8 : uncomment
+,-c : kill the buffer
+,-h : highlight line
+,-g : unhighlight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
