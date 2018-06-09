@@ -1,5 +1,4 @@
 " Michael Ganem vimrc
-" Last Update March 20 2018
 
 set nocompatible
 syntax on
@@ -33,6 +32,7 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Align'
 Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
 Plugin 'majutsushi/tagbar'    " Class/module browser
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -80,7 +80,7 @@ set nrformats-=octal
 set title
 " set background=dark
 set ttyfast
-" set lazyredraw
+set lazyredraw
 
 
 highlight ColorColumn ctermbg=black
@@ -143,7 +143,7 @@ noremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " my addings
 " Highlight search results
-set hlsearch
+"  set hlsearch
 
 " Mappings
 let mapleader=","
@@ -332,8 +332,8 @@ nmap <leader>v v
 "=====================================================
 let g:tagbar_autofocus=0
 let g:tagbar_width=42
-autocmd BufEnter *.py :call tagbar#autoopen(0)
-autocmd BufWinLeave *.py :TagbarClose
+" autocmd BufEnter *.py :call tagbar#autoopen(0)
+" autocmd BufWinLeave *.py :TagbarClose
 
 
 "================================
@@ -343,12 +343,49 @@ autocmd BufWinLeave *.py :TagbarClose
 " set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
 
 
+"==========================================================================="
+" Save and load session
+"
+" map <leader>ss :SessionSaveAs user_auto_saved_session<cr>:NERDTree .<cr>
+" map <leader>so :SessionOpen user_auto_saved_session<cr><C-d><C-d>,n:NERDTree .<cr>
+
+"==========================================================================="
 
 
+"===================================================================================================
+" Commenting blocks of code.
+autocmd FileType c,cppva,scala    let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> <leader>cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> <leader>cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
+" ====================================================================================================
 
 
+" ====================================================================================================
+" configure vim bufferline
+" ====================================================================================================
+
+let g:bufferline_active_buffer_left  = '['
+let g:bufferline_active_buffer_right = ']'
 
 
+" ========================================================================================
+" " Resize split window horizontally and vertically
+" Shortcuts to Shift-Alt-Up - Alt is mapped as M in vim
+" nmap <S-M-Up> :2winc+<cr>
+" imap <S-M-Up> <Esc>:2winc+<cr>i
+" nmap <S-M-Down> :2winc-<cr>
+" imap <S-M-Down> <Esc>:2winc-<cr>i
+"
+" nmap <S-M-Left> :2winc><cr>
+" imap <S-M-Left> <Esc>:2winc><cr>i
+" nmap <S-M-Right> :2winc<<cr>
+" imap <S-M-Right> <Esc>:2winc<<cr>i
+" ========================================================================================
 
 
 
