@@ -62,7 +62,7 @@ urgent:
     youcompleteme
     git plugin
     fix c-h in tmux
-    minibuffer
+    minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split
     vim git gutter
 
 

@@ -1,4 +1,4 @@
-" Michael Ganem vimrc
+" Michael vimrc
 
 set nocompatible
 syntax on
@@ -65,7 +65,7 @@ set nowrap
 set number
 set relativenumber
 set ruler
-set scrolloff=15
+set scrolloff=10
 set showmatch
 set shiftwidth=4
 set shortmess=I
@@ -89,24 +89,33 @@ set colorcolumn=80
 "CtrlP
 let g:ctrlp_map = '<c-p>'
 
-"Airline
-"let g:airline_theme='tomorrow'
+" ========================================================================================
+" VIM-airline  plugin
+" https://github.com/bling/vim-airline   
+" let g:airline_theme='tomorrow'
 let g:airline_theme='luna'
+" let g:airline_theme           = 'badwolf'
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+" au WinEnter :AirlineRefresh
+" au BufWinEnter :AirlineRefresh
+" let g:airline_powerline_fonts = 1
+" ========================================================================================
+
 
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-"Gvim mods
-set encoding=utf-8
-set hidden
-set history=100
-set mouse=a
-
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guioptions-=Lo
+" "Gvim mods
+" set encoding=utf-8
+" set hidden
+" set history=100
+" set mouse=a
+"
+" set guioptions-=m
+" set guioptions-=T
+" set guioptions-=r
+" set guioptions-=Lo
 
 "nerd-commenter settings
 " Add spaces after comment delimiters by default
@@ -365,13 +374,17 @@ noremap <silent> <leader>cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader
 " ====================================================================================================
 
 
-" ====================================================================================================
-" configure vim bufferline
-" ====================================================================================================
-
-let g:bufferline_active_buffer_left  = '['
-let g:bufferline_active_buffer_right = ']'
-
+" " ====================================================================================================
+" " configure vim bufferline
+" " ====================================================================================================
+" let g:bufferline_active_buffer_left  = '['
+" let g:bufferline_active_buffer_right = ']'
+" " let g:bufferline_echo = 1
+" " let g:bufferline_modified = '+'
+" " " let g:bufferline_echo = 0
+" " autocmd VimEnter *
+" "   \ let &statusline='%{bufferline#refresh_status()}'
+" "     \ .bufferline#get_status_string()
 
 " ========================================================================================
 " " Resize split window horizontally and vertically
@@ -388,16 +401,50 @@ let g:bufferline_active_buffer_right = ']'
 " ========================================================================================
 
 
+" ========================================================================================
+" " Automatically go to the end of pasted text
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+" ========================================================================================
+
+
+" " ========================================================================================
+" " VIM-airline  plugin
+" " https://github.com/bling/vim-airline   
+" let g:airline#extensions#tabline#enabled = 1 
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|' 
+" 
+" function! AirlineInit()
+"   " let g:airline_section_a = airline#section#create(['mode'])
+"   let g:airline_section_c = airline#section#create(['%F'])
+" endfunction
+" autocmd VimEnter * call AirlineInit()
+" 
+" let g:airline_theme_patch_func = 'AirlineThemePatch'
+" function! AirlineThemePatch(palette)
+"   if g:airline_theme == 'badwolf'
+"     for colors in values(a:palette.inactive)
+"       let colors[3] = 245
+"     endfor
+"   endif
+" endfunction
+" " ========================================================================================
+
+
+" ========================================================================================
+" vimdiff options
+" Always use vertical diffs 
+set diffopt+=vertical
+if &diff 
+    colorscheme badwolf_diff
+endif
+" ========================================================================================
 
 
 
-
-
-
-
-
-
-
-
+" Highlight search results
+set hlsearch
 
 
