@@ -61,8 +61,8 @@ urgent:
     chck if we can remap esc to caps lock         -- add jj to move to normal mode from insert
     youcompleteme
     git plugin
-    fix c-h in tmux
-    minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split
+    fix c-h in tmux-- done
+    minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split -- done
     vim git gutter
 
 
