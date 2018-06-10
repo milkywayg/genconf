@@ -25,9 +25,9 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'nvie/vim-flake8'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'bling/vim-bufferline'
+" Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'bling/vim-bufferline'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Align'
 Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
@@ -70,7 +70,7 @@ set showmatch
 set shiftwidth=4
 set shortmess=I
 set showcmd
-set showmode
+"set showmode
 set sidescroll=1
 set sidescrolloff=7
 set smartcase
@@ -89,33 +89,47 @@ set colorcolumn=80
 "CtrlP
 let g:ctrlp_map = '<c-p>'
 
-" ========================================================================================
-" VIM-airline  plugin
-" https://github.com/bling/vim-airline   
-" let g:airline_theme='tomorrow'
-let g:airline_theme='luna'
-" let g:airline_theme           = 'badwolf'
-" let g:airline#extensions#tabline#enabled = 1
+" " ========================================================================================
+" " VIM-airline  plugin
+" " https://github.com/bling/vim-airline   
 let g:airline_powerline_fonts = 1
-" au WinEnter :AirlineRefresh
-" au BufWinEnter :AirlineRefresh
-" let g:airline_powerline_fonts = 1
-" ========================================================================================
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#branch#format = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#close_symbol = ''
+let g:airline#extensions#hunks#non_zero_only = 1
+let g:airline#extensions#tabline#show_close_button = 1
+let airline#extensions#tabline#middle_click_preserves_windows = 1
+let g:airline_theme = 'bubblegum'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
+set encoding=utf-8
+" set term=screen-256color
+" set term=rxvt-unicode-256
+" set t_Co=256
+" colorscheme inkpot 
+
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.space = "\ua0"
+" " ========================================================================================
+
 
 
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>
-
-" "Gvim mods
-" set encoding=utf-8
-" set hidden
-" set history=100
-" set mouse=a
-"
-" set guioptions-=m
-" set guioptions-=T
-" set guioptions-=r
-" set guioptions-=Lo
 
 "nerd-commenter settings
 " Add spaces after comment delimiters by default
@@ -156,14 +170,9 @@ noremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " Mappings
 let mapleader=","
-" nnoremap <Leader>b :bp<CR>
-" nnoremap <Leader>f :bn<CR>
 " nnoremap     <M-l> : so %<CR>
 nnoremap <Leader>R             : %s/
 nnoremap <Leader>r             : .,$s/
-"nnoremap <M-b>                : b
-"nnoremap <M-p>                : b#<CR>
-"nnoremap <Leader>c            : bd<CR>
 nnoremap <silent> <leader>c    : lclose<bar>b#<bar>bd #<CR>
 nnoremap <F5>                  : ls<CR>: b
 nnoremap <Leader>u             : noh<CR>
@@ -172,7 +181,6 @@ nnoremap <silent> <Leader>g    : call clearmatches()<CR>
 nnoremap <F8>                  : diffupdate<CR>
 nnoremap <F6>                  : diffthis<CR>
 nnoremap <F7>                  : diffoff<CR>
-
 nnoremap <M-g>                 : %!grep
 "comment-uncomment
 vnoremap <Leader>9             : norm i#<CR>
@@ -247,24 +255,6 @@ set iskeyword+=-
 " Yank in the system clipboard -- dont know if this does something
 set clipboard=unnamedplus
 
-" in xterm to change the cursor in insert mode
-"
-"
-"let &t_SI = "\<Esc>[6 q"
-"let &t_SR = "\<Esc>[4 q"
-"let &t_EI = "\<Esc>[2 q"
-
-"if &term =~ "xterm\\|rxvt"
-"  " use an orange cursor in insert mode
-"  let &t_SI = "\<Esc>]12;orange\x7"
-"  " use a red cursor otherwise
-"  let &t_EI = "\<Esc>]12;red\x7"
-"  silent !echo -ne "\033]12;red\007"
-"  " reset cursor when vim exits
-"  autocmd VimLeave * silent !echo -ne "\033]112\007"
-"  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
-"endif
-
 " =========== Gvim Settings =============
 
 " Removing scrollbars
@@ -280,18 +270,11 @@ if has("gui_running")
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 else
     set t_Co=256
-    " colorscheme desert 
-    colorscheme inkpot 
+    " colorscheme desert
+    colorscheme inkpot
     " colorschem badwolf
     " colorscheme iceberg
 endif
-
-" if has("gui_running")
-"     if has("gui_gtk2")
-"         set guifont=Inconsolata\ for\ Powerline\ Medium\ 16
-"         colorscheme iceberg
-"     endif
-" endif
 " ========== END Gvim Settings ==========
 
 "==========================================================================="
@@ -437,7 +420,7 @@ nnoremap <silent> p p`]
 " vimdiff options
 " Always use vertical diffs 
 set diffopt+=vertical
-if &diff 
+if &diff
     colorscheme badwolf_diff
 endif
 " ========================================================================================
