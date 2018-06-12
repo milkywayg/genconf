@@ -28,7 +28,7 @@ function gprel() {
     fi
     git push
 }
-
+alias tmux='tmux -2'
 
 #general
 #this disables the flow control to terminal to enable using ctrl+s in vim (in general it freezes the term)
