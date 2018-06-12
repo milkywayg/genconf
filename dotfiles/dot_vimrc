@@ -218,7 +218,7 @@ imap jj <ESC>
 
  " Wildmenu
 set wildmenu
-set wildmode=longest,list
+set wildmode=longest,list,full
 if has("wildmenu")
    set wildignore+=*.a,*.o
    set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
