@@ -60,9 +60,10 @@ urgent:
     less problems                                 -- no solutuon use vim key to go up/down     -- done
     chck if we can remap esc to caps lock         -- add jj to move to normal mode from insert
     youcompleteme
-    git plugin
-    fix c-h in tmux-- done
+    fix c-h in tmux                               -- done
     minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split -- done
+    vim git fugitive and vimagit
+    tmux color issue                              -- done
     vim git gutter
 
 
