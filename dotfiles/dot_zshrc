@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/genconf/dotfiles/dot_my_aliases
 
+# See hidden files and folder upon completion
+setopt globdots
+
 #Customize the prompt a bit
 # PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m ${PROMPT}"
 
@@ -122,23 +125,26 @@ source ~/genconf/dotfiles/dot_my_aliases
 #source ~/.oh-my-zsh/lib/history.zsh
 # setopt inc_append_history
 # Appends every command to the history file once it is executed
-# setopt inc_append_history
-# Reloads the history whenever you use it
-# setopt share_history
-
-#### zsh history #### {                                                                                                                                                                                                                                                                                                                       
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt APPEND_HISTORY           # append rather than overwrite history file.
-setopt EXTENDED_HISTORY         # save timestamp and runtime information
-setopt HIST_EXPIRE_DUPS_FIRST   # allow dups, but expire old ones when I hit HISTSIZE
-setopt HIST_FIND_NO_DUPS        # don't find duplicates in history
-setopt HIST_IGNORE_ALL_DUPS     # ignore duplicate commands regardless of commands in between
-setopt HIST_IGNORE_DUPS         # ignore duplicate commands
-setopt HIST_REDUCE_BLANKS       # leave blanks out
-setopt HIST_SAVE_NO_DUPS        # don't save duplicates
-setopt INC_APPEND_HISTORY       # write after each command
-setopt SHARE_HISTORY            # share history between sessions
-##### end zsh history #### }  
+setopt inc_append_history
+# Reloads the history whenever you use it
+# setopt share_history
+
+# #### zsh history #### {
+# HISTFILE=$HOME/.zsh_history
+# HISTSIZE=10000
+# SAVEHIST=10000
+# setopt APPEND_HISTORY           # append rather than overwrite history file.
+# setopt EXTENDED_HISTORY         # save timestamp and runtime information
+# setopt HIST_EXPIRE_DUPS_FIRST   # allow dups, but expire old ones when I hit HISTSIZE
+# setopt HIST_FIND_NO_DUPS        # don't find duplicates in history
+# setopt HIST_IGNORE_ALL_DUPS     # ignore duplicate commands regardless of commands in between
+# setopt HIST_IGNORE_DUPS         # ignore duplicate commands
+# setopt HIST_REDUCE_BLANKS       # leave blanks out
+# setopt HIST_SAVE_NO_DUPS        # don't save duplicates
+# setopt INC_APPEND_HISTORY       # write after each command
+# setopt SHARE_HISTORY            # share history between sessions
+# ##### end zsh history #### }
 
