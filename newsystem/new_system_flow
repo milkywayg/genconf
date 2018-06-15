@@ -11,6 +11,7 @@ for x server: check that $DISPLAY and the display used by the xserver in windows
 
 
 ------------------  new install ------------
+sudo apt-get update && sudo apt-get -y upgrade
 install packages: git, vim, tmux, zsh, 
 clone not in root oh-my-zsh
 
@@ -26,5 +27,5 @@ soft link my dot files
 python3 is installed by default otherwise install it
 if pip not installed install
 pipenv also
-sudo apt-get install python-pip
+sudo apt-get install python3-pip
 

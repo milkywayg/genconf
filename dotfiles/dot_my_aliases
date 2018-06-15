@@ -15,6 +15,7 @@ alias vv='vim'
 alias h='history'
 alias wl='wc -l'
 alias py='python3'
+alias pip='python3 -m pip'
 alias ec='echo'
 alias gcred="git config credential.helper store && git config --global credential.helper 'cache --timeout 7200'"
 alias gd='git diff'
@@ -45,7 +46,7 @@ git config --global alias.ci commit
 git config --global alias.st status
 
 
-
+#general setttings -- if needed
 
 
 

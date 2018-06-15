@@ -66,5 +66,6 @@ urgent:
     tmux color issue                              -- done
     vim git gutter
     tmux roll back in shell using mouse(copy mode) --done
+    tmux roll back faaaster with the mouse
 
 
