@@ -194,6 +194,9 @@ set showmode
 " remap :w save with Leader s
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
+" remap :q save with Leader q
+nnoremap <leader>q :qa<cr>
+inoremap <leader>q <C-c>:qa<cr>
 
 "Align Current Paragraph with Leader + a
 noremap <leader>a =ip
@@ -202,8 +205,8 @@ noremap <leader>a =ip
 nnoremap <silent> <F12>     : BufExplorer<CR>
 nnoremap <silent> !         : bp<CR>
 nnoremap <silent> @         : bn<CR>
-nnoremap <silent> <Leader>q : bp<CR>
-nnoremap <silent> <Leader>w : bn<CR>
+nnoremap <silent> <Leader>w : bp<CR>
+nnoremap <silent> <Leader>e : bn<CR>
 
 " quick select in normla mode with 8
 noremap  8 *<S-n>

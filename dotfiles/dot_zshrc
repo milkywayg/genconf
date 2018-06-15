@@ -59,7 +59,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions python pyenv zsh-completions)
+plugins=(git zsh-autosuggestions python zsh-completions)
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
@@ -147,4 +147,8 @@ setopt inc_append_history
 # setopt INC_APPEND_HISTORY       # write after each command
 # setopt SHARE_HISTORY            # share history between sessions
 # ##### end zsh history #### }
+
+
+# #hyphen as part of the word
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 

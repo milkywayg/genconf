@@ -21,7 +21,10 @@ sudo chown miki:miki $HISTFILE
 in addition to dot file soft link, need to do a soft link to the prompt script in .oh-my-zsh/custom/theme
 
 clone from github my genconf repo
-backup the dot files
+backup the dot files in the machine
 soft link my dot files
-
+python3 is installed by default otherwise install it
+if pip not installed install
+pipenv also
+sudo apt-get install python-pip
 
