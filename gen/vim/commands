@@ -44,7 +44,8 @@ s-a : go end of line and insert
 ,-h : highlight line
 ,-g : unhighlight
 
-
+#open from remote server
+vim scp://root@10.100.55.3//root/test.py
 
 
 

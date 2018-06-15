@@ -32,6 +32,7 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Align'
 Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
 Plugin 'majutsushi/tagbar'    " Class/module browser
+Plugin 'Valloric/YouCompleteMe' " autocomplete python and others 
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -474,6 +475,14 @@ endfunction
 " Highlight search results
 set hlsearch
 " =====================================
+
+
+" =====================================
+" youcompleteme config
+" =====================================
+
+let g:ycm_python_binary_path = 'python3'
+
 
 
 

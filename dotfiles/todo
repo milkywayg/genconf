@@ -24,7 +24,7 @@ vim:
     resize the panes with mouse
     plug in markers
     reload
-    code completion
+    code completion -- done
     align-- done
     org mode
     tabs
@@ -59,7 +59,7 @@ urgent:
     vim highlight line                            -- done
     less problems                                 -- no solutuon use vim key to go up/down     -- done
     chck if we can remap esc to caps lock         -- add jj to move to normal mode from insert
-    youcompleteme
+    youcompleteme                                 -- done
     fix c-h in tmux                               -- done
     minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split -- done
     vim git fugitive and vimagit
