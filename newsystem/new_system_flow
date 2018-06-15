@@ -28,4 +28,7 @@ python3 is installed by default otherwise install it
 if pip not installed install
 pipenv also
 sudo apt-get install python3-pip
+#the below uses aliases...py=python3
+sudo pip install pipenv
+
 
