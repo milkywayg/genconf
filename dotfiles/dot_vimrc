@@ -483,6 +483,11 @@ set hlsearch
 
 let g:ycm_python_binary_path = 'python3'
 
+" =====================================
+" ctrlp plugin add support hidden files
+" =====================================
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_follow_symlinks = 1
 
 
 
