@@ -20,6 +20,9 @@ alias ec='echo'
 alias gcred="git config credential.helper store && git config --global credential.helper 'cache --timeout 7200'"
 alias gd='git diff'
 alias rp='realpath'
+alias crgith='~/genconf/dotfiles/cr_gith_repo.sh'
+
+#git prel
 function gprel() {
     if [ "$1" != "" ] # or better, if [ -n "$1" ]
     then
@@ -29,11 +32,25 @@ function gprel() {
     fi
     git push
 }
+
+#this alias keep the colors in tmux
 alias tmux='tmux -2'
 # When using sudo, use alias expansion (otherwise sudo ignores your aliases)
 alias sudo='sudo '
 
 alias pls='sudo $(fc -ln -1)'
+
+#git tag alias
+function gtg() {
+    if [ "$1" != "" ] # or better, if [ -n "$1" ]
+    then
+        git tag $1
+    else
+        echo "need a tag name"
+    fi
+    git push origin --tags
+}
+
 
 #general
 #this disables the flow control to terminal to enable using ctrl+s in vim (in general it freezes the term)
