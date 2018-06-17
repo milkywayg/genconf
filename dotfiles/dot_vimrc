@@ -490,4 +490,15 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_follow_symlinks = 1
 
 
+" =====================================
+" define the indentation
+" =====================================
+" set sts=4
+" set ts=2
+" set sw=8
+
+
+
+
+
 
