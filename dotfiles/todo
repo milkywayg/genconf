@@ -68,5 +68,10 @@ urgent:
     tmux roll back in shell using mouse(copy mode) --done
     tmux roll back faaaster with the mouse
     vim scroll bar horizontal and vertical (horizontal before)
-
+    vim plugins:    
+        -nerdocmmenter
+        -snoppets
+        -class viewer
+        -git
+        -debugger python
 
