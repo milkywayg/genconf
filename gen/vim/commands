@@ -47,7 +47,8 @@ s-a : go end of line and insert
 #open from remote server
 vim scp://root@10.100.55.3//root/test.py
 
-
+ctrl-p plugin: 
+    -to change seraching path :ctrlP <new path>
 
 
 
