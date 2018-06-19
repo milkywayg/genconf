@@ -15,6 +15,8 @@ sudo apt-get update && sudo apt-get -y upgrade
 install packages: git, vim, tmux, zsh, 
 clone not in root oh-my-zsh
 
+#install vundle
+
 #chnage the permission of the zsh history file to enable sharing the history
 sudo chown miki:miki $HISTFILE
 
@@ -38,10 +40,13 @@ sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev
 #compile you complete
 cd ~/.vim/bundle/YouCompleteMe
-./install.py
+sudo python3 ./install.py
 
 #install tmux plug in manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+#open vim to install vundle plugins
+sudo vim
+:PluginInstall
 
 

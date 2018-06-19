@@ -82,6 +82,7 @@ set title
 " set background=dark
 set ttyfast
 set lazyredraw
+set shortmess=a "this avoids the text hit enter to continue when saving
 
 
 highlight ColorColumn ctermbg=black
@@ -488,6 +489,7 @@ let g:ycm_python_binary_path = 'python3'
 " =====================================
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_follow_symlinks = 1
+" let g:ctrlp_working_path_mode = 0 "this search not only on the active path
 
 
 " =====================================
