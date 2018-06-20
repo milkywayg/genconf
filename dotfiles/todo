@@ -23,7 +23,7 @@ vim:
     nerdtree see dot file hidden
     resize the panes with mouse
     plug in markers
-    reload
+    reload          -- done
     code completion -- done
     align-- done
     org mode
