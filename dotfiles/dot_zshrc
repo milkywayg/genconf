@@ -152,3 +152,10 @@ setopt inc_append_history
 # #hyphen as part of the word
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
+
+# # Clear screen.
+# [[ -n "$keyinfo[Control]" ]] && \
+#     bindkey -M "$keymap" "$keyinfo[Control]K" clear-screen
+
+
+
