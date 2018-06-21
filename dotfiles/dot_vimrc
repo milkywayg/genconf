@@ -528,3 +528,36 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checkti
 " https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
+
+
+" " =========================================
+" " absolute and relative linue numbering
+" " =========================================
+" 
+" set number relativenumber
+" 
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" augroup END
+
+" "other option
+" set number
+" autocmd InsertEnter * :set norelativenumber
+" autocmd InsertLeave * :set relativenumber
+
+
+
+
+
+
+
+
+
+
+
+
+
+
