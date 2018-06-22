@@ -190,8 +190,8 @@ vnoremap <Leader>9             : norm i#<CR>
 vnoremap <Leader>8             : norm ^x<CR>
 
 " toggle easily paste mode
-nnoremap <silent><Leader>0:set invpaste paste?<CR>
-set pastetoggle=<Leader>0
+nnoremap <silent><Leader>;:set invpaste paste?<CR>
+set pastetoggle=<Leader>;
 set showmode
 
 " remap :w save with Leader s
