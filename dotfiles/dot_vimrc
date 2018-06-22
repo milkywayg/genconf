@@ -198,8 +198,8 @@ set showmode
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
 " remap :q save with Leader q
-nnoremap <leader>q :qa<cr>
-inoremap <leader>q <C-c>:qa<cr>
+nnoremap <leader>q :wqa<cr>
+inoremap <leader>q <C-c>:wqa<cr> 
 
 "Align Current Paragraph with Leader + a
 noremap <leader>a =ip
