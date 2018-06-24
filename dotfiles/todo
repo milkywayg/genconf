@@ -75,5 +75,9 @@ urgent:
         -class viewer
         -git
         -debugger python
+        -toggle reltive/abs line numbering
+        -marker in margin
+        -remove red cursor on unused spaces
+        -chnage color of cursor brackets
 
 
