@@ -8,5 +8,10 @@ add the type of files to not track or the file
 and check in the file
 
 
+to list the files that are tracked in git:
+git ls-tree -r master --name-only
+
+
+
 
 
