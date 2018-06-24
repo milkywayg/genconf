@@ -79,5 +79,7 @@ urgent:
         -marker in margin
         -remove red cursor on unused spaces
         -chnage color of cursor brackets
+        -zsh autosuggestion display problem
+        -fast scrolling in copy mode in tmux
 
 
