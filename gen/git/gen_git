@@ -1,2 +1,12 @@
 - to commit use : git commit -a -m "sdfgs"
 - then push to github: git push
+
+
+to not track files:
+touch .gitignore
+add the type of files to not track or the file
+and check in the file
+
+
+
+
