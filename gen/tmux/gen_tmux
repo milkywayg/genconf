@@ -13,10 +13,9 @@ with mouse, need to enter first copy mode prefix+[, then select with mouse, fina
 
 copy from tmux to windows (maybe works also in term without tmux)
 hold shift key and select with the mouse )delect with enter key)
-  
- 
 
-
+prefix+d: to detach
+outside tmux: tmux attach " to reattach
 
 
 
