@@ -12,7 +12,8 @@ for x server: check that $DISPLAY and the display used by the xserver in windows
 
 ------------------  new install ------------
 sudo apt-get update && sudo apt-get -y upgrade
-install packages: git, vim, tmux, zsh, 
+install packages: git, vim, tmux, zsh,w3m (text browser)
+sudo apt-get install w3m w3m-img
 clone not in root oh-my-zsh
 
 #install vundle
