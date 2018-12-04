@@ -1,0 +1,12 @@
+pipenv is a way to install packages and manage dependencies in the project.
+commands:
+    - pipenv shell #spawns a shell and the virtual env now the python called 
+    when python is called is the python of the enviromnement.
+    - pipenv install numpy 
+    - exit #exists the virtual env shell
+files:
+    -Pipenv gives a list of the pakages used and the python
+    -Pipenv.lock: more details.
+locations:
+    -the virtual env is located in .virtualenv (or something close) and this location
+    contains the actual python and probably the actual packages used in the project.
