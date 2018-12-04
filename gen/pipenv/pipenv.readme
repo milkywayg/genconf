@@ -15,4 +15,8 @@ upgrade:
     1-sudo pip install --upgrade pip
     2-sudo pip install pipenv --upgrade
 
+gen:
+    -convert requirement.txt to pipenv: pipenv install #in the dir with the requirement.txt file
+
+
 
