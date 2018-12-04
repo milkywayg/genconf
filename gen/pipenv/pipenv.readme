@@ -10,3 +10,9 @@ files:
 locations:
     -the virtual env is located in .virtualenv (or something close) and this location
     contains the actual python and probably the actual packages used in the project.
+
+upgrade:
+    1-sudo pip install --upgrade pip
+    2-sudo pip install pipenv --upgrade
+
+
