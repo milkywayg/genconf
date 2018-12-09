@@ -21,4 +21,8 @@ gen:
     -pipfile contains all the information to create a virtual env located in for ex. /home/miki/.local/share/virtualenvs/assignment1--RlxVXNq
     -all the needed packages are there and pipfile only describe how to construct it
 
+commands:
+    -pipenv --venv : view the path of the virtual env
+    -pipenv --rm : removes the virtual env created
+    -pipenv install: installs the pipfile
 
