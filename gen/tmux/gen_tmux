@@ -17,6 +17,8 @@ hold shift key and select with the mouse )delect with enter key)
 prefix+d: to detach
 outside tmux: tmux attach " to reattach
 
+- every stuff selected by the mouse is autom. copied in the clipboard 
+and you are positionned to the prompt. to paste just do prefix+]
 
 
 
