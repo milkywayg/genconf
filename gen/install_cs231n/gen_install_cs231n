@@ -1,0 +1,5 @@
+-there is generally a file called setup_googlecloud.sh. Need to open it and check if there are some particular installations (ubuntu packages)
+that need to be install beforehand.
+- then clean the virtuaenv created by pipenv using pipenv --rm
+- create the pipfile and the dot lock file using: pipenv lock -r, it will take the requirements.txt file and build a pipfile and dot_lock
+-then run pipenv install to install the needed packages.
