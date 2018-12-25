@@ -3,3 +3,5 @@ that need to be install beforehand.
 - then clean the virtuaenv created by pipenv using pipenv --rm
 - create the pipfile and the dot lock file using: pipenv lock -r, it will take the requirements.txt file and build a pipfile and dot_lock
 -then run pipenv install to install the needed packages.
+-import matplotlib.pyplot as plt will not load until this is installed:sudo apt-get install python3-tk
+
