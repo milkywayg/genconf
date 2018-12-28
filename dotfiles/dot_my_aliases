@@ -2,7 +2,7 @@
 #they go to bash and zsh
 #
 #my aliases
-alias zz='less -N'
+alias zz='less -N -M'
 alias g='grep'
 alias gr='grep -R'
 alias gi='grep -i'
