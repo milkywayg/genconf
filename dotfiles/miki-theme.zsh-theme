@@ -1,5 +1,5 @@
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-local prompt_host="$fg[cyan]%}$USER@%{$fg[green]%}%m "
+local prompt_host="%{$fg[cyan]%}$USER@%{$fg[green]%}%m "
 
 PROMPT='${prompt_host}${ret_status} %{$fg[cyan]%}%3c%{$reset_color%} $(git_prompt_info)'
 
