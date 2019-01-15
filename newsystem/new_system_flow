@@ -50,4 +50,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo vim
 :PluginInstall
 
+#in mobaxterm
+need to uncheck the "box backspace sends ^h" in the terminal config.
+
+
 
