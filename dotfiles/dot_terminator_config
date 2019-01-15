@@ -1,5 +1,6 @@
 [global_config]
-  inactive_color_offset = 1.0
+  dbus = False
+  inactive_color_offset = 0.805555555556
 [keybindings]
 [layouts]
   [[default]]
