@@ -51,7 +51,22 @@ sudo vim
 :PluginInstall
 
 #in mobaxterm
-need to uncheck the "box backspace sends ^h" in the terminal config.
+- need to uncheck the "box backspace sends ^h" in the terminal config.
+- in the login page, check that there is x forwarding is enabled
+
+#to have terminator as external teminal window (a bit laggy but ok)
+- sudo apt-get install dbus-x11 
+-sudo add-apt-repository ppa:gnome-terminator
+-sudo apt-get update
+-sudo apt-get install terminator
+
+- 
+I had to create the ~/.config/terminator folder as well as the ~/.config/terminator/config file:
+mkdir -p ~/.config/terminator
+touch ~/.config/terminator/config
+
+
+
 
 
 
