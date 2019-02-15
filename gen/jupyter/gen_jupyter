@@ -15,6 +15,7 @@ filenally open in the laptop browser at the address:
 
 After that: we can setup a password so that not everyone can connect to our notebook and use the computing power of our instance.
 
+Debug: to add debuggger in the middle of the execution of a cell, put inside the cell: import pdb; pdb.set_trace() 
 
 
 
