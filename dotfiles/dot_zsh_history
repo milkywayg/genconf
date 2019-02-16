@@ -2414,3 +2414,17 @@ git push origin --tags
 : 1550348089:0;gs
 : 1550348096:0;gl
 : 1550348111:0;gprel "ll"
+: 1550348116:0;ll
+: 1550348118:0;cd
+: 1550348200:0;gr HISTSIZE 
+: 1550348203:0;gr HISTSIZE .
+: 1550354476:0;zz .zsh_history
+: 1550354505:0;tmux
+: 1550354526:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1550354529:0;cd../..
+: 1550354533:0;../..
+: 1550354547:0;pipenv shell\
+
+: 1550354557:0;jupyter-notebook --no-browser --port=7000
+: 1550357095:0;cd genconf
+: 1550357098:0;gprel "ll"
