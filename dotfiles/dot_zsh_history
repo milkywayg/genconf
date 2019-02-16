@@ -1,0 +1,2408 @@
+: 1527864891:0;ll
+: 1527865003:0;git clone https://github.com/wesdoyle/dotfiles
+: 1527865006:0;ll
+: 1527865008:0;cd dotfiles
+: 1527865011:0;ll
+: 1527865020:0;cd jetbrains
+: 1527865021:0;ll
+: 1527865043:0;find . -name "*vim*"
+: 1527865053:0;ls -la
+: 1527865062:0;cd options
+: 1527865062:0;ll
+: 1527865069:0;cd ..
+: 1527865071:0;ll
+: 1527865073:0;cd ..
+: 1527865166:0;pwd
+: 1527865168:0;cd ..
+: 1527865168:0;ll
+: 1527865173:0;rm -rf dotfiles
+: 1527865179:0;git clone https://github.com/wesdoyle/dotfiles .
+: 1527865181:0;ll
+: 1527865214:0;find . -name "*vim*"
+: 1527865219:0;ll
+: 1527865221:0;ls -la
+: 1527865280:0;pwd
+: 1527865292:0;vi .vimrc
+: 1527865316:0;vi .zshrc
+: 1527865362:0;echo $HOME
+: 1527865385:0;cd ..
+: 1527865391:0;pwd
+: 1527865394:0;cd dotfiles
+: 1527865397:0;ll
+: 1527865401:0;rm =rf 
+: 1527865406:0;rm =rf *
+: 1527865413:0;rm -rf *
+: 1527865418:0;ll
+: 1527865421:0;cd ..
+: 1527865422:0;ll
+: 1527865427:0;cd dotfiles
+: 1527865431:0;cd ..
+: 1527865434:0;rm -rf dotfiles
+: 1527865442:0;mkdir ref_dotfiles
+: 1527865444:0;cd ref_dotfiles
+: 1527865449:0;git clone https://github.com/wesdoyle/dotfiles 
+: 1527865451:0;ll
+: 1527865473:0;cp dotfiles/.vimrc .
+: 1527865475:0;ll
+: 1527865478:0;ls -la
+: 1527865549:0;git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+: 1527865553:0;ll
+: 1527865582:0;vim test
+: 1527865593:0;vim .vimrc
+: 1527865758:0;cd ..
+: 1527865760:0;echo "# dotfiles" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git remote add origin https://github.com/milkywayg/dotfiles.git\
+git push -u origin master
+: 1527865776:0;pwd
+: 1527865782:0;ll
+: 1527865784:0;ls -la
+: 1527865797:0;rm .git*
+: 1527865801:0;rm -rf .git*
+: 1527865803:0;ll
+: 1527865806:0;ls -la
+: 1527865823:0;echo "# dotfiles" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git remote add origin https://github.com/milkywayg/dotfiles.git\
+git push -u origin master
+: 1527865838:0;pwd
+: 1527865846:0;rm -rf .git*
+: 1527865847:0;ll
+: 1527865856:0;mkdir dotfiles
+: 1527865858:0;cd dotfiles
+: 1527865861:0;echo "# dotfiles" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git remote add origin https://github.com/milkywayg/dotfiles.git\
+git push -u origin master
+: 1527865877:0;ll
+: 1527865882:0;rm -rf .git*
+: 1527865884:0;ll
+: 1527865888:0;rm 
+: 1527865891:0;rm *
+: 1527865902:0;echo "# dotfiles" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git remote add origin https://github.com/milkywayg/dotfiles.git\
+git push -u origin master
+: 1527865918:0;ll
+: 1527865921:0;ls -la
+: 1527865974:0;less ../.vimrc
+: 1527865987:0;less ~/.vimrc
+: 1527866004:0;cp ../ref_dotfiles/dotfiles/.vimrc .
+: 1527866006:0;ll
+: 1527866013:0;ls -la
+: 1527866031:0;mv .vimrc vimrc
+: 1527866032:0;ll
+: 1527866038:0;vi vimrc
+: 1527866062:0;ll ..
+: 1527866082:0;rm ../vimrc
+: 1527866090:0;history
+: 1527866108:0;ln -s vimrc ../.vimrc
+: 1527866114:0;vim vimrc
+: 1527866210:0;vim ~/.vimrc
+: 1527866222:0;ll
+: 1527866226:0;less vimrc
+: 1527866239:0;rm ../.vimrc
+: 1527866252:0;ln -s vimrc ~/.vimrc
+: 1527866260:0;less ~/.vimrc
+: 1527866267:0;ll ..
+: 1527866273:0;ls -la ..
+: 1527866300:0;rm ../.vimrc
+: 1527866315:0;ln -s ./vimrc ../.vimrc
+: 1527866324:0;less ~/.vimrc
+: 1527866333:0;ls -la ..
+: 1527866346:0;rm ../.vim
+: 1527866349:0;rm ../.vimrc
+: 1527866364:0;realpath vimrc
+: 1527866404:0;ln -s /home/miki/dotfiles/vimrc ~/.vimrc
+: 1527866412:0;less ~/.vimrc
+: 1527866421:0;vim ~/.vimrc
+: 1527866646:0;tmux
+: 1527866938:0;ll
+: 1527866942:0;cd ..
+: 1527866977:0;ll
+: 1527866983:0;git st
+: 1527866988:0;git status
+: 1527867008:0;git add tmux.conf vimrc
+: 1527867019:0;git status
+: 1527867036:0;git commit -m "first"
+: 1527867043:0;git br
+: 1527867051:0;git branch
+: 1527867066:0;git status
+: 1527867070:0;git push
+: 1527867121:0;git st
+: 1527867129:0;git status
+: 1527867143:0;ll
+: 1527867153:0;vim todo
+: 1527867280:0;less todo
+: 1527867286:0;git st
+: 1527867291:0;git status
+: 1527867304:0;git add todo
+: 1527867305:0;git st
+: 1527867313:0;git status
+: 1527867317:0;git push
+: 1527867341:0;git push --set-upstream origin master
+: 1527867372:0;git st
+: 1527867376:0;git status
+: 1527867381:0;git pull
+: 1527867393:0;git pull origin master
+: 1527867399:0;git push
+: 1527867447:0;git status
+: 1527867469:0;git push --help
+: 1527867642:0;git remote add origin https://github.com/milkywayg/dotfiles.git
+: 1527867655:0;git push origin master
+: 1527867709:0;git push upstream upstreammaster:master
+: 1527867773:0;git co master
+: 1527867780:0;git checkout master
+: 1527867790:0;git status
+: 1527867802:0;git commit -m "dd"
+: 1527867812:0;git status
+: 1527867816:0;git push
+: 1527867821:0;git push --set-upstream origin master\
+
+: 1527867832:0;git st
+: 1527867836:0;git status
+: 1527867838:0;ll
+: 1527867847:0;less todo
+: 1527867861:0;git checkout master
+: 1527867866:0;git pull
+: 1527867872:0;git pull origin master
+: 1527867894:0;git push origin master
+: 1528830638:0;ll
+: 1528830641:0;h
+: 1528830664:0;find . -name "*vim*"
+: 1528830670:0;h
+: 1528829270:1343;tmux
+: 1528830624:0;s ~/.zshrc
+: 1528830630:45;sudo tmux
+: 1528830808:0;chown user:group $HISTFILE
+: 1528830829:0;chown miki:group $HISTFILE
+: 1528830854:0;ec $HISTFILE
+: 1528830878:0;chown miki:miki $HISTFILE
+: 1528830882:0;pls
+: 1528830890:0;sudo chown miki:miki $HISTFILE
+: 1528830898:0;ll ~/.zsh*
+: 1528830911:0;tmux
+: 1528830913:0;h
+: 1528830933:0;vv ~/.zshrc
+: 1528831050:0;vv ~/genconf/newsystem/new_system_flow
+: 1528831220:0;h
+: 1528831664:0;genconf
+: 1528831667:0;gs
+: 1528831676:0;gprel "some fixes"
+: 1528831681:0;gl
+: 1528831693:0;cd test
+: 1528831697:0;vv test.py
+: 1528837340:0;cd
+: 1528837351:0;gen
+: 1528837354:0;genconf
+: 1528837359:0;gs
+: 1528837364:0;ll
+: 1528837380:0;newsystem/
+: 1528837387:0;vv new_system_flow
+: 1528837875:0;gs
+: 1528837883:0;gprel "some fixes"
+: 1528837895:0;cd
+: 1528828715:327;vv ~/test/test.py
+: 1528829044:0;h
+: 1528828701:332;vv ~/test/test1
+: 1528829036:0;ll
+: 1528829038:0;h
+: 1528828833:0;gs
+: 1528828837:7;vv ~/.vimrc
+: 1528828853:3;gprel "fix copy paste vim tmux"
+: 1528828865:0;vv dotfiles/todo
+: 1529047859:0;python3
+: 1529047869:0;which python
+: 1529047873:0;which python3
+: 1529047927:0;python3 -V
+: 1529047941:0;tmux
+: 1529047974:0;which pip
+: 1529048169:0;pip -V
+: 1529048241:0;vv genconf/dotfiles/dot_my_aliases
+: 1529048252:0;py
+: 1529048279:0;tmux
+: 1529048289:0;py
+: 1529048365:0;vv genconf/newsystem/new_system_flow
+: 1529048445:0;vv ~/.zshrc
+: 1529048489:0;s ~/.zshrc
+: 1529048563:0;py -m pip -V
+: 1529048623:0;py -m pip install pipenv
+: 1529048669:0;sudo apt-get update && sudo apt-get -y upgrade
+: 1529048708:0;pip -V
+: 1529048719:0;py -m pip -V
+: 1529048740:0;which pip
+: 1529048773:0;vv genconf/dotfiles/todo
+: 1529049058:0;vv ~/.zshrc
+: 1529049175:0;s ~/.zshrc
+: 1529049263:0;cd genconf
+: 1529049263:0;ll
+: 1529049272:0;cd gen/
+: 1529049274:0;ll
+: 1529049280:0;mkdir zsh
+: 1529049282:0;cd zsh
+: 1529049284:0;ll
+: 1529049298:0;vv gen_zsh
+: 1529049414:0;vv ~/.zshrc
+: 1529049447:0;s ~/.zshrc
+: 1529049495:0;vv ~/.zshrc
+: 1529049521:0;vv ~/.vimrc
+: 1529049754:0;vv ~/.vimrc test/test.py
+: 1529049878:0;s ~/.zshrc
+: 1529049885:0;vv ~/.zshrc
+: 1529049893:0;s ~/.zshrc
+: 1529050009:0;ec $WORDCHARS
+: 1529050014:0;vv ~/.zshrc
+: 1529050030:0;s ~/.zshrc
+: 1529050102:0;vv ~/.zshrc
+: 1529050502:0;s ~/.zshrc
+: 1529050521:0;cd genconf
+: 1529050526:0;gs
+: 1529050541:0;git add gen/zsh/
+: 1529050543:0;gs
+: 1529050551:0;gprel "some fixes"
+: 1529050563:0;gl
+: 1529050634:0;which pip
+: 1529050641:0;py -m pip -V
+: 1529050656:0;h
+: 1529050663:0;h | g sudo
+: 1529050676:0;sudo apt-get install python-pip
+: 1529050725:0;pip -V
+: 1529050737:0;py -m pip -V
+: 1529050743:0;py -m pip install pipenv
+: 1529050926:0;sudo apt install python3-pip
+: 1529050944:0;gs
+: 1529050952:0;df -h
+: 1529050969:0;pip3 -V
+: 1529050993:0;py -m pip -V
+: 1529051032:0;vv genconf/dotfiles/todo
+: 1529051043:0;vv genconf/dotfiles/dot_my_aliases
+: 1529051159:0;s ~/.zshrc
+: 1529051168:0;pip search numpy
+: 1529051189:0;pip search num
+: 1529051269:0;pip -h
+: 1529051328:0;pip list
+: 1529051336:0;pip show
+: 1529051382:0;pip -V
+: 1529051425:0;pip install pipenv
+: 1529051512:0;pip install scrapy
+: 1529051526:0;sudo apt install build-essential python3-dev  python3-setuptools
+: 1529051532:0;pip install scrapy
+: 1529051683:0;ec $PATH
+: 1529051730:0;zz ~/.profile
+: 1529051778:0;cd genconf/dotfiles
+: 1529051778:0;ll
+: 1529051816:0;vv dot_my_aliases
+: 1529051886:0;pip -V
+: 1529051901:0;which pip
+: 1529051908:0;s ~/.zshrc
+: 1529051911:0;which pip
+: 1529051971:0;s ~/.zshrc
+: 1529051977:0;pip show
+: 1529051985:0;pip list
+: 1529051994:0;which pip
+: 1529052020:0;vv genconf/dotfiles/todo
+: 1529052066:0;gs
+: 1529052075:0;gprel "some fixes"
+: 1529052089:0;cd
+: 1529052097:0;pip install pipenv
+: 1529052115:0;pip show pipenv
+: 1529052178:0;ll
+: 1529052196:0;mkdir Projects
+: 1529052204:0;Projects
+: 1529052205:0;ll
+: 1529052217:0;mkdir gentest_py
+: 1529052219:0;cd gentest_py
+: 1529052223:0;ll
+: 1529052227:0;pipenv shell
+: 1529052264:0;h
+: 1529052276:0;which pipenv
+: 1529052397:0;pip show pipenv
+: 1529052449:0;/home/miki/.local/lib/python3.6/site-packages/pipenv/
+: 1529052451:0;ll
+: 1529052466:0;cd -
+: 1529052629:0;h | g pipen
+: 1529052791:0;pip shell
+: 1529052800:0;pipenv shell
+: 1529053925:0;pipenv install django
+: 1529054139:0;cd ../tmux
+: 1529054143:0;ll
+: 1529054147:0;vv gen_tmux
+: 1529054286:0;ll
+: 1529054298:0;vv ~/test/test.py
+: 1529054319:0;vv gen_tmux
+: 1529054330:0;s ~/.zshrc
+: 1529054334:0;vv gen_tmux
+: 1529054380:0;cd
+: 1529054384:0;sudo pip install pipenv
+: 1529054410:0;pip -h
+: 1529054434:0;pip uninstall pipenv
+: 1529054446:0;pip show pipenv
+: 1529054451:0;sudo pip install pipenv
+: 1529054461:0;pip show pipenv
+: 1529054498:0;sudo pip install pipenv
+: 1529054546:0;genconf
+: 1529054549:0;gs
+: 1529054566:0;gprel "fixes"
+: 1529054605:0;cd
+: 1529054614:0;Projects/gentest_py
+: 1529054616:0;ll
+: 1529054625:0;pipenv shell
+: 1529054631:0;. /home/miki/.local/share/virtualenvs/gentest_py-fQMi6ztE/bin/activate
+: 1529054639:0;ll
+: 1529054674:0;du . -h
+: 1529069620:0;tmux
+: 1529069644:0;ll
+: 1529069650:0;cd Projects
+: 1529069651:0;ll
+: 1529069657:0;cd gentest_py
+: 1529069658:0;ll
+: 1529069677:0;pipenv -h
+: 1529069752:0;which python
+: 1529069755:0;which python3
+: 1529069857:0;pipenv shell
+: 1529069858:0;. /home/miki/.local/share/virtualenvs/gentest_py-fQMi6ztE/bin/activate
+: 1529069869:0;exit
+: 1529069872:0;pipenv shell
+: 1529069873:0;. /home/miki/.local/share/virtualenvs/gentest_py-fQMi6ztE/bin/activate
+: 1529069875:0;ll
+: 1529069879:0;which python3
+: 1529069885:0;py
+: 1529069907:0;exit
+: 1529069909:0;cd
+: 1529069987:0;vv ~/.zshrc
+: 1529070144:0;vv ~/.vimrc 
+: 1529070239:0;sudo vim
+: 1529070459:0;The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). YCM core library not detected; you need to compile YCM before using it. Follow t
+: 1529071097:0;cd ~/.vim/bundle/YouCompleteMe
+: 1529071120:0;./install.py --clang-completer
+: 1529071307:0;vv genconf/./newsystem/new_system_flow
+: 1529071400:0;./install.py 
+: 1529071419:0;./install.py
+: 1529071532:0;cd ..
+: 1529071540:0;rm -rf YouCompleteMe
+: 1529071545:0;sudo rm -rf YouCompleteMe
+: 1529071700:0;cd YouCompleteMe
+: 1529071700:0;ll
+: 1529071705:0;cd
+: 1529071716:0;cd test/first.py
+: 1529071721:0;vv test/first.py
+: 1529071736:0;cd -
+: 1529071767:0;./install.py
+: 1529072200:0;sudo apt-get install python-dev python3-dev
+: 1529072244:0;./install.py
+: 1529072286:0;htop
+: 1529072380:0;sudo ./install.py
+: 1529072568:0;cd
+: 1529072579:0;vv test/first.py
+: 1529073174:0;vv ~/.vimrc 
+: 1529073259:0;vv test/first.py
+: 1529073817:0;vv genconf/gen/vim/commands
+: 1529073964:0;vv genconf/dotfiles/todo
+: 1529075620:0;ll
+: 1529075622:0;cd genconf
+: 1529075627:0;g
+: 1529075630:0;gs
+: 1529075667:0;git diff dotfiles/dot_vimrc
+: 1529075691:0;gprel "youcompletme"
+: 1529174869:0;vv ~/.vimrc 
+: 1529175087:0;tmux
+: 1529175089:0;ll
+: 1529175090:0;h
+: 1529175152:0;vv ~/.vimrc 
+: 1529175417:0;vv ~/.tmux.conf
+: 1529175450:0;tmux
+: 1529175453:0;h
+: 1529175487:0;vv ~/.tmux.conf
+: 1529175738:0;vv 
+: 1529176281:0;tmux
+: 1529176293:0;vv 
+: 1529176349:0;git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+: 1529176373:0;vv
+: 1529177101:0;tmux
+: 1529177110:0;vv ~/.tmux.conf
+: 1529177515:0;h
+: 1529177610:0;2  cd
+: 1529178111:0;tmux
+: 1529178112:0;h
+: 1529178119:0;vv ~/.tmux.conf
+: 1529178131:0;tmux
+: 1529178132:0;h
+: 1529178153:0;vv ~/.tmux.conf
+: 1529178211:0;tmux
+: 1529178213:0;h
+: 1529178241:0;vv ~/.tmux.conf
+: 1529178260:0;tmux
+: 1529178262:0;h
+: 1529178294:0;vv ~/.tmux.conf
+: 1529178324:0;tmux
+: 1529178326:0;h
+: 1529178384:0;ll .tmux/plugins/tmux-better-mouse-mode
+: 1529178447:0;vv ~/.tmux.conf
+: 1529178566:0;tmux
+: 1529178568:0;h
+: 1529178582:0;vv ~/.tmux.conf
+: 1529179440:0;h
+: 1529179514:0;tmux
+: 1529179520:0;h
+: 1529179543:0;vv ~/.tmux.conf
+: 1529180237:0;tmux
+: 1529180253:0;h
+: 1529180255:0;ll
+: 1529180260:0;h
+: 1529180292:0;vv ~/.tmux.conf
+: 1529180314:0;tmux
+: 1529180319:0;vv ~/.tmux.conf
+: 1529180336:0;tmux
+: 1529180357:0;vv ~/.tmux.conf
+: 1529180371:0;tmux
+: 1529180383:0;ll
+: 1529180390:0;vv ~/.tmux.conf
+: 1529180511:0;vv
+: 1529180531:0;vv ~/.tmux.conf
+: 1529180570:0;tmux
+: 1529180612:0;vv ~/.tmux.conf
+: 1529180628:0;genconf
+: 1529180630:0;gs
+: 1529180641:0;gprel "some updates"
+: 1529180727:0;vv
+: 1529180747:0;gcred
+: 1529180768:0;genconf
+: 1529180770:0;gcred
+: 1529180774:0;gs
+: 1529180800:0;gprel "some updates"
+: 1529180914:0;vv
+: 1529180982:0;h
+: 1529181362:0;tmux
+: 1529181365:0;h
+: 1529181470:0;vv ~/.tmux.conf
+: 1529181484:0;tmux
+: 1529181485:0;h
+: 1529181514:0;vv ~/.tmux.conf
+: 1529181596:0;tmux
+: 1529181599:0;h
+: 1529181615:0;vv ~/.tmux.conf
+: 1529181638:0;tmux
+: 1529181640:0;h
+: 1529181661:0;vv ~/.tmux.conf
+: 1529181683:0;tmux
+: 1529181685:0;h
+: 1529181763:0;vv ~/.tmux.conf
+: 1529181841:0;genconf
+: 1529181842:0;gs
+: 1529181847:0;gprel "some updates"
+: 1529184123:0;du . -h
+: 1529184355:0;ll
+: 1529184378:0;cd genconf
+: 1529184380:0;ll
+: 1529184383:0;cd dotfiles
+: 1529184384:0;ll
+: 1529185244:0;gs
+: 1529267508:0;tmux
+: 1529267514:0;ll
+: 1529267523:0;cd Projects
+: 1529267524:0;ll
+: 1529267539:0;mkdir tictactoe
+: 1529267541:0;cd tictactoe
+: 1529267552:0;echo "# tictactoe" >> README.md
+: 1529267563:0;git init
+: 1529267573:0;git add README.md
+: 1529267581:0;git commit -m "first commit"
+: 1529267589:0;git remote add origin https://github.com/milkywayg/tictactoe.git
+: 1529267598:0;git push -u origin master
+: 1529267612:0;ll
+: 1529267673:0;touch test
+: 1529267678:0;gs
+: 1529267684:0;gcred
+: 1529267692:0;git add test
+: 1529267699:0;gprel "test"
+: 1529267738:0;genconf
+: 1529267739:0;ll
+: 1529267787:0;dotfiles
+: 1529267789:0;ll
+: 1529267823:0;vv test
+: 1529267841:0;test alllo
+: 1529267854:0;cat test
+: 1529267930:0;vv test
+: 1529267947:0;test alllo
+: 1529268063:0;which zsh
+: 1529268158:0;tmux
+: 1529268174:0;genconf/dotfiles
+: 1529268176:0;ll
+: 1529268178:0;gs
+: 1529268184:0;vv test
+: 1529268193:0;which sh
+: 1529268217:0;source test ffff
+: 1529268225:0;sh test ffff
+: 1529268258:0;vv test
+: 1529268280:0;mv test test.sh
+: 1529268285:0;vv test.sh
+: 1529268319:0;h
+: 1529268486:0;s test.sh
+: 1529268497:0;which s
+: 1529268503:0;vv test.sh
+: 1529268534:0;s test.sh alllo
+: 1529268542:0;vv test.sh
+: 1529268572:0;s test.sh alllo
+: 1529268579:0;cd genconf/dotfiles
+: 1529268582:0;s test.sh alllo
+: 1529269113:0;chmod a+x test.sh
+: 1529269116:0;./test.sh
+: 1529269127:0;./test.sh alll
+: 1529269530:0;mv test.sh cr_gith_repo.sh
+: 1529269532:0;ll
+: 1529269552:0;./cr_gith_repo.sh test
+: 1529269616:0;ll
+: 1529269692:0;rm -rf .git
+: 1529269694:0;ll
+: 1529269701:0;rm README.md
+: 1529269702:0;ll
+: 1529269715:0;cd Projects
+: 1529269716:0;ll
+: 1529269722:0;mkdir test
+: 1529269726:0;cd test
+: 1529269749:0;~/genconf/dotfiles/cr_gith_repo.sh test
+: 1529269781:0;gs
+: 1529269833:0;vv cr_gith_repo.sh
+: 1529269889:0;gs
+: 1529269894:0;gl
+: 1529269907:0;git add cr_gith_repo.sh
+: 1529269909:0;gs
+: 1529269922:0;gprel "gh"
+: 1529269970:0;vv dot_my_aliases
+: 1529270082:0;ll
+: 1529270091:0;s ~/.zshrc
+: 1529270098:0;crgith toto
+: 1529270104:0;ll
+: 1529270118:0;touch gggg
+: 1529270122:0;git add gggg
+: 1529270125:0;gs
+: 1529270185:0;gprel "fff"
+: 1529270190:0;gl
+: 1529270200:0;git tag allo1
+: 1529270217:0;git push origin --tags
+: 1529270382:0;touch qweqwe
+: 1529270387:0;git add qweqwe
+: 1529270393:0;gprel "fff"
+: 1529270401:0;touch lllll
+: 1529270406:0;git add lllll
+: 1529270414:0;gprel "fff"
+: 1529270462:0;git tag allo2 && \
+\
+git push origin --tags
+: 1529270908:0;s ~/.zshrc
+: 1529270917:0;touch dldl
+: 1529270921:0;git add dldl
+: 1529270929:0;gtg allo3
+: 1529270941:0;gprel "fff"
+: 1529270954:0;gtg allo4
+: 1529270999:0;gs
+: 1529271014:0;gprel "some updates"
+: 1529271033:0;s ~/.zshrc
+: 1529271045:0;gtg stable1
+: 1529271106:0;cd
+: 1529271121:0;cd Projects/tictactoe
+: 1529271122:0;ll
+: 1529271195:0;pipenv shell
+: 1529271203:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529271208:0;ll
+: 1529271218:0;gs
+: 1529271222:0;rm test
+: 1529271223:0;gs
+: 1529271230:0;git add Pipfile
+: 1529271232:0;gs
+: 1529271249:0;gprel "first'\
+"
+: 1529271254:0;ll
+: 1529271272:0;vv tictactoe.py
+: 1529271299:0;cd Projects/tictactoe
+: 1529271305:0;pipenv shell
+: 1529271305:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529271311:0;which py
+: 1529271321:0;py
+: 1529271454:0;chmod a+x tictactoe.py
+: 1529271455:0;ll
+: 1529271461:0;./tictactoe.py
+: 1529271564:0;vv ~/.vimrc
+: 1529272027:0;./tictactoe.py
+: 1529272049:0;genconf
+: 1529272052:0;gs
+: 1529272069:0;gprel "some updates"
+: 1529272084:0;gs
+: 1529272089:0;gprel 
+: 1529272097:0;gprel "ff"
+: 1529272112:0;git add tictactoe.py
+: 1529272117:0;gprel "ff"
+: 1529272123:0;gs
+: 1529272265:0;gprel "ff"
+: 1529352144:0;tmux
+: 1529352162:0;cd Projects/
+: 1529352170:0;tictactoe
+: 1529352172:0;ll
+: 1529352179:0;pipenv shell
+: 1529352180:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529352185:0;ll
+: 1529352190:0;vv tictactoe.py
+: 1529352341:0;py
+: 1529352694:0;Projects/tictactoe/
+: 1529352698:0;pipenv shell
+: 1529352699:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529352706:0;gs
+: 1529352725:0;pipenv -h
+: 1529352779:0;pipenv graph
+: 1529352802:0;pipenv list
+: 1529352808:0;pipenv show
+: 1529352831:0;vv ~/.tmux.conf
+: 1529352914:0;tmux
+: 1529352918:0;h
+: 1529352951:0;vv ~/.tmux.conf
+: 1529352979:0;tmux
+: 1529352981:0;h
+: 1529353005:0;Projects/tictactoe
+: 1529353015:0;pipenv shell
+: 1529353016:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529353099:0;pip -h
+: 1529353109:0;pip list
+: 1529353127:0;pipenv install numpy
+: 1529353185:0;pip list
+: 1529353200:0;vv
+: 1529353331:0;Projects/tictactoe
+: 1529353339:0;pipenv shell
+: 1529353340:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529353343:0;py
+: 1529358228:0;vv
+: 1529358302:0;genconf
+: 1529358304:0;gs
+: 1529358308:0;gprel "ff"
+: 1529358363:0;cd
+: 1529358369:0;cd Projects/tictactoe
+: 1529358375:0;pipenv shell
+: 1529358375:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529358378:0;py
+: 1529359462:0;gs
+: 1529359472:0;git add Pipfile.lock
+: 1529359474:0;gs
+: 1529359482:0;gprel "dd"
+: 1529359490:0;cd 
+: 1529359497:0;genconf
+: 1529359500:0;gs
+: 1529437470:0;help
+: 1529437488:0;tmux
+: 1529437504:0;vv
+: 1529437517:0;Projects/tictactoe
+: 1529437528:0;pipenv shell
+: 1529437529:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529437533:0;exit
+: 1529437536:0;py
+: 1529437546:0;pipenv shell
+: 1529437546:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529437549:0;py
+: 1529437561:0;which python3
+: 1529437565:0;exit
+: 1529437576:0;which python3
+: 1529437583:0;pipenv shell
+: 1529437584:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529437592:0;Projects/tictactoe
+: 1529437593:0;pipenv shell
+: 1529437594:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529437597:0;vv tictactoe.py
+: 1529437672:0;vv
+: 1529437780:0;Projects/tictactoe
+: 1529437784:0;vv tictactoe.py
+: 1529437815:0;tmux
+: 1529437820:0;vv tictactoe.py
+: 1529437843:0;pipenv shell
+: 1529437844:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529437851:0;vv tictactoe.py
+: 1529437974:0;exit
+: 1529437978:0;vv tictactoe.py
+: 1529438010:0;pipenv shell
+: 1529438010:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529438290:0;pipenv shell
+: 1529438291:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529438292:0;py
+: 1529440600:0;vv ~/.vimrc
+: 1529441440:0;cd ~/.vim/bundle/YouCompleteMe
+: 1529441442:0;ll
+: 1529441456:0;which py
+: 1529441498:0;py install.py
+: 1529441738:0;cd
+: 1529441739:0;vv
+: 1529441764:0;sudo vim
+: 1529441794:0;vv tictactoe.py
+: 1529441858:0;sudo python3 install.py
+: 1529441891:0;vv ~/.vimrc
+: 1529441968:0;sudo vim
+: 1529441987:0;vv tictactoe.py
+: 1529442108:0;vv ~/.vimrc
+: 1529442156:0;vv tictactoe.py
+: 1529442296:0;vv ~/.vimrc
+: 1529442313:0;vv tictactoe.py
+: 1529442970:0;ll
+: 1529442974:0;./tictactoe.py
+: 1529443006:0;gs
+: 1529443012:0;gprel "dd"
+: 1529443021:0;cd
+: 1529443024:0;cd-
+: 1529443027:0;cd -
+: 1529443028:0;cd
+: 1529443030:0;exit
+: 1529443034:0;cd
+: 1529443039:0;genconf
+: 1529443043:0;gs
+: 1529443048:0;gprel "dd"
+: 1529443067:0;vv 
+: 1529443285:0;gs
+: 1529443290:0;gprel "dd"
+: 1529443295:0;gl
+: 1529443309:0;cd
+: 1529443315:0;cd Projects/tictactoe
+: 1529443317:0;gs
+: 1529507213:0;tmux
+: 1529507230:0;vv
+: 1529507309:0;Projects/tictactoe
+: 1529507313:0;pipenv shell
+: 1529507314:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529507474:0;py
+: 1529507720:0;cd Projects/tictactoe
+: 1529507724:0;pipenv shell
+: 1529507724:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529507734:0;ll
+: 1529507745:0;vv test.py
+: 1529507886:0;chmod a+x test.py
+: 1529507890:0;./test.py
+: 1529507941:0;chmod a+x tictactoe.py
+: 1529507950:0;./tictactoe.py
+: 1529508106:0;py -h
+: 1529508145:0;py -m tictactoe.py
+: 1529508182:0;py -m pdb tictactoe.py
+: 1529515656:0;py -m pdb tictactoe.py\
+: 1529515659:0;py -m pdb tictactoe.py
+: 1529515683:0;./tictactoe.py
+: 1529515946:0;cd Projects/tictactoe
+: 1529515957:0;vv tictactoe.py
+: 1529516716:0;vv
+: 1529516798:0;cd genconf
+: 1529516802:0;gs
+: 1529516809:0;gprel "dd"
+: 1529517268:0;vv ~/.vimrc
+: 1529517942:0;vim --version
+: 1529517950:0;vim --version | g pyth
+: 1529517969:0;ls
+: 1529518107:0;vv ~/.zshrc
+: 1529518211:0;s ~/.zshrc
+: 1529518227:0;vv ~/.zshrc
+: 1529518270:0;s ~/.zshrc
+: 1529518329:0;vv ~/.zshrc
+: 1529518364:0;s ~/.zshrc
+: 1529518379:0;vv ~/.zshrc
+: 1529518397:0;s ~/.zshrc
+: 1529518424:0;ll
+: 1529518430:0;rm test.py
+: 1529518509:0;vv ~/.zshrc
+: 1529518652:0;cd
+: 1529518657:0;cd genconf
+: 1529518658:0;gs
+: 1529518664:0;gprel "dd"
+: 1529518671:0;cd -
+: 1529518678:0;Projects/tictactoe
+: 1529518682:0;pipenv shell
+: 1529518695:0;ll
+: 1529518701:0;pipenv shell
+: 1529518711:0;exit
+: 1529518714:0;pipenv shell
+: 1529518715:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529518840:0;bindkey
+: 1529519280:0;clear-screen
+: 1529519296:0;bindkey | g clea
+: 1529519318:0;cd
+: 1529519320:0;vv
+: 1529519473:0;bindkey | g clea
+: 1529519497:0;cd genconf
+: 1529519505:0;gprel "dd"
+: 1529519749:0;vim --version
+: 1529519755:0;vim --version | g pyth
+: 1529520251:0;vv ~/.vimrc
+: 1529520753:0;exit
+: 1529520760:0;which python3
+: 1529520883:0;which python
+: 1529520946:0;pipenv shell
+: 1529520947:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529520956:0;vv tictactoe.py
+: 1529520983:0;cd
+: 1529520989:0;genconf/
+: 1529520992:0;gs
+: 1529520995:0;gprel "dd"
+: 1529521114:0;vv ~/.vimrc
+: 1529521165:0;cd
+: 1529521168:0;cd -
+: 1529521170:0;cd
+: 1529521182:0;Projects/tictactoe
+: 1529521191:0;vv tictactoe.py
+: 1529521445:0;cd
+: 1529521452:0;vv ~/.vimrc
+: 1529521631:0;vv tictactoe.py
+: 1529521728:0;vv
+: 1529521827:0;gs
+: 1529521833:0;gprel "dd"
+: 1529522176:0;./tictactoe.py
+: 1529522196:0;cd
+: 1529522206:0;vv Projects/tictactoe
+: 1529522226:0;cd Projects/tictactoe
+: 1529522238:0;./tictactoe.py
+: 1529522356:0;exit
+: 1529522374:0;vv tictactoe.py
+: 1529522486:0;./tictactoe.py
+: 1529522660:0;pyd ./tictactoe.py
+: 1529522665:0;s ~/.zshrc
+: 1529522675:0;pipenv shell
+: 1529522679:0;exit
+: 1529522681:0;pipenv shell
+: 1529522682:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529522688:0;pyd ./tictactoe.py
+: 1529522712:0;vv
+: 1529522744:0;which python
+: 1529522750:0;which python3
+: 1529522766:0;py -m pdb tictactoe.py\
+: 1529515659:0;py -m pdb tictactoe.py
+: 1529522803:0;cd genconf
+: 1529522805:0;gs
+: 1529522809:0;gprel "dd"
+: 1529522950:0;py -m pdb tictactoe.py\
+: 1529515659:0;py -m pdb tictactoe.py
+: 1529522978:0;./tictactoe.py
+: 1529524522:0;py
+: 1529524589:0;vv ~/.zshrc
+: 1529524823:0;s ~/.zshrc
+: 1529524832:0;pipenv shell
+: 1529524836:0;exit
+: 1529524838:0;pipenv shell
+: 1529524838:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529524844:0;py
+: 1529524883:0;s ~/.zshrc
+: 1529524934:0;py
+: 1529525949:0;gs
+: 1529527822:0;pipenv shell
+: 1529527828:0;gs
+: 1529527838:0;./tictactoe.py
+: 1529527934:0;pyd ./tictactoe.py
+: 1529528443:0;./tictactoe.py
+: 1529529095:0;pyd ./tictactoe.py
+: 1529529443:0;gs
+: 1529529448:0;gprel "dd"
+: 1529529455:0;gs
+: 1529620218:0;tmux
+: 1529620237:0;cd Projects/tictactoe
+: 1529620241:0;pipenv shell
+: 1529620242:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529620249:0;vv tictactoe.py
+: 1529620263:0;cd Projects/tictactoe
+: 1529620309:0;./tictactoe.py
+: 1529620360:0;pipenv shell
+: 1529620361:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529620364:0;./tictactoe.py
+: 1529620391:0;exit
+: 1529620397:0;vv ~/.zshrc
+: 1529620410:0;vv ./tictactoe.py
+: 1529620464:0;pyd ./tictactoe.py
+: 1529621203:0;./tictactoe.py
+: 1529621475:0;vv ~/.tmux.conf
+: 1529621544:0;genconf
+: 1529621685:0;vv ~/.vimrc
+: 1529622327:0;gd
+: 1529622338:0;gs
+: 1529622342:0;gprel "dd"
+: 1529622350:0;gl
+: 1529622484:0;./tictactoe.py
+: 1529622763:0;gs
+: 1529622768:0;gprel "dd"
+: 1529622787:0;pyd ./tictactoe.py
+: 1529623187:0;./tictactoe.py
+: 1529665375:0;tmux
+: 1529665394:0;Projects/t
+: 1529665398:0;Projects/tictactoe
+: 1529665406:0;pipenv shell
+: 1529665407:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529665417:0;vv ./tictactoe.py
+: 1529665438:0;tictactoe
+: 1529665444:0;cd Projects/tictactoe
+: 1529665451:0;exit
+: 1529665455:0;vv ~/.vimrc
+: 1529665461:0;vv ./tictactoe.py
+: 1529665591:0;ll
+: 1529665593:0;gs
+: 1529665606:0;sudo chmod a+x tictactoe_train.py
+: 1529665608:0;ll
+: 1529667218:0;vv ./tictactoe.py
+: 1529667251:0;vv ~/.vimrc
+: 1529667356:0;gs
+: 1529667358:0;cd genconf
+: 1529667360:0;gs
+: 1529667372:0;vv ./tictactoe.py
+: 1529667435:0;vv ./tictactoe.py ./tictactoe_train.py
+: 1529667459:0;gprel "dd"
+: 1529667842:0;./tictactoe.py
+: 1529667897:0;pipenv shell
+: 1529667897:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529667902:0;./tictactoe.py
+: 1529667926:0;gs
+: 1529667936:0;git add tictactoe_train.py
+: 1529668055:0;./tictactoe.py
+: 1529668519:0;py
+: 1529671768:0;./tictactoe_train.py
+: 1529672159:0;pyd ./tictactoe_train.py
+: 1529672188:0;vv
+: 1529672398:0;pyd ./tictactoe_train.py
+: 1529672744:0;./tictactoe_train.py
+: 1529672783:0;py
+: 1529672816:0;pyd ./tictactoe_train.py
+: 1529672969:0;vv ~/.vimrc
+: 1529673056:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529673112:0;vv ~/.vimrc
+: 1529673149:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529673275:0;./tictactoe_train.py
+: 1529673288:0;gs
+: 1529673291:0;gprel "dd"
+: 1529673298:0;gs
+: 1529673310:0;git add tictactoe_lib.py
+: 1529673312:0;gs
+: 1529673320:0;gprel "dd"
+: 1529673493:0;g surrou ~/.vimrc
+: 1529677558:0;pyd ./tictactoe_train.py
+: 1529678665:0;gs
+: 1529678668:0;gprel "dd"
+: 1529781489:0;tmux
+: 1529781518:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529781525:0;ll
+: 1529781540:0;Projects/tictactoe
+: 1529781544:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529782251:0;vv ~/.vimrc
+: 1529782468:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529783318:0;Projects/tictactoe
+: 1529783323:0;pipenv shell
+: 1529783325:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529783329:0;py
+: 1529784623:0;genconf
+: 1529784625:0;gs
+: 1529784633:0;gprel "dd"
+: 1529784638:0;gs
+: 1529784643:0;gprel "dd"
+: 1529787090:0;tmux
+: 1529787113:0;cd Projects/tictactoe
+: 1529787117:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529788627:0;Projects/tictactoe
+: 1529788631:0;pipenv shell
+: 1529788633:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529788639:0;py
+: 1529790944:0;vv ~/.vimrc
+: 1529791406:0;genconf
+: 1529791409:0;cd
+: 1529791416:0;cd Projects/tictactoe
+: 1529791418:0;gs
+: 1529791428:0;git diff tictactoe_lib.py
+: 1529791804:0;./tictactoe.py 
+: 1529792096:0;pyd ./tictactoe.p
+: 1529792099:0;pyd ./tictactoe.py
+: 1529792407:0;cd 
+: 1529792410:0;cd genconf
+: 1529792412:0;cd
+: 1529792415:0;vv ~/.vimrc
+: 1529792874:0;cd genconf
+: 1529793044:0;vv ~/.vimrc
+: 1529793334:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529793596:0;gs
+: 1529793603:0;gprel "dd"
+: 1529793609:0;gs
+: 1529793614:0;gprel "dd"
+: 1529821533:0;tmux
+: 1529821561:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529821571:0;Projects/tictactoe
+: 1529821574:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529821641:0;Projects/tictactoe
+: 1529821643:0;pipenv shell
+: 1529821645:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529821843:0;pyd ./tictactoe.py
+: 1529824060:0;vv
+: 1529824102:0;pyd ./tictactoe.py
+: 1529828132:0;./tictactoe_train.py
+: 1529828164:0;pyd ./ticta
+: 1529828172:0;pyd ./tictac
+: 1529828179:0;pyd ./tictactoe_train.py
+: 1529828413:0;gs
+: 1529828417:0;gprel "dd"
+: 1529828429:0;cd genconf
+: 1529828431:0;gs
+: 1529828435:0;gprel "dd"
+: 1529828552:0;pyd ./tictactoe_train.py
+: 1529828827:0;gprel "some fix looks better"
+: 1529828851:0;./tictactoe_train.py
+: 1529829049:0;htop
+: 1529829067:0;./tictactoe_train.py
+: 1529831377:0;pyd ./tictactoe_train.py
+: 1529831909:0;./tictactoe_train.py
+: 1529834921:0;pyd ./tictactoe_train.py
+: 1529836144:0;cd
+: 1529836150:0;Projects/tictactoe
+: 1529836153:0;pipenv shell
+: 1529836154:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529836159:0;py
+: 1529836221:0;htop
+: 1529836732:0;ll
+: 1529836739:0;htop
+: 1529836783:0;which virtualenv
+: 1529839333:0;pyd ./tictactoe_train.py
+: 1529839469:0;cd
+: 1529839486:0;vv ~/.vimrc
+: 1529839493:0;vv
+: 1529839546:0;cd genconf
+: 1529839549:0;gs
+: 1529839559:0;gprel "bb"
+: 1529840872:0;Projects/t
+: 1529840875:0;Projects/tictactoe
+: 1529840879:0;pipenv shell
+: 1529840880:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529840882:0;py
+: 1529841471:0;genconf
+: 1529841486:0;cd Projects/tictactoe
+: 1529841488:0;gs
+: 1529841495:0;rm test1.p
+: 1529841690:0;touch .gitignore
+: 1529841697:0;vv .gitignore
+: 1529841712:0;ll
+: 1529841728:0;g
+: 1529841730:0;gs
+: 1529841772:0;git add .gitignore
+: 1529841773:0;gs
+: 1529841788:0;gprel "in debug"
+: 1529841794:0;gl
+: 1529841798:0;gs
+: 1529841803:0;git list
+: 1529841832:0;git ls-tree -r master --name-only
+: 1529841835:0;ll
+: 1529841856:0;vv
+: 1529841906:0;gs
+: 1529841922:0;gd gen/git/gen_git
+: 1529841935:0;gprel "pp"
+: 1529841950:0;htop
+: 1529842023:0;vv
+: 1529842054:0;gs
+: 1529842057:0;gprel "pp"
+: 1529843671:0;pyd ./tictactoe_train.py
+: 1529843702:0;\./tictactoe_train.py
+: 1529843707:0;./tictactoe_train.py
+: 1529844008:0;gs
+: 1529844018:0;gprel "add copies"
+: 1529849258:0;./tictactoe_train.py
+: 1529850225:0;gs
+: 1529850230:0;gprel "add copies"
+: 1529852832:0;./tictactoe_train.py
+: 1529862303:0;./tictactoe.py
+: 1529862430:0;gprel "ms=2"
+: 1529862441:0;./tictactoe_train.py
+: 1529862669:0;gs
+: 1529862674:0;gd tictactoe_lib.py
+: 1529862738:0;git blame tictactoe_lib.py
+: 1529862787:0;./tictactoe_train.py
+: 1529862814:0;pyd ./tictactoe_train.py
+: 1529862938:0;./tictactoe_train.py
+: 1529862953:0;pyd ./tictactoe_train.py
+: 1529863108:0;./tictactoe_train.py
+: 1529863153:0;pyd ./tictactoe_train.py
+: 1529863672:0;./tictactoe_train.py
+: 1529863709:0;pyd ./tictactoe_train.py
+: 1529864381:0;./tictactoe_train.py
+: 1529864438:0;pyd ./tictactoe_train.py
+: 1529864753:0;g sum *
+: 1529865068:0;pyd ./tictactoe_train.py
+: 1529866374:0;g sum *
+: 1529866439:0;cd
+: 1529866444:0;cd Projects/tictactoe
+: 1529866448:0;pipenv shell
+: 1529866455:0;./tictactoe_train.py
+: 1529866475:0;pyd ./tictactoe_train.py
+: 1529867796:0;gprel "ms=2"
+: 1529868400:0;./tictactoe_train.py
+: 1529868518:0;htop
+: 1529869245:0;ll
+: 1529871267:0;./tictactoe.py
+: 1529872963:0;pyd ./tictactoe.py
+: 1529873239:0;./tictactoe.py
+: 1529873374:0;pyd ./tictactoe.py
+: 1529874016:0;./tictactoe.py
+: 1529874201:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529874214:0;./tictactoe.py
+: 1529874368:0;gs
+: 1529874371:0;gprel 
+: 1529874384:0;gprel "not bad"
+: 1529874396:0;./tictactoe_train.py
+: 1529875131:0;./tictactoe.py
+: 1529875561:0;py
+: 1529875670:0;./tictactoe_train.py
+: 1529876245:0;gprel "not bad"
+: 1529876396:0;./tictactoe.py
+: 1529876522:0;cd
+: 1529876525:0;genconf
+: 1529957902:0;tmux
+: 1529957913:0;cd Projects/tictactoe
+: 1529957919:0;vv ./tictactoe.py ./tictactoe_train.py ./tictactoe_lib.py
+: 1529957928:0;cd Projects/tictactoe
+: 1529957931:0;pipenv shell
+: 1529957933:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1529958114:0;./tictactoe_train.py
+: 1529958252:0;./tictactoe_train.py > log_train_ms_2
+: 1529958259:0;vv log_train_ms_2
+: 1529958452:0;./tictactoe_train.py > log_train_ms_2
+: 1529958459:0;./tictactoe_train.py
+: 1529958481:0;./tictactoe_train.py > log_train_ms_3
+: 1529959354:0;vv log_train_ms_3
+: 1529960515:0;ll
+: 1529960623:0;vv log_train_ms_3
+: 1529960696:0;pyd ./tictactoe_train.py 
+: 1529965799:0;htop
+: 1529966471:0;gprel "adding discount factor and improving perf"
+: 1529966887:0;gs
+: 1529966895:0;rm log_train_ms_*
+: 1529966901:0;gs
+: 1529966983:0;./tictactoe_train.py
+: 1529967114:0;genconf
+: 1529967118:0;gs
+: 1529967120:0;cd
+: 1530123471:0;tmux
+: 1530123490:0;cd Projects/tictactoe
+: 1530123546:0;ll
+: 1530123555:0;vv *.py
+: 1530123583:0;cd Projects/tictactoe
+: 1530123588:0;pipenv shell
+: 1530123589:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1530123755:0;sudo apt-get updat
+: 1530123768:0;sudo apt-get update && sudo apt-get -y upgrade
+: 1530124033:0;ll
+: 1530124037:0;tmux
+: 1530124297:0;cd Projects/tictactoe
+: 1530124299:0;vv *.py
+: 1530124308:0;cd Projects/tictactoe
+: 1530124349:0;pipenv shell
+: 1530124351:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1530124490:0;genconf
+: 1530124492:0;ll
+: 1530124496:0;gl
+: 1530124541:0;vv
+: 1530124568:0;gtg stable2
+: 1530124578:0;gl
+: 1530135270:0;./tictactoe_train.py
+: 1530135565:0;cd
+: 1530135569:0;cd Projects/tictactoe
+: 1530135570:0;ll
+: 1530135617:0;gprel "chnage to correct compute next state including opponent action"
+: 1530136657:0;./tictactoe.py
+: 1530136814:0;gl
+: 1530136846:0;gtg looks_great
+: 1530136855:0;cd
+: 1530136858:0;cd genconf
+: 1530136862:0;gs
+: 1530250018:0;tmux
+: 1530250027:0;vv
+: 1530250090:0;sudo apt-get update && sudo apt-get -y upgrade
+: 1530250110:0;sudo apt-get install w3m
+: 1530250118:0;df -h
+: 1530250140:0;w3m www.lemonde.fr
+: 1530250287:0;sudo apt-get install w3m w3m-img
+: 1530250296:0;w3m www.lemonde.fr
+: 1530250429:0;vv
+: 1530250529:0;cd genconf/gen
+: 1530250530:0;ll
+: 1530250534:0;mkdir w3m
+: 1530250536:0;cd w3m
+: 1530250542:0;vv w3m_gen
+: 1530250839:0;w3m www.lemonde.fr
+: 1530251473:0;tmux
+: 1530251478:0;cd genconf
+: 1530251480:0;gs
+: 1530251485:0;cd gen/w3m
+: 1530251486:0;ll
+: 1530251497:0;vv w3m_gen
+: 1530251504:0;w3m
+: 1530251517:0;w3m figaro.fr
+: 1530251576:0;gs
+: 1530251583:0;git add .
+: 1530251585:0;gs
+: 1530251596:0;gprel "ll"
+: 1530252423:0;htop
+: 1530252433:0;jobs
+: 1530252441:0;tmux attach
+: 1530252466:0;py
+: 1530252514:0;tmux attach
+: 1530252528:0;jobs
+: 1530252532:0;htop
+: 1530252546:0;tmux attach
+: 1530252571:0;vv
+: 1530252914:0;cd genconf
+: 1530252915:0;gs
+: 1530252920:0;gprel "ll"
+: 1532092741:0;ls
+: 1532092743:0;ll
+: 1532092747:0;tmux
+: 1532092769:0;ll
+: 1532092773:0;exit
+: 1532092858:0;tmux
+: 1532092870:0;ll
+: 1532092876:0;vv ~/.vimrc
+: 1532092895:0;cd ref_dotfiles
+: 1532092900:0;..
+: 1532092905:0;ls
+: 1532092908:0;cd genconf
+: 1532092910:0;ll
+: 1532092917:0;..
+: 1532092917:0;ll
+: 1532092921:0;cd Projects
+: 1532092922:0;ll
+: 1532092924:0;cd tictactoe
+: 1532092929:0;pipenv shell
+: 1532092931:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1532092937:0;./tictactoe.py
+: 1543100680:0;ll
+: 1543100695:0;cd Projects
+: 1543100696:0;ll
+: 1543100699:0;cd tictactoe
+: 1543100701:0;ll
+: 1543100703:0;gs
+: 1543100712:0;./tictactoe
+: 1543100719:0;./tictactoe.py 
+: 1543100730:0;py ./tictactoe.py 
+: 1543100735:0;python ./tictactoe.py 
+: 1543100759:0;cd ..
+: 1543100760:0;ll
+: 1543100766:0;py
+: 1543100784:0;cd tictactoe
+: 1543100784:0;ll
+: 1543100803:0;zz README.md
+: 1543100827:0;cd
+: 1543100828:0;ll
+: 1543100840:0;cd ref_dotfiles
+: 1543100841:0;ll
+: 1543100844:0;cd dotfiles
+: 1543100845:0;ll
+: 1543100865:0;vv
+: 1543100875:0;vv ~/.vim
+: 1543100880:0;vv ~/.vimrc
+: 1543959257:0;ll
+: 1543959310:0;zz /home/miki/genconf/dotfiles/dot_tmux.conf
+: 1543959549:0;ll
+: 1543959562:0;zz /home/miki/genconf/dotfiles/dot_tmux.conf
+: 1543959632:0;zz /home/miki/genconf/dotfiles/dot_zshrc
+: 1543959684:0;gr pipenv .
+: 1543959740:0;cd Projects/t
+: 1543959749:0;cd Projects/tictactoe
+: 1543959751:0;ll
+: 1543959753:0;gs
+: 1543960919:0;ll
+: 1543960926:0;zz Pipfile
+: 1543960936:0;zz Pipfile.lock
+: 1543960951:0;pipenv
+: 1543960960:0;pipenv she
+: 1543960969:0;pipenv shell
+: 1543960970:0;. /home/miki/.local/share/virtualenvs/tictactoe-jJkMdzvs/bin/activate
+: 1543960986:0;./tictactoe.py
+: 1543961047:0;exit
+: 1543961052:0;cd
+: 1543961055:0;ll
+: 1543961059:0;cd ref_dotfiles
+: 1543961061:0;ll
+: 1543961063:0;cd dotfiles
+: 1543961064:0;ll
+: 1543961072:0;cd 
+: 1543961074:0;ll
+: 1543961089:0;cd genconf/
+: 1543961091:0;ll
+: 1543961096:0;cd gen/
+: 1543961097:0;ll
+: 1543961112:0;gs
+: 1543961127:0;mkdir pipenv
+: 1543961130:0;cd pipenv
+: 1543961130:0;ll
+: 1543961146:0;which vv
+: 1543961158:0;vv pipenv.readme
+: 1543961584:0;ll
+: 1543961586:0;gs
+: 1543961594:0;ll
+: 1543961600:0;git add .
+: 1543961606:0;gprel "ll"
+: 1543961615:0;gl
+: 1543961624:0;ll
+: 1543961625:0;cd ..
+: 1543961626:0;ll
+: 1543961647:0;cd
+: 1543961654:0;ll
+: 1543961660:0;mkdir cs231n
+: 1543961662:0;cd cs231n
+: 1543961731:0;wget http://cs231n.github.io/assignments/2018/spring1718_assignment1.zip
+: 1543961733:0;ll
+: 1543961751:0;gunzip spring1718_assignment1.zip
+: 1543961756:0;ll
+: 1543961761:0;gunzip -h
+: 1543961825:0;gunzip spring1718_assignment1.zip -d
+: 1543961833:0;gunzip -d spring1718_assignment1.zip 
+: 1543961842:0;ll
+: 1543961872:0;gunzip -c spring1718_assignment1.zip 
+: 1543961877:0;ll
+: 1543961897:0;which unzip
+: 1543961912:0;sudo apt-get install unzip
+: 1543961929:0;ll
+: 1543962001:0;gunzip spring1718_assignment1.zip -d spring1718_assignment1
+: 1543962034:0;sudo apt-get up
+: 1543962045:0;sudo apt-get update && sudo apt-get -y upgrade
+: 1543962227:0;sudo apt-get install unzip
+: 1543962235:0;gunzip spring1718_assignment1.zip -d spring1718_assignment1
+: 1543962249:0;gunzip spring1718_assignment1.zip -d assignt1
+: 1543962264:0;unzip spring1718_assignment1.zip -d assignt1
+: 1543962268:0;ll
+: 1543962281:0;..
+: 1543962282:0;ll
+: 1543962291:0;rm -rf assignt1
+: 1543962300:0;unzip spring1718_assignment1.zip -d
+: 1543962303:0;unzip spring1718_assignment1.zip
+: 1543962305:0;ll
+: 1543962308:0;cd assignment1
+: 1543962309:0;ll
+: 1543962357:0;cd
+: 1543962358:0;ll
+: 1543962371:0;zz /home/miki/genconf/dotfiles/dot_bash_aliases
+: 1543962383:0;zz ~/genconf/dotfiles/dot_my_aliases
+: 1543962397:0;tmux
+: 1543962414:0;zz ~/.tmux.conf
+: 1543962441:0;ll
+: 1543962445:0;cd genconf/
+: 1543962447:0;ll
+: 1543962450:0;cd newsystem
+: 1543962451:0;ll
+: 1543962458:0;vv new_system_flow
+: 1543962522:0;ll
+: 1543962525:0;..
+: 1543962526:0;ll
+: 1543962530:0;cd gen
+: 1543962531:0;ll
+: 1543962538:0;cd tm
+: 1543962540:0;cd tmux
+: 1543962541:0;ll
+: 1543962545:0;vv gen_tmux
+: 1543962829:0;gs
+: 1543962834:0;gprel "ll"
+: 1543963050:0;Projects/cs231n/assignment1
+: 1543963051:0;ll
+: 1543963074:0;cd cs231n
+: 1543963075:0;ll
+: 1543963082:0;..
+: 1543963083:0;ll
+: 1543963089:0;zz features.ipynb
+: 1543963124:0;zz re
+: 1543963129:0;zz requirements.txt
+: 1543963173:0;ll
+: 1543963176:0;zz gen_tmux
+: 1543963211:0;zz  requirements.txt
+: 1543963412:0;pipenv install -r requirements.txt
+: 1543963698:0;pip install pipenv --upgrade
+: 1543963741:0;pip install --upgrade pip
+: 1543963761:0;sudo pip install --upgrade pip
+: 1543963771:0;sudo pip install pipenv --upgrade
+: 1543963784:0;..
+: 1543963787:0;cd pipenv
+: 1543963790:0;vv 
+: 1543963798:0;vv pipenv.readme
+: 1543963912:0;gprel "ll"
+: 1543963934:0;pipenv install -r requirements.txt
+: 1543964031:0;..
+: 1543964040:0;mkdir upgrade
+: 1543964050:0;vv gen_upgrade
+: 1543964169:0;git add .
+: 1543964172:0;gs
+: 1543964177:0;gprel "ll"
+: 1543964569:0;ll
+: 1543965625:0;..
+: 1543965626:0;ll
+: 1543965630:0;rm -rf assignment1
+: 1543965632:0;ll
+: 1543965635:0;unzip spring1718_assignment1.zip
+: 1543965637:0;ll
+: 1543965640:0;cd assignment1
+: 1543965641:0;ll
+: 1543965679:0;sudo pipenv install -r requirements.txt
+: 1543966095:0;..
+: 1543966100:0;rm -rf assignment1
+: 1543966103:0;unzip spring1718_assignment1.zip
+: 1543966107:0;cd assignment1
+: 1543966108:0;ll
+: 1543966122:0;pipenv she
+: 1543966142:0;../..
+: 1543966146:0;cd tictactoe
+: 1543966152:0;pipenv shell
+: 1543966158:0;exit
+: 1543966165:0;..
+: 1543966178:0;cs231n/assignment1/ll
+: 1543966181:0;cs231n/assignment1/
+: 1543966183:0;ll
+: 1543966254:0;zz requirements.txt
+: 1543966302:0;cd cs231n
+: 1543966304:0;ll
+: 1543966314:0;cd datasets
+: 1543966316:0;ll
+: 1543966319:0;..
+: 1543966321:0;ll
+: 1543966325:0;cd classifiers
+: 1543966326:0;ll
+: 1543966328:0;..
+: 1543966332:0;ll
+: 1543966386:0;pipenv install
+: 1543966707:0;sudo pip install pipenv --upgrade
+: 1543966718:0;w3m
+: 1543966787:0;w3m -N google.com
+: 1543967013:0;ll
+: 1543967018:0;zz Pipfile
+: 1543967035:0;pipenv shell
+: 1543967050:0;py
+: 1543967085:0;ll /home/miki/.local/share/virtualenvs/
+: 1543967093:0;ll /home/miki/.local/share/virtualenvs/assignment1--RlxVXNq
+: 1543967141:0;ll
+: 1543967148:0;zz Pipfile
+: 1543967242:0;jupyter notebook
+: 1543967258:0;ll
+: 1543967274:0;cd cs231n/datasets/]
+: 1543967277:0;cd cs231n/datasets/
+: 1543967279:0;ll
+: 1543967282:0;./get_datasets.sh
+: 1543967303:0;df- h
+: 1543967309:0;df -h
+: 1543967391:0;ll
+: 1543967396:0;./get_datasets.sh
+: 1543967460:0;../..
+: 1543967462:0;ll
+: 1543967473:0;jupyter notebook
+: 1543967501:0;..
+: 1543967502:0;ll
+: 1543967506:0;gen
+: 1543967507:0;ll
+: 1543967548:0;cd pipenv
+: 1543967550:0;ll
+: 1543967553:0;vv 
+: 1543967570:0;vv pipenv.readme
+: 1543967675:0;gprel "ll"
+: 1543969241:0;jupyter-notebook --no-browser --port=7000
+: 1543969710:0;gl
+: 1543969715:0;gs
+: 1544050653:0;df -h
+: 1544050666:0;tmux
+: 1544050700:0;cd Projects/cs231n/assignment1
+: 1544050701:0;ll
+: 1544050706:0;pipenv shell
+: 1544050720:0;jupyter-notebook --no-browser --port=7000
+: 1544050788:0;tmux -h
+: 1544050797:0;man tmux
+: 1544050812:0;tmux -V
+: 1544050886:0;vv .tmux.conf
+: 1544051005:0;ll .tmux/plugins/tpm
+: 1544051687:0;ping mic123
+: 1544051698:0;ping www.ynet.co.il
+: 1544052508:0;/run/user/1001/jupyter/notebook_cookie_secret
+: 1544052514:0;zz /run/user/1001/jupyter/notebook_cookie_secret
+: 1544108474:0;ll
+: 1544108619:0;tmux
+: 1544108787:0;dgsdfgsdfgsfd
+: 1544108798:0;fgsdfdfgsdfg
+: 1544108800:0;vv
+: 1544108962:0;Projects/cs231n/assignment1
+: 1544108968:0;pipenv shell
+: 1544108972:0;ll
+: 1544108977:0;pwd
+: 1544109004:0;clear
+: 1544109011:0;ll
+: 1544109021:0;vv requirements.txt
+: 1544109052:0;ll
+: 1544308375:0;tmux
+: 1544308389:0;Projects/cs231n/assignment1
+: 1544308391:0;ll
+: 1544308395:0;pipenv shell
+: 1544308403:0;jupyter-notebook --no-browser --port=7000
+: 1544308776:0;jupyter-notebook --generate-config
+: 1544308809:0;vv /home/miki/.jupyter/jupyter_notebook_config.py
+: 1544309080:0;jupyter notebook password
+: 1544309192:0;cd
+: 1544309195:0;jupyter notebook password
+: 1544309199:0;cd -
+: 1544309236:0;jupyter notebook password
+: 1544309272:0;jupyter -v
+: 1544309276:0;jupyter -h
+: 1544309283:0;jupyter --version
+: 1544309317:0;ll
+: 1544309343:0;requirements.txt
+: 1544309347:0;zz requirements.txt
+: 1544309469:0;jupyter-notebook --no-browser --port=7000
+: 1544309552:0;vv
+: 1544309562:0;vv /home/miki/.jupyter/jupyter_notebook_config.py
+: 1544309617:0;jupyter-notebook --no-browser --port=7000
+: 1544309825:0;ll
+: 1544309840:0;cd genconf/gen/
+: 1544309846:0;mkdir jupyter
+: 1544309848:0;cd jupyter
+: 1544309865:0;vv gen_jupyter
+: 1544309951:0;vv /home/miki/.jupyter/jupyter_notebook_config.py
+: 1544310570:0;gprel "ll"
+: 1544310578:0;git add .
+: 1544310581:0;gs
+: 1544310583:0;gprel "ll"
+: 1544391681:0;tmux
+: 1544391688:0;cd Projects/cs231n/assignment1
+: 1544391694:0;pipenv shell
+: 1544391701:0;jupyter-notebook --no-browser --port=7000
+: 1544391813:0;cd Projects/cs231n/assignment1
+: 1544391826:0;pipenv shell
+: 1544391833:0;du -h .
+: 1544391842:0;ll
+: 1544391852:0;du -h knn.ipynb
+: 1544392051:0;cd ..
+: 1544392053:0;ll
+: 1544392058:0;cd assignment1
+: 1544392059:0;ll
+: 1544392086:0;cd ..
+: 1544392107:0;which zz
+: 1544392134:0;ll cs231n/
+: 1544392138:0;ll
+: 1544392141:0;cd assignment1
+: 1544392142:0;ll
+: 1544392147:0;cd cs231n
+: 1544392148:0;ll
+: 1544392177:0;cd ..
+: 1544392179:0;ll
+: 1544392191:0;py
+: 1544392233:0;ll
+: 1544392236:0;zz requirements.txt
+: 1544392321:0;cd Projects/cs231n/assignment1
+: 1544392322:0;ll
+: 1544392348:0;zz Pipfile
+: 1544392568:0;py
+: 1544392651:0;pip install -r requirements.txt
+: 1544392715:0;cd genconf/gen/
+: 1544392718:0;ll
+: 1544392722:0;cd pipenv/
+: 1544392738:0;vv pipenv.readme
+: 1544392777:0;gs
+: 1544392779:0;gprel "ll"
+: 1544392788:0;..
+: 1544392800:0;ll
+: 1544392859:0;cd git
+: 1544392860:0;ll
+: 1544392865:0;vv gen_git
+: 1544393199:0;pipenv -h
+: 1544393350:0;aph      Displays currently-installed dependency graph information.
+: 1544393371:0;cd genconf/gen/tmux
+: 1544393373:0;ll
+: 1544393379:0;vv gen_tmux
+: 1544393469:0;gs
+: 1544393472:0;gprel "ll"
+: 1544393683:0;cd
+: 1544393685:0;ll
+: 1544393695:0;ls -la |g scr
+: 1544393790:0;cd genconf
+: 1544393791:0;ll
+: 1544393795:0;cd dotfiles
+: 1544393797:0;ll
+: 1544393820:0;vv dot_screenrc
+: 1544393864:0;vv README_screenrc
+: 1544393930:0;gs
+: 1544393940:0;git add README_screenrc
+: 1544393970:0;git add dot_screenrc
+: 1544393974:0;gs
+: 1544393977:0;gprel "ll"
+: 1544393990:0;cd
+: 1544394013:0;ln -s .screenrc genconf/dotfiles/dot_screenrc
+: 1544394042:0;ln -s genconf/dotfiles/dot_screenrc .screenrc
+: 1544394044:0;ll
+: 1544394048:0;cd genconf
+: 1544394049:0;cd
+: 1544394077:0;exit
+: 1544394108:0;tmux
+: 1544394110:0;ll
+: 1544394203:0;cd genconf/dotfiles
+: 1544394204:0;ll
+: 1544394211:0;vv README_screenrc
+: 1544394232:0;ll
+: 1544394255:0;mv dot_screenrc dot_screenrc_dont_use
+: 1544394257:0;ll
+: 1544394260:0;gs
+: 1544394272:0;git add dot_screenrc_dont_use
+: 1544394274:0;gs
+: 1544394280:0;gprel "ll"
+: 1544394287:0;gs
+: 1544394305:0;cd
+: 1544394309:0;cd Projects/cs231n/assignment1
+: 1544394332:0;pipenv install -r requirements.txt --user
+: 1544394543:0;vv requirements.txt
+: 1544394586:0;pipenv -h
+: 1544394591:0;man pipenv
+: 1544394681:0;ll
+: 1544394696:0;vv setup_googlecloud.sh
+: 1544394880:0;rm Pipfile Pipfile.lock
+: 1544394894:0;pipenv lock -r requirements.txt
+: 1544394902:0;pipenv lock -h
+: 1544394962:0;pipenv lock -r
+: 1544394987:0;ll
+: 1544395007:0;zz Pipfile
+: 1544395228:0;pipenv install
+: 1544395322:0;cd Projects/cs231n/assignment1
+: 1544395324:0;ll
+: 1544395332:0;zz setup_googlecloud.sh
+: 1544395398:0;sudo apt-get update
+: 1544395421:0;sudo apt-get install libncurses5-dev
+: 1544395485:0;sudo apt-get install python-dev
+: 1544395533:0;sudo apt-get install libjpeg8-dev
+: 1544395563:0;sudo apt-get build-dep python-imaging
+: 1544395613:0;cd Projects/cs231n/assignment1
+: 1544395620:0;pipenv install
+: 1544395649:0;pipenv -h
+: 1544395716:0;pipenv --venv
+: 1544395724:0;pipenv --rm
+: 1544395728:0;pipenv --venv
+: 1544395734:0;pipenv install
+: 1544395746:0;cd 
+: 1544395751:0;cd genconf/gen
+: 1544395752:0;ll
+: 1544395758:0;cd pipenv
+: 1544395772:0;vv pipenv.readme
+: 1544395981:0;cd ..
+: 1544395983:0;ll
+: 1544395998:0;mkdir install_cs231n
+: 1544396001:0;cd install_cs231n
+: 1544396012:0;vv gen_install_cs231n
+: 1544396238:0;gs
+: 1544396242:0;git add .
+: 1544396244:0;gs
+: 1544396247:0;gprel "ll"
+: 1544396318:0;zz setup_googlecloud.sh
+: 1544396352:0;pipenv --venv
+: 1544396357:0;pipenv --rm
+: 1544396367:0;pipenv install
+: 1544396453:0;tmux attach-session
+: 1544396495:0;tmux
+: 1544396540:0;cd Projects/cs231n/assignment1
+: 1544396544:0;pipenv --rm
+: 1544396557:0;pipenv --venv
+: 1544396560:0;pipenv --rm
+: 1544396564:0;pipenv --venv
+: 1544396579:0;cd genconf/gen/pipenv
+: 1544396585:0;vv pipenv.readme
+: 1544396662:0;gs
+: 1544396665:0;gprel "ll"
+: 1544396678:0;pipenv install
+: 1544397131:0;tmux attach
+: 1544397246:0;pip install --upgrade pip
+: 1544397256:0;py
+: 1544398263:0;tmux attach
+: 1544890574:0;tmux
+: 1544890586:0;cd Projects/cs231n/assignment1
+: 1544890591:0;pipenv shell
+: 1544890597:0;py
+: 1544890649:0;pipenv lock 
+: 1544890688:0;pipenv --venv
+: 1544890708:0;pipenv install -r requirements.txt
+: 1544890965:0;exit
+: 1544890981:0;pipenv --rm
+: 1544890992:0;pipenv install
+: 1544891612:0;ll
+: 1544891654:0;cd cs231n
+: 1544891655:0;ll
+: 1544891660:0;cd ..
+: 1544891670:0;ll -R |g setup
+: 1544891762:0;pipenv --venv
+: 1544891802:0;zz requirements.txt
+: 1544891822:0;pipenv --rm
+: 1544891829:0;python -m pip install --upgrade --user pipenv==v2018.10.9
+: 1544891872:0;pipenv install
+: 1544892331:0;python -m pip install --upgrade --user 
+: 1544892346:0;python -m pip install --upgrade --user pipenv
+: 1544892361:0;pipenv --rm
+: 1544892370:0;pipenv install
+: 1544893034:0;pipenv --rm
+: 1544893238:0;pip --ver
+: 1544893246:0;pip --version
+: 1544893318:0;pipenv shell
+: 1544893335:0;pipenv install wheel
+: 1544894145:0;pipenv install scipy
+: 1544894213:0;cd ..
+: 1544894214:0;ll
+: 1544894220:0;mkdir test
+: 1544894223:0;cd test
+: 1544894232:0;pipenv shell
+: 1544894235:0;ll
+: 1544894243:0;pipenv install scipy
+: 1544894310:0;py
+: 1544895373:0;exit
+: 1544895412:0;ll
+: 1544895425:0;pipenv --rm
+: 1544895628:0;pip install virtualenv
+: 1544895647:0;virtualenv -p python3 .env
+: 1544895768:0;which virtualenv
+: 1544895823:0;sudo pip install virtualenv 
+: 1544895850:0;virtualenv -p python3 .env
+: 1544895886:0;pipenv --rm
+: 1544895896:0;ll
+: 1544895902:0;rm Pipfile*
+: 1544895904:0;ll
+: 1544896605:0;y
+: 1544896620:0;cd Projects/cs231n/assignment1
+: 1544896640:0;zz requirements.txt
+: 1544896765:0;cd Projects/cs231n/assignment1
+: 1544896793:0;cp requirements.txt req1.txt
+: 1544896794:0;ll
+: 1544896891:0;cp requirements.txt req2.txt
+: 1544896894:0;ll
+: 1544896974:0;cp req2.txt req3.txt
+: 1544896978:0;ll
+: 1544896992:0;vv req1.txt 
+: 1544897050:0;pipenv install -r req1.txt
+: 1544897243:0;cd Projects/cs231n/assignment1
+: 1544897256:0;vv req1.txt
+: 1544897267:0;vv req2.txt
+: 1544897355:0;pipenv install -r req2.txt
+: 1544897764:0;pipenv --venv
+: 1544897784:0;ll /home/miki/.local/share/virtualenvs/assignment1--RlxVXNq
+: 1544897992:0;pipenv install scipy==0.16.1
+: 1544898057:0;pipenv install scipy
+: 1544898529:0;tmux
+: 1544898542:0;cd Projects/cs231n/assignment1
+: 1544898611:0;ll
+: 1544898627:0;zz req3.txt
+: 1544898670:0;cd Projects/cs231n/test
+: 1544898671:0;ll
+: 1544898677:0;zz Pipfile
+: 1544898684:0;zz Pipfile.lock
+: 1544898729:0;pipenv install scipy==0.17.0
+: 1544898840:0;pipenv install scipy==0.17.1
+: 1544898944:0;pipenv install scipy==0.14.1
+: 1544899328:0;cd ../assignment1
+: 1544899337:0;zz requirements.txt
+: 1544899393:0;pipenv install scipy==0.18.0
+: 1544900039:0;pipenv install scipy==0.18.1
+: 1544900154:0;vv req3.txt
+: 1544900185:0;pipenv install -r req3.txt
+: 1544900291:0;jupyter-notebook --no-browser --port=7000
+: 1544900299:0;pipenv shell
+: 1544900304:0;jupyter-notebook --no-browser --port=7000
+: 1544900416:0;exit
+: 1544900422:0;ll
+: 1544900435:0;cp requirements.txt requirements.tx_orgt
+: 1544900437:0;ll
+: 1544900483:0;mv requirements.tx_orgt requirements.txt_org
+: 1544900485:0;ll
+: 1544900491:0;vv requirements.txt
+: 1544900513:0;pipenv --rm
+: 1544900523:0;pipenv install
+: 1544902643:0;jupyter-notebook --no-browser --port=7000
+: 1544902650:0;pipenv shell
+: 1544902655:0;jupyter-notebook --no-browser --port=7000
+: 1544902676:0;pipenv shell
+: 1544902705:0;py
+: 1545748911:0;apt-get update && apt-get upgrade
+: 1545748925:0;sudo apt-get update && sudo apt-get upgrade
+: 1545748972:0;tmux
+: 1545748997:0;cd Projects/cs231n/
+: 1545749005:0;cd assignment1
+: 1545749007:0;ll
+: 1545749017:0;jupyter-notebook --no-browser --port=7000
+: 1545749025:0;pipenv shell
+: 1545749033:0;jupyter-notebook --no-browser --port=7000
+: 1545749141:0;cd Projects/cs231n/assignment1
+: 1545749145:0;pipenv shell
+: 1545749148:0;py
+: 1545749320:0;sudo apt-get install python3-tk 
+: 1545749399:0;cd genconf/gen/install_cs231n/
+: 1545749401:0;ll
+: 1545749404:0;vv gen_install_cs231n
+: 1545749488:0;gprel "ll"
+: 1545985614:0;tmux
+: 1545985643:0;cd Projects/cs231n/assignment1
+: 1545985721:0;pipenv shell
+: 1545985730:0;jupyter-notebook --no-browser --port=7000
+: 1545986099:0;cd Projects/cs231n/assignment1
+: 1545986100:0;ll
+: 1545986855:0;pipenv env
+: 1545986860:0;pipenv shell
+: 1545986864:0;py
+: 1545991162:0;ps -e | zz
+: 1545991189:0;echo PROMPT
+: 1545991194:0;echo $PROMPT
+: 1545991379:0;cd Projects/
+: 1545991522:0;cd
+: 1545991524:0;ll
+: 1545991542:0;zz /home/miki/genconf/dotfiles/dot_zshrc
+: 1545991600:0;cd genconf
+: 1545991602:0;ll
+: 1545991610:0;dotfiles
+: 1545991611:0;ll
+: 1545991618:0;zz miki-theme.zsh-theme
+: 1545991657:0;tmux
+: 1545991665:0;ll
+: 1545991668:0;zz miki-theme.zsh-theme
+: 1545991721:0;_prompt -l
+: 1545991734:0;prompt -l
+: 1545991855:0;echo $RPROMPT
+: 1545991925:0;print -p "%(?:%{$fg_bold[green]%}âƒ¾ƒ¼ :%{$fg_bold[red]%}âƒ¾ƒ¼ )"
+: 1545991934:0;print -P "%(?:%{$fg_bold[green]%}âƒ¾ƒ¼ :%{$fg_bold[red]%}âƒ¾ƒ¼ )"
+: 1545992038:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992056:0;print -P "%m "
+: 1545992064:0;print -P "$USER "
+: 1545992111:0;print -P "{$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992116:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992157:0;print -P "{$fg[green]%} "
+: 1545992168:0;print -P "$fg[green]%} "
+: 1545992176:0;print -P "$fg[green]%} gg"
+: 1545992183:0;print -P "$fg[green]% gg"
+: 1545992189:0;print -P "$fg[green]%}} gg"
+: 1545992192:0;print -P "$fg[green]%} gg"
+: 1545992481:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992488:0;print -P "%fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992599:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545992636:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%2G%}%m "
+: 1545992670:0;print -P "$fg[green]%} gg"
+: 1545992681:0;export PROMPT "$fg[green]%} gg"
+: 1545992704:0;export PROMPT="$fg[green]%} gg"
+: 1545992726:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%2G%}%m "
+: 1545995518:0;ll
+: 1545995522:0;pwd
+: 1545995524:0;cd
+: 1545995544:0;print -P "$fg[cyan]%}$USER@%{$fg[green]%2G%}%m "
+: 1545995548:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%2G%}%m "
+: 1545995560:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%10G%}%m "
+: 1545995563:0;pwd
+: 1545995585:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545995606:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%15G%}%m "
+: 1545995624:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%-5G%}%m "
+: 1545995637:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m "
+: 1545995734:0;print -P "%{seq%2G%}"
+: 1545995741:0;print -P "%{seq%2G%}fff"
+: 1545995746:0;print -P "%{seq%10G%}fff"
+: 1545995774:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%-2G%}%m "
+: 1545995783:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%0G%}%m "
+: 1545995792:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%1G%}%m "
+: 1545995804:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%6G%}%m "
+: 1545995867:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%16G%}%m "
+: 1545995916:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%16G%}%m %{$reset_color%}"
+: 1545995944:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%0G%}%m %{$reset_color%}"
+: 1545996003:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%1G%}%m %{$reset_color%}"
+: 1545996071:0;export PROMPT="$fg[cyan]%}$USER@%{$fg{green}%}%m %{$reset_color%}"
+: 1545996113:0;export PROMPT="$fg[cyan]%}$USER@%{$g{green}%}%m %{$reset_color%}"
+: 1545996125:0;export PROMPT="$fg[cyan]%}$USER@%{$g[green]%}%m %{$reset_color%}"
+: 1545996190:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m %{$reset_color%}"
+: 1545996241:0;export PROMPT="$fg[cyan]%}$USER@%{$FG[green]%}%m %{$reset_color%}"
+: 1545996246:0;export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m %{$reset_color%}"
+: 1545996379:0;export PROMPT="$fg[cyan]%}$USER@"
+: 1545996392:0;export PROMPT="$USER@"
+: 1545996429:0;export PROMPT="%}$USER@"
+: 1545996458:0;export PROMPT="%{$fg[cyan]%}$USER@"
+: 1545996478:0;cd export PROMPT="$fg[cyan]%}$USER@%{$fg[green]%1G%}%m %{$reset_color%}"
+: 1545996489:0;export PROMPT="%{$fg[cyan]%}$USER@%{$fg[green]%1G%}%m %{$reset_color%}"
+: 1545996503:0;export PROMPT="%{$fg[cyan]%}$USER@%{$fg[green]%}%m %{$reset_color%}"
+: 1545996557:0;zz -M miki-theme.zsh-theme
+: 1545996563:0;ll
+: 1545996573:0;vv dot_my_aliases
+: 1545996598:0;source dot_my_aliases
+: 1545996608:0;zz miki-theme.zsh-theme
+: 1545996639:0;gprel "ll"
+: 1545996660:0;cd genconf/dotfiles/
+: 1545996662:0;pw
+: 1545996664:0;pwd
+: 1545996666:0;ll
+: 1545996670:0;vv miki-theme.zsh-theme
+: 1545996705:0;ll
+: 1545996719:0;gprel "ll"
+: 1545996760:0;exit
+: 1545996770:0;ll
+: 1545996784:0;source miki-theme.zsh-theme 
+: 1545996901:0;tmux
+: 1545996904:0;cd
+: 1545996914:0;Projects/cs231n/assignment1
+: 1545996915:0;ll
+: 1547093691:0;cd genconf
+: 1547093694:0;cd
+: 1547093708:0;cd Projects/cs231n/
+: 1547093714:0;as
+: 1547093728:0;assignment1
+: 1547093729:0;ll
+: 1547093744:0;jupyter-notebook --no-browser --port=7000
+: 1547093750:0;pipenv shell
+: 1547093756:0;jupyter-notebook --no-browser --port=7000
+: 1547093794:0;tmux
+: 1547093798:0;pipenv shell
+: 1547093803:0;jupyter-notebook --no-browser --port=7000
+: 1547093809:0;cd
+: 1547093811:0;cd genconf
+: 1547093812:0;ll
+: 1547093815:0;cd gen
+: 1547093816:0;ll
+: 1547093821:0;cd ..
+: 1547093822:0;ll
+: 1547093826:0;cd newsystem
+: 1547093828:0;ll
+: 1547093837:0;vv todo
+: 1547093860:0;gprel "ll"
+: 1547093873:0;git add todo
+: 1547093875:0;gprel "ll"
+: 1547094332:0;cd
+: 1547094360:0;cd Projects/cs231n/assignment1
+: 1547094376:0;vv cs231n/classifiers/k_nearest_neighbor.py
+: 1547094803:0;pipenv shell
+: 1547094813:0;py
+: 1547095527:0;cd
+: 1547095572:0;cd genconf/newsystem/.
+: 1547095598:0;tmux attach
+: 1547095613:0;cd .
+: 1547095625:0;cd ..
+: 1547095626:0;ll
+: 1547095696:0;cd gen/nx
+: 1547095706:0;exit
+: 1547095736:0;tmux
+: 1547095751:0;dfgsdfg\\\\exit
+: 1547095753:0;fg
+: 1547095755:0;exit
+: 1547095762:0;exit
+: 1547095936:0;fghdfghdfgh
+: 1547095943:0;tmux
+: 1547095948:0;exit
+: 1547095951:0;tmux
+: 1547095999:0;cd genconf/newsystem
+: 1547096001:0;ll
+: 1547096006:0;vv todo
+: 1547096026:0;gprel "ll"
+: 1547096132:0;cd
+: 1547096137:0;tmux
+: 1547096187:0;cd Projects/cs231n/assignment1
+: 1547096191:0;pipenv shell
+: 1547096195:0;jupyter-notebook --no-browser --port=7000
+: 1547096215:0;pipenv shell
+: 1547096217:0;jupyter-notebook --no-browser --port=7000
+: 1547096224:0;exit
+: 1547096227:0;tmux
+: 1547096231:0;cd Projects/cs231n/assignment1
+: 1547096234:0;pipenv shell
+: 1547096314:0;pipenv exit
+: 1547096319:0;pipenv -h
+: 1547096459:0;deactivate
+: 1547096468:0;pipenv shell
+: 1547096484:0;cd  /home/miki/.local/share/virtualenvs/assignment1--RlxVXNq
+: 1547096486:0;ll
+: 1547096492:0;cd ..
+: 1547096493:0;ll
+: 1547096496:0;cd assignment1--RlxVXNq
+: 1547096497:0;ll
+: 1547096529:0;cd -
+: 1547096531:0;cd
+: 1547096538:0;cd Projects/cs231n/assignment1
+: 1547096539:0;ll
+: 1547096556:0;pipenv shell
+: 1547096592:0;exit
+: 1547096600:0;cd Projects/cs231n/assignment1
+: 1547096602:0;pipenv shell
+: 1547096607:0;exit
+: 1547096609:0;tmux
+: 1547096613:0;pipenv shell
+: 1547096625:0;exit
+: 1547096633:0;pipenv shell
+: 1547096640:0;exit
+: 1547096643:0;tmux
+: 1547096675:0;sudo apt-get update && sudo apt-get upgrade
+: 1547096709:0;pipenv shell
+: 1547096712:0;exit
+: 1547096715:0;tmux
+: 1547096718:0;pipenv shell
+: 1547096822:0;tmux
+: 1547096824:0;cd Projects/cs231n/assignment1
+: 1547096826:0;pipenv shell
+: 1547097066:0;tmux
+: 1547097070:0;pipenv shell
+: 1547097083:0;ll
+: 1547097089:0;exit
+: 1547097114:0;rm Pipfile
+: 1547097119:0;cd Projects/cs231n/assignment1
+: 1547097121:0;pipenv shell
+: 1547097134:0;jupyter-notebook --no-browser --port=7000
+: 1547097179:0;cd Projects/cs231n/assignment1
+: 1547097182:0;pipenv shell
+: 1547097185:0;ll
+: 1547097196:0;vv cs231n/classifiers/k_nearest_neighbor.py
+: 1547097346:0;vv ~/.vimrc
+: 1547097562:0;py
+: 1547097578:0;cd Projects/cs231n/assignment1
+: 1547097580:0;pipenv shell
+: 1547097582:0;py
+: 1547097939:0;jupyter nbconvert --to script knn.ipynb
+: 1547097951:0;vv knn.py
+: 1547097978:0;cd Projects/cs231n/assignment1
+: 1547097980:0;pipenv shell
+: 1547098003:0;ll
+: 1547098012:0;pyd ./knn.py
+: 1547098020:0;which pyd
+: 1547098027:0;python3 -m pdb
+: 1547098032:0;python3 -m pdb knn.py
+: 1547098108:0;exit
+: 1547098608:0;vv ipy_deb.py
+: 1547098680:0;nano ipy_deb.py
+: 1547098709:0;vv ipy_deb.py
+: 1547098867:0;py
+: 1547099239:0;top
+: 1547439428:0;tmux
+: 1547439436:0;cd Projects/cs231n/assignment1
+: 1547439439:0;pipenv shell
+: 1547439448:0;jupyter nbconvert --to script knn.ipynb
+: 1547439460:0;jupyter-notebook --no-browser --port=7000
+: 1547439480:0;cd genconf
+: 1547439483:0;cd
+: 1547440302:0;cd Projects/cs231n/assignment1
+: 1547440304:0;pipenv shell
+: 1547440309:0;ll
+: 1547440354:0;vv cs231n/classifiers/*
+: 1547440390:0;vv cs231n/classifiers/k_nearest_neighbor.py
+: 1547440520:0;cd genconf/newsystem
+: 1547440522:0;ll
+: 1547440526:0;vv todo
+: 1547440562:0;gprel "ll"
+: 1547440752:0;vv ~/.vimrc
+: 1547585737:0;tmux
+: 1547586011:0;vv .tmux.conf
+: 1547586272:0;tmux
+: 1547586288:0;vv
+: 1547586435:0;cd genconf/newsystem
+: 1547586438:0;ll
+: 1547586441:0;vv todo
+: 1547586457:0;ll
+: 1547586461:0;vv new_system_flow
+: 1547586521:0;gprel "ll"
+: 1547586529:0;sudo apt-get update && sudo apt-get upgrade
+: 1547586761:0;vimx
+: 1547586839:0;https://www.reddit.com/r/vim/comments/7tt4ts/painless_copy_paste_between_tmux_vim_and_system/
+: 1547586937:0;w3m https://www.reddit.com/r/vim/comments/7tt4ts/painless_copy_paste_between_tmux_vim_and_system/
+: 1547587020:0;vv .tmux.conf
+: 1547587036:0;cd genconf
+: 1547587065:0;ll
+: 1547587076:0;mkdir cheat_sheet
+: 1547587078:0;cd cheat_sheet
+: 1547587085:0;vv cheat_sheet
+: 1547587340:0;vv .tmux.conf
+: 1547587491:0;git st
+: 1547587531:0;git add ../cheat_sheet/
+: 1547587534:0;git st
+: 1547587540:0;gprel "ll"
+: 1547587547:0;git st
+: 1547587586:0;nedit
+: 1547587592:0;gvim
+: 1547587627:0;emacs
+: 1547587632:0;df -h
+: 1547587660:0;xev
+: 1547587705:0;xterm
+: 1547587924:0;gnome
+: 1547587935:0;terminal
+: 1547588092:0;sudo add-apt-repository ppa:gnome-terminator
+: 1547588119:0;sudo apt-get update
+: 1547588129:0;sudo apt-get install terminator
+: 1547588188:0;terminator
+: 1547588254:0;x-terminal-emulator
+: 1547588276:0;sudo x-terminal-emulator
+: 1547588317:0;touch /home/miki/.config/terminator/config
+: 1547588329:0;sudo touch /home/miki/.config/terminator/config
+: 1547588345:0;cd .config
+: 1547588346:0;ll
+: 1547588415:0;.
+: 1547588417:0;..
+: 1547588418:0;terminator
+: 1547588481:0;mkdir -p ~/.config/terminator
+: 1547588488:0;touch ~/.config/terminator/config
+: 1547588490:0;terminator
+: 1547588630:0;dbus-x11
+: 1547588644:0;sudo apt-get install dbus-x11
+: 1547588658:0;terminator
+: 1547588687:0;tmux
+: 1547588692:0;lll
+: 1547588693:0;ll
+: 1547588700:0;vv
+: 1547588748:0;cd genconf
+: 1547588750:0;ll
+: 1547588756:0;cd newsystem
+: 1547588759:0;ll
+: 1547588764:0;vv new_system_flow
+: 1547588850:0;top
+: 1547589021:0;bg
+: 1547589264:0;cd genconf
+: 1547589267:0;cd newsystem
+: 1547589269:0;ll
+: 1547589273:0;vv new_system_flow
+: 1547589395:0;gprel "ll"
+: 1547589401:0;gs
+: 1547589436:0;cd
+: 1547589442:0;ll
+: 1547589517:0;man terminator
+: 1547589550:0;terminator -f -v
+: 1547589560:0;terminator -f -b
+: 1547589592:0;mux
+: 1547589595:0;tmux
+: 1547589668:0;vv .config/terminator/config
+: 1547589741:0;terminator  -b
+: 1547589796:0;terminator 
+: 1547590184:0;vv .config/terminator/config
+: 1547590193:0;terminator 
+: 1547590233:0;tmux
+: 1547590341:0;h
+: 1547590372:0;1689  cd cs231n
+: 1547590423:0;exit
+: 1547590593:0;terminator 
+: 1547590672:0;sdfgsdgfsdfxfghfghdfg
+: 1547590673:0;h
+: 1547590701:0;bg
+: 1547590708:0;cd genconf/newsystem
+: 1547590709:0;ll
+: 1547590714:0;cd ..
+: 1547590715:0;ll
+: 1547590721:0;vv 
+: 1547590758:0;gprel "ll"
+: 1547590767:0;ll
+: 1547590771:0;cd dotfiles
+: 1547590772:0;ll
+: 1547590801:0;cp ~/.config/terminator/config dot_terminator_config
+: 1547590807:0;ll
+: 1547590816:0;zz dot_terminator_config
+: 1547590831:0;ll
+: 1547590863:0;zz .clipboard
+: 1547590877:0;ll .config
+: 1547590907:0;cd .config/terminator
+: 1547590909:0;ll
+: 1547590916:0;rm config
+: 1547590939:0;ln -s ~/genconf/dotfiles/dot_terminator_config config
+: 1547590941:0;ll
+: 1547590952:0;terminator 
+: 1547591057:0;gs
+: 1547591070:0;git add dot_terminator_config
+: 1547591073:0;gs
+: 1547591076:0;gprel "ll"
+: 1547591081:0;ll
+: 1547591106:0;bg
+: 1547591114:0;terminator 
+: 1547591266:0;kkkk
+: 1547591271:0;gs
+: 1547591278:0;gprel "ll"
+: 1547591284:0;cd
+: 1547591460:0;cd genconf
+: 1547591463:0;gs
+: 1547591468:0;gprel "ll"
+: 1547591487:0;vv .tmux.conf
+: 1547591511:0;gs
+: 1547591514:0;cd
+: 1547591518:0;vv .tmux.conf
+: 1547591598:0;tmux
+: 1547591600:0;h
+: 1547591611:0;bg
+: 1547591614:0;tmux
+: 1547591615:0;h
+: 1547591635:0;cd
+: 1547591645:0;exit
+: 1547591648:0;vv .tmux.conf
+: 1547591680:0;cd genconf
+: 1547591726:0;vv
+: 1547591835:0;ll
+: 1547591840:0;tmux
+: 1547591850:0;ll
+: 1547591852:0;gs
+: 1547591857:0;gprel "ll"
+: 1547591894:0;exit
+: 1547591900:0;cd
+: 1547592249:0;cd geb
+: 1547592253:0;cd genconf/n
+: 1547592257:0;cd genconf/
+: 1547592267:0;cd
+: 1547592268:0;tmux
+: 1547592276:0;vv
+: 1547592408:0;ll
+: 1547592520:0;vv
+: 1547592619:0;1689  cd cs231n
+: 1547592714:0;cd Projects/cs231n/assignment1
+: 1547592716:0;ll
+: 1547592719:0;pipenv shell
+: 1547592724:0;ll
+: 1547592727:0;exit
+: 1547592768:0;-rwxrwxrwx 1 miki miki 376K Jan 14 04:31 knn.ipynb
+: 1547592768:0;-rw-rw-r-- 1 miki miki  13K Jan 14 04:17 knn.py
+: 1547592768:0;-rwxrwxr-x 1 miki miki  185 Dec 15 18:03 req1.txt
+: 1547592768:0;-rwxrwxr-x 1 miki miki  482 Dec 15 18:08 req2.txt
+: 1547592768:0;-rwxrwxr-x 1 miki miki  129 Dec 15 18:56 req3.txt
+: 1547592768:0;-rwxrwxrwx 1 miki miki  794 Dec 15 19:01 requirements.txt
+: 1547592826:0;cd
+: 1548884877:0;sudo apt-get update && sudo apt-get upgrade
+: 1548884930:0;tmux
+: 1548884942:0;cd Projects/cs231n/assignment1
+: 1548884943:0;ll
+: 1548884951:0;pipenv shell
+: 1548884962:0;cd genconf
+: 1548884963:0;ll
+: 1548884967:0;cd gen
+: 1548884969:0;ll
+: 1548885020:0;mkdir start_cs231n_ex
+: 1548885022:0;cd start_cs231n_ex
+: 1548885028:0;vv start_cs231n
+: 1548885101:0;gs
+: 1548885104:0;gprel "ll"
+: 1548885109:0;git add ./
+: 1548885111:0;gs
+: 1548885115:0;gprel "ll"
+: 1548885126:0;jupyter-notebook --no-browser --port=7000
+: 1548885280:0;cd
+: 1548885287:0;cd Projects/cs231n/assignment1
+: 1548885290:0;pipenv shell
+: 1548885293:0;ll
+: 1548885304:0;cd cs231n
+: 1548885306:0;ll
+: 1548885321:0;cd classifiers/
+: 1548885323:0;ll
+: 1548885348:0;vv k_nearest_neighbor.py
+: 1548886810:0;puy
+: 1548886812:0;py
+: 1548887630:0;cd Projects/cs231n/assignment1
+: 1548887633:0;pipenv shell
+: 1548887636:0;py
+: 1548890440:0;top
+: 1549011833:0;sudo apt-get update && sudo apt-get upgrade
+: 1549011864:0;h
+: 1549011869:0;h | g pa
+: 1549011892:0;sudo apt-get update && sudo apt-get upgrade
+: 1549011933:0;tmux
+: 1549011945:0;cd Projects/cs231n/assignment1
+: 1549011948:0;pipenv shell
+: 1549011954:0;jupyter-notebook --no-browser --port=7000
+: 1549012163:0;cd Projects/cs231n/assignment1
+: 1549012172:0;pipenv shell
+: 1549012226:0;ll
+: 1549012231:0;cd cs231n
+: 1549012233:0;ll
+: 1549012244:0;cd classifiers
+: 1549012245:0;ll
+: 1549012251:0;vv k_nearest_neighbor.py
+: 1549012977:0;vv ~/.vimrc
+: 1549013225:0;cd genconf
+: 1549013229:0;gprel "ll"
+: 1549132750:0;tmux
+: 1549132765:0;cd Projects/cs231n/assignment1
+: 1549132768:0;pipenv shell
+: 1549133284:0;tmux
+: 1549133292:0;cd Projects/cs231n/assignment1
+: 1549133295:0;pipenv shell
+: 1549133302:0;jupyter-notebook --no-browser --port=7000
+: 1549133317:0;cd Projects/cs231n/assignment1
+: 1549133330:0;pipenv shell
+: 1549133335:0;py
+: 1549311118:0;tmux
+: 1549311128:0;cd Projects/cs231n/assignment1
+: 1549311131:0;pipenv shell
+: 1549311304:0;cd Projects/cs231n/assignment1
+: 1549311307:0;pipenv shell
+: 1549311440:0;cd cs231n
+: 1549311440:0;ll
+: 1549311452:0;cd classifiers
+: 1549311459:0;vv k_nearest_neighbor.py
+: 1549312645:0;py
+: 1549312686:0;cd cs231n/classifiers
+: 1549312688:0;py
+: 1549313168:0;zz genconf/cheat_sheet/cheat_sheet
+: 1549313231:0;vv ~/.vimrc
+: 1549313424:0;py
+: 1549313485:0;cd Projects/cs231n/assignment1
+: 1549313610:0;pipenv shell
+: 1549313615:0;vv k_nearest_neighbor.py
+: 1549313625:0;cd cs231n/classifiers
+: 1549313627:0;vv k_nearest_neighbor.py
+: 1549313800:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1549313806:0;vv test.py
+: 1549314016:0;ll
+: 1549314025:0;pyd test.py
+: 1549314105:0;exit
+: 1549314189:0;tmux
+: 1549314196:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1549314199:0;pipenv shell
+: 1549314553:0;cd 
+: 1549314557:0;cd Projects/cs231n/assignment1/cs231n/classifiers\\
+
+: 1549314563:0;pipenv shell\\
+
+: 1549314589:0;pyd test.py
+: 1549314599:0;cd classifiers
+: 1549314604:0;cd cs231n/classifiers
+: 1549314609:0;pyd test.py
+: 1549314627:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1549314630:0;vv test.py
+: 1549315301:0;pyd test.py
+: 1549315552:0;jupyter-notebook --no-browser --port=7000
+: 1549316594:0;py
+: 1550221098:0;su
+: 1550221116:0;sudo apt-get update && sudo apt-get upgrade~
+: 1550221126:0;sudo apt-get update && sudo apt-get upgrade
+: 1550221170:0;tmux
+: 1550221206:0;cd proq
+: 1550221213:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1550221218:0;cd ../..
+: 1550221222:0;pipenv shell\\
+
+: 1550221233:0;pipenv shell\
+
+: 1550221243:0;jupyter-notebook --no-browser --port=7000
+: 1550221304:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1550221305:0;ll
+: 1550221320:0;vv k_nearest_neighbor.py
+: 1550221563:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1550221566:0;pipenv shell\
+
+: 1550221568:0;py
+: 1550225309:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1550225313:0;ll
+: 1550225332:0;cd ..
+: 1550225333:0;ll
+: 1550225352:0;cd datasets
+: 1550225353:0;ll
+: 1550225363:0;cd cifar-10-batches-py
+: 1550225364:0;ll
+: 1550225419:0;zz data_batch_1
+: 1550227747:0;pipenv install pixiedust
+: 1550228134:0;py
+: 1550228293:0;cd 
+: 1550228308:0;cd genconf/gen/jupyter
+: 1550228310:0;ll
+: 1550228312:0;vv 
+: 1550228324:0;vv gen_jupyter
+: 1550228422:0;gprel "ll"
+: 1550234930:0;py
+: 1550235371:0;top
+: 1550235809:0;cd
+: 1550235810:0;ll
+: 1550235828:0;.zsh_history
+: 1550235830:0;zz .zsh_history
+: 1550347615:0;ll
+: 1550347688:0;zz .zsh_history
+: 1550347799:0;du -h genconf
+: 1550347809:0;ll
+: 1550347813:0;cd genconf
+: 1550347814:0;ll
+: 1550347818:0;cd dotfiles
+: 1550347819:0;ll
+: 1550347850:0;cp ~/.zsh_history ./dot_zsh_history
+: 1550347963:0;cd
+: 1550347965:0;ll
+: 1550347980:0;gthy
+: 1550347988:0;zz /home/miki/genconf/dotfiles/dot_zsh_history
+: 1550348000:0;cd genconf/
+: 1550348003:0;git st
+: 1550348029:0;mv dotfiles/.zsh_history_bu ~/
+: 1550348036:0;mv dotfiles/.zsh_history_bu_2 ~/
+: 1550348038:0;ll
+: 1550348041:0;gs
+: 1550348044:0;gprel "ll"
+: 1550348052:0;git add dotfiles/dot_zsh_history
+: 1550348055:0;gs
+: 1550348058:0;gprel "ll"
