@@ -2428,3 +2428,25 @@ git push origin --tags
 : 1550354557:0;jupyter-notebook --no-browser --port=7000
 : 1550357095:0;cd genconf
 : 1550357098:0;gprel "ll"
+: 1552639483:0;apt
+: 1552639491:0;apt-get update && apt-get upgrade
+: 1552639504:0;sudo apt-get update && sudo apt-get upgrade
+: 1552639527:0;tmux
+: 1552639541:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1552639727:0;pipenv shell\
+
+: 1553723452:0;su
+: 1553723467:0;sudo apt-get update && sudo apt-get upgrade
+: 1553723509:0;man apt-get
+: 1553723712:0;sudo vv /etc/apt/sources.list
+: 1553723748:0;tmux
+: 1553723770:0;sudo apt-get update && sudo apt-get upgrade
+: 1553723780:0;sudo vv /etc/apt/sources.list
+: 1553724102:0;cd Projects/cs231n/assignment1/cs231n/classifiers
+: 1553724105:0;pipenv shell\
+
+: 1553724112:0;jupyter-notebook --no-browser --port=7000
+: 1553724766:0;cd
+: 1553724779:0;cd genconf
+: 1553724782:0;gs
+: 1553724786:0;gprel "ll"
