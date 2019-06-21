@@ -17,5 +17,6 @@ After that: we can setup a password so that not everyone can connect to our note
 
 Debug: to add debuggger in the middle of the execution of a cell, put inside the cell: import pdb; pdb.set_trace() 
 
-
+to make the ip address global:
+https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
 
