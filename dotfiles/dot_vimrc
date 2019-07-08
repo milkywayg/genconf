@@ -89,7 +89,8 @@ set autoread
 
 
 highlight ColorColumn ctermbg=black
-set colorcolumn=80
+"will try to remove the color column to see if its better
+"set colorcolumn=80
 
 "CtrlP
 let g:ctrlp_map = '<c-p>'
