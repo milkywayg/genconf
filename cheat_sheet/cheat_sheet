@@ -26,5 +26,6 @@ tmux:
     *`+ctrl+s: saves the tmux session (ressurect plug in), check obsesion plug in for vim if vim is not restored
     *`+ctrl+r: to ressurect
     *continum plug in should save the session every 15 min
+-swap the panes: prefix+ctrl+o
 
 
