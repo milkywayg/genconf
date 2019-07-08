@@ -178,7 +178,7 @@ let mapleader=","
 " nnoremap     <M-l> : so %<CR>
 nnoremap <Leader>R             : %s/
 nnoremap <Leader>r             : .,$s/
-nnoremap <silent> <leader>c    : lclose<bar>b#<bar>bd #<CR>
+nnoremap <silent> <leader>c    : lclose<bar>b#<bar>bw #<CR>
 nnoremap <F5>                  : ls<CR>: b
 nnoremap <Leader>u             : noh<CR>
 nnoremap <silent> <Leader>h ml : execute 'match Search /\%'.line('.').'l/'<CR>
@@ -224,7 +224,7 @@ nnoremap <F2> : /\<<C-r><C-w>\><CR>N
 " Map ESC to jj
 imap jj <ESC>
 " Map ESC to ff
-imap ff <ESC>
+imap fff <ESC>
 
  " Wildmenu
 set wildmenu

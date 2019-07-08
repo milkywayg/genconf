@@ -4,7 +4,9 @@ x terminal: terminator (check man)
 vim:
 -comment: ,cc
 -uncomment: ,cu
-
+-close buffer: ,c
+-go to normal: jj or fff 
+ 
 
 tmux:
 -windows:
