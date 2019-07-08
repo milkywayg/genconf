@@ -6,3 +6,20 @@ vim:
 -uncomment: ,cu
 
 
+tmux:
+-windows:
+    *w: list windows
+    *c: create new window
+    *,: name a window
+    *p: previous window
+    *n: next window
+    *&: kill wondow
+-pane:
+    *": create horizontal pane
+    *%: vertical
+    *h,j,k,l: change active pane
+    *x: kill pane
+    *<space>: toggle between layouts
+
+
+
