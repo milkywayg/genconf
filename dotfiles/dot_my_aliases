@@ -22,6 +22,7 @@ alias gcred="git config credential.helper store && git config --global credentia
 alias gd='git diff'
 alias rp='realpath'
 alias crgith='~/genconf/dotfiles/cr_gith_repo.sh'
+alias cl='vim ~/cl'
 
 #git prel
 function gprel() {
