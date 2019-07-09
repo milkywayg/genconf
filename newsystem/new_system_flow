@@ -65,7 +65,8 @@ I had to create the ~/.config/terminator folder as well as the ~/.config/termina
 mkdir -p ~/.config/terminator
 touch ~/.config/terminator/config
 
-
+files to create in home:
+-cl: text file used to move text between tmux and windows
 
 
 
