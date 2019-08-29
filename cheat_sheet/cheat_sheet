@@ -27,5 +27,5 @@ tmux:
     *`+ctrl+r: to ressurect
     *continum plug in should save the session every 15 min
 -swap the panes: prefix+ctrl+o
-
+-copy paste: from tmux to system clipboard (windows), just press SHIFT and with the mouse select. Then go to windows and simply CTRL+v.
 
