@@ -87,6 +87,10 @@ set lazyredraw
 set shortmess=a "this avoids the text hit enter to continue when saving
 set autoread
 
+"https://vi.stackexchange.com/questions/444/how-do-i-reload-the-current-file/13092#13092
+"For additional goodness, adding the following to your vimrc will trigger autoread when changing buffers inside while inside vim:
+au FocusGained,BufEnter * :checktime
+
 
 highlight ColorColumn ctermbg=black
 "will try to remove the color column to see if its better
