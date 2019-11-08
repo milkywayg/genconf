@@ -36,8 +36,8 @@ s-a : go end of line and insert
 ''  : go last location in file
 ,-0 : paste mode
 ,-r : replace
-,-q : buffer prec
-,-w : buffer next
+,-w : buffer prec
+,-e : buffer next
 ,-9 : comment
 ,-8 : uncomment
 ,-c : kill the buffer
