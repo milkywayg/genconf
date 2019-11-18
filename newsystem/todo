@@ -1,3 +1,4 @@
 Check how to save the typing history in git
 copy paste from vim to tmux
 fix ctrl-hjkl movments between panes in vim 
+install plugin: vim-signature to show markers in margin
