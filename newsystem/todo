@@ -1,7 +1,7 @@
 Check how to save the typing history in git
 copy paste from vim to tmux
 fix ctrl-hjkl movments between panes in vim sometimes works empty buffer, sometimes does not
-    - I work on this one and the problem is for vim on pipenv only, there is thread with a work around. Let's wait for an official update of the
+    - I work on this one and the problem is for vim on pipenv only, there is thread with a work around. Let's wait (28/11/2019) for an official update of the
     -christoomey/vim-tmux-navigator#195 plugin
     -issue described in https://github.com/pypa/pipenv/issues/1407
 install plugin: vim-signature to show markers in margin
