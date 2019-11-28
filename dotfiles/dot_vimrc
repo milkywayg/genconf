@@ -164,11 +164,13 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeShowHidden=1
 
 
-" map c-hjkl to move inside win panes
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" WARNING: no need for the bwlo mappingm they are dealt inside 
+" christoomey/vim-tmux-navigator plugin which is included here.
+" " map c-hjkl to move inside win panes
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 
 " nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
 " nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
