@@ -4,5 +4,5 @@ fix ctrl-hjkl movments between panes in vim sometimes works empty buffer, someti
     - I work on this one and the problem is for vim on pipenv only, there is thread with a work around. Let's wait (28/11/2019) for an official update of the
     -christoomey/vim-tmux-navigator#195 plugin
     -issue described in https://github.com/pypa/pipenv/issues/1407
-    -in the meantime use <c-w><c-h> ...
+    -in the meantime use <c-w>h ...
 install plugin: vim-signature to show markers in margin
