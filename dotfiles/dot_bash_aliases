@@ -1,4 +1,4 @@
 source ~/genconf/dotfiles/dot_my_aliases
-exec zsh
+# exec zsh
 
 
