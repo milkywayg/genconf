@@ -1,0 +1,11 @@
+#update the upbuntu packages
+sudo apt-get update && sudo apt-get upgrade
+
+#update pipenv?
+
+#update conda
+conda update conda
+
+
+
+
