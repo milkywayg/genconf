@@ -75,5 +75,8 @@ check: https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zs
 
 #anaconda
 run the install process
-
+by the end the PATH is updated with the anaconda path in bashrc.
+we just need to make sure that the last command of bashrc is exec zsh, so that till this point
+bash is run and correctly set the PATH. Otherwise, the export command that updates the PATH will not been executed(since we are under zsh now)
+and we will not be able to run the conda command.
 
