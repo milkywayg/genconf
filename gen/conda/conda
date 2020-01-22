@@ -7,6 +7,7 @@
 - anaconda has conda + tons of pre installed packages.
 - it also work with virtual environment
 - the best way to think of it is matlab like with data processing packages env where python is the programming language of this env
+- a virtual env in conda is apparently a set of env variables not a folder
 
 
 
