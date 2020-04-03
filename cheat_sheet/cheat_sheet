@@ -8,6 +8,7 @@ vim:
 -go to normal: jj or fff 
 -toggle paste mode: ,;
 -toggle nerdtree <c-n>
+-close pane: :q
  
 
 tmux:
