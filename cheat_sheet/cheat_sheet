@@ -9,6 +9,8 @@ vim:
 -toggle paste mode: ,;
 -toggle nerdtree <c-n>
 -close pane: :q
+-,-w : buffer prec
+-,-e : buffer next
  
 
 tmux:
