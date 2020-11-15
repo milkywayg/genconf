@@ -238,6 +238,12 @@ nnoremap <F2> : /\<<C-r><C-w>\><CR>N
 
 " Map ESC to jj
 imap jj <ESC>
+" Map ESC to jj
+imap kk <ESC>
+" Map ESC to jj
+imap ll <ESC>
+" Map ESC to jj
+imap hh <ESC>
 " Map ESC to ff
 imap fff <ESC>
 
