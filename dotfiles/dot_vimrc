@@ -241,7 +241,8 @@ imap jj <ESC>
 " Map ESC to jj
 imap kk <ESC>
 " Map ESC to jj
-imap ll <ESC>
+"imap ll <ESC>
+""remove this one since there words with 
 " Map ESC to jj
 imap hh <ESC>
 " Map ESC to ff
@@ -573,7 +574,11 @@ autocmd FileChangedShellPost *
 " autocmd InsertEnter * :set norelativenumber
 " autocmd InsertLeave * :set relativenumber
 
-
+" "====================================
+" Merlin support for Ocaml
+" "====================================
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 
 
