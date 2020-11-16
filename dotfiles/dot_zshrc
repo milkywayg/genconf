@@ -100,7 +100,7 @@ setopt globdots
 # PROMPT="$fg[cyan]%}$USER@%{$fg[green]%}%m ${PROMPT}"
 
 # #Use vi mode
-# bindkey -v
+bindkey -v
 # 
 # # Vi mode settings
 # # Better searching in command mode
