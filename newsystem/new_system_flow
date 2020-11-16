@@ -103,8 +103,10 @@ opam install merlin
 #or we can run it using:
 eval $(opam env)
 
+#install reactiveML and rmlbuild
+opam install rml rmlbuild
 
-
+#we can use opam also to install Coq (not installed for now)
 
 
 
