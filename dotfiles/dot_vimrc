@@ -583,8 +583,11 @@ autocmd FileChangedShellPost *
 " "====================================
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
-
-
+"==============================
+" Merlin for reactive ML
+" =============================
+" au Syntax rml  runtime! syntax/ocaml.vim
+autocmd BufNewFile,BufRead *.rml set syntax=ocaml
 
 
 
