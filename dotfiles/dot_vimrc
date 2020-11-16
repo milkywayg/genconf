@@ -248,6 +248,10 @@ imap hh <ESC>
 " Map ESC to ff
 imap fff <ESC>
 
+"search selected text in visual mode
+noremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+
  " Wildmenu
 set wildmenu
 set wildmode=longest,list,full
