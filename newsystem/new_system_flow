@@ -80,3 +80,35 @@ we just need to make sure that the last command of bashrc is exec zsh, so that t
 bash is run and correctly set the PATH. Otherwise, the export command that updates the PATH will not been executed(since we are under zsh now)
 and we will not be able to run the conda command.
 
+
+#========== OPAM, Ocaml ==========#
+#install OPAM library for ocaml (kind of pip for python libraries)
+sudo apt install opam
+#initialize the folder  of opam env (under .opam/)
+opam init
+#this installs opam and ocaml latest stable version
+
+#install merlin lib from opam for vim
+#check if this step is manddatory
+export TMPDIR='/tmp'
+
+#first install m4
+sudo apt-get install -y m4 
+opam install merlin
+
+#then run the instructions for vim
+
+#installing opam and ocaml adds a line in .zshrc
+#to run the env variables in each new term
+#or we can run it using:
+eval $(opam env)
+
+
+
+
+
+
+
+
+
+
