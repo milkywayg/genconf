@@ -21,6 +21,7 @@ tmux:
     *p: previous window
     *n: next window
     *&: kill wondow
+    *[: swap/roll panes
 -pane:
     *": create horizontal pane
     *%: vertical
