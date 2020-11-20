@@ -111,6 +111,7 @@ opam install rml rmlbuild
 opam install utop
 #rerun the eval command
 #check the vim plug in vim-slim to send text to REPL
+#as a REPL use utop
 
 
 
