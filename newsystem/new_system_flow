@@ -107,6 +107,9 @@ eval $(opam env)
 opam install rml rmlbuild
 
 #we can use opam also to install Coq (not installed for now)
+#install utop, which is a good REPL
+opam install utop
+#rerun the eval command
 
 
 
