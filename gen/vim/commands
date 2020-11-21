@@ -51,6 +51,11 @@ ctrl-p plugin:
     -to change seraching path :ctrlP <new path>
 
 
+*to install a new plugin in vundle, need to open vimrc on vim with sudo
+*to use vim-slime in a REPL:
+    *to send a buffer use : <C-c><C-c>
+
+
 
 
 

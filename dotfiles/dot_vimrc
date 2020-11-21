@@ -33,6 +33,7 @@ Plugin 'Align'
 Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
 Plugin 'majutsushi/tagbar'    " Class/module browser
 Plugin 'Valloric/YouCompleteMe' " autocomplete python and others
+Plugin 'jpalardy/vim-slime'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -590,6 +591,11 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd BufNewFile,BufRead *.rml set syntax=ocaml
 
 
+"====================
+"vim-slime
+"===================
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 
 
 
