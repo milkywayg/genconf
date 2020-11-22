@@ -37,7 +37,7 @@ tmux:
     *h,j,k,l: change active pane
     *; : toggle last active pane
     *x: kill pane
-    *<space>: toggle between layouts
+    *<space>: toggle between layouts, from vert <-> horiz
 -tmux ressurect:
     *`+ctrl+s: saves the tmux session (ressurect plug in), check obsesion plug in for vim if vim is not restored
     *`+ctrl+r: to ressurect
