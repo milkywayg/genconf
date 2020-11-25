@@ -249,6 +249,13 @@ imap hh <ESC>
 " Map ESC to ff
 imap fff <ESC>
 
+" resize the panes with alt-0 
+noremap <M-0> <C-w>>
+noremap <M-9> <C-w><
+noremap <M-7> <C-w>+
+noremap <M-8> <C-w>-
+
+
 "search selected text in visual mode
 noremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
