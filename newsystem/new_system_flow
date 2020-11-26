@@ -113,7 +113,7 @@ opam install utop
 #check the vim plug in vim-slim to send text to REPL
 #as a REPL use utop
 # 2 other package opam to install is ocp-ident (for indentation) another one for debug 
-# is ubuntu package rlwrap
+# is ubuntu package rlwrap 
  
 
 
