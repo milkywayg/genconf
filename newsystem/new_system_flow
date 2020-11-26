@@ -114,6 +114,13 @@ opam install utop
 #as a REPL use utop
 # 2 other package opam to install is ocp-ident (for indentation) another one for debug 
 # is ubuntu package rlwrap 
+#
+#ocp-indent
+opam install ocp-ident
+sudo apt-get install -y rlwrap
+
+#some usefull functions
+opam install batteries
  
 
 
