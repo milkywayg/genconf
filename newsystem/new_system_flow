@@ -132,6 +132,8 @@ opam install core_bench
 #harware library to design and simulate hardware in ocaml
 sudo apt-get install -y libgmp-dev
 opam install hardcaml
+#there are other libraries from jane street github: https://github.com/janestreet?q=expect&type=&language=
+
 
 
 
