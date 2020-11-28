@@ -130,6 +130,7 @@ opam install stdio
 opam install core_bench
 
 #harware library to design and simulate hardware in ocaml
+sudo apt-get install -y libgmp-dev
 opam install hardcaml
 
 
