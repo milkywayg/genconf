@@ -23,7 +23,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-markdown'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'nvie/vim-flake8'
-Plugin 'bronson/vim-trailing-whitespace'
+" Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'leafgarland/typescript-vim'
 " Plugin 'othree/javascript-libraries-syntax.vim'
 " Plugin 'pangloss/vim-javascript'
@@ -136,8 +137,9 @@ set encoding=utf-8
 " endif
 " let g:airline_symbols.space = "\ua0"
 " " ========================================================================================
-
-
+" PlugIn config ntpeters/vim-better-whitespace
+let g:better_whitespace_enabled=0
+let g:strip_whitespace_on_save=0
 
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>

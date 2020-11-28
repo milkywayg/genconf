@@ -122,7 +122,8 @@ sudo apt-get install -y rlwrap
 #some usefull functions
 opam install batteries
  
-
+#from Jane street Base library
+opam install base
 
 
 
