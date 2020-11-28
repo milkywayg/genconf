@@ -125,6 +125,10 @@ opam install batteries
 #from Jane street Base library
 opam install base
 
+#core bench to evaluate the time function takes
+opam install core_bench
+
+
 
 
 
