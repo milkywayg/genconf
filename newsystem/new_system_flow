@@ -129,6 +129,8 @@ opam install stdio
 #core bench to evaluate the time function takes
 opam install core_bench
 
+#harware library to design and simulate hardware in ocaml
+opam install hardcaml
 
 
 
