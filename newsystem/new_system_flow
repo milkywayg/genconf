@@ -134,6 +134,10 @@ sudo apt-get install -y libgmp-dev
 opam install hardcaml
 #there are other libraries from jane street github: https://github.com/janestreet?q=expect&type=&language=
 
+#install some basic Tex tools
+sudo apt-get install texlive-latex-base
+
+
 
 
 
