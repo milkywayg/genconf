@@ -261,6 +261,9 @@ noremap <M-8> <C-w>-
 "search selected text in visual mode
 noremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
+"apply macro on visually selected lines
+vnoremap <leader>m :normal @
+
 
  " Wildmenu
 set wildmenu
