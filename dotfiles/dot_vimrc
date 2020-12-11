@@ -264,6 +264,15 @@ noremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 "apply macro on visually selected lines
 vnoremap <leader>m :normal @
 
+"quick copy
+noremap 44 yiw
+
+"quickly jump to a file
+noremap ff <c-w>f
+
+"quick jump
+noremap <leader>w ^
+noremap <leader>e $
 
  " Wildmenu
 set wildmenu
