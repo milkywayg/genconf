@@ -160,7 +160,7 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
+let g:NERDTrimTrailingWhitespace = 0
 
 
 "see hidden files in nerdtree
@@ -273,6 +273,17 @@ noremap ff <c-w>f
 "quick jump
 noremap <leader>w ^
 noremap <leader>e $
+vnoremap <leader>w ^
+vnoremap <leader>e $
+
+nnoremap <leader>b :b 
+"quick move
+nnoremap  <M-j>  10jzz
+nnoremap  <M-k>  10kzz
+
+""copy and find
+nnoremap \\ viwy/\V<C-R>=escape(@",'/\')<CR><CR>N
+
 
  " Wildmenu
 set wildmenu
@@ -411,7 +422,7 @@ autocmd FileType tex              let b:comment_leader = '% '
 autocmd FileType mail             let b:comment_leader = '> '
 autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> <leader>cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
-noremap <silent> <leader>cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
+noremap <silent> <leader>cx :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
 " ====================================================================================================
 
 
