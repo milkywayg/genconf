@@ -283,6 +283,8 @@ nnoremap <leader>b :b
 "quick move
 nnoremap  <M-j>  10jzz
 nnoremap  <M-k>  10kzz
+" nnoremap  <A-j>  10jzz
+" nnoremap  <A-k>  10kzz
 
 ""copy and find
 nnoremap \\ viwy/\V<C-R>=escape(@",'/\')<CR><CR>N
