@@ -267,6 +267,9 @@ vnoremap <leader>m :normal @
 "quick copy
 noremap 44 yiw
 
+"cut a word
+noremap 33 diw
+
 "quickly jump to a file
 noremap ff <c-w>f
 
