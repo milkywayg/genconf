@@ -13,5 +13,16 @@ git ls-tree -r master --name-only
 
 
 
+#create a repo tracked with git
+#this creates a git repo and check in the content locally
+git init
+git add .
+git commit -m "first commit"
+
+#to push it to github
+#open a new repo on git hub, then:
+git remote add origin https://github.com/milkywayg/coq_train.git
+git branch -M main
+git push -u origin main
 
 
