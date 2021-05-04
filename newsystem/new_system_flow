@@ -137,6 +137,11 @@ opam install hardcaml
 #install some basic Tex tools
 sudo apt-get install texlive-latex-base
 
+#update and upgrade opam
+opam update && opam upgrade
+
+#install coq
+opam install coq
 
 
 
