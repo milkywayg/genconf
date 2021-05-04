@@ -35,6 +35,7 @@ Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
 Plugin 'majutsushi/tagbar'    " Class/module browser
 Plugin 'Valloric/YouCompleteMe' " autocomplete python and others
 Plugin 'jpalardy/vim-slime'
+Plugin 'whonore/Coqtail'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
