@@ -1,0 +1,47 @@
+w3m: text browser
+x terminal: terminator (check man)
+
+vim:
+-comment: ,cc
+-uncomment: ,cu
+-close buffer: ,c
+-go to normal: jj or fff 
+-toggle paste mode: ,;
+-toggle nerdtree <c-n>
+-close pane: :q
+-,-w : buffer prec
+-,-e : buffer next
+ 
+
+tmux:
+-windows:
+    *w: list windows
+    *c: create new window
+    *,: name a window
+    *p: previous window
+    *n: next window
+    *&: kill wondow
+    *[: swap/roll panes
+-copy mode:
+    *[ : enter copy mode
+    * use vi cmds to navigate: g, G, hjkl
+    *q: quit
+    *<spc>: start selection
+    * <enter>: copy selection
+    *<c-v>: select rectangular
+    */: search
+    *n,N: nagivate the search
+-pane:
+    *": create horizontal pane
+    *%: vertical
+    *h,j,k,l: change active pane
+    *; : toggle last active pane
+    *x: kill pane
+    *<space>: toggle between layouts, from vert <-> horiz
+-tmux ressurect:
+    *`+ctrl+s: saves the tmux session (ressurect plug in), check obsesion plug in for vim if vim is not restored
+    *`+ctrl+r: to ressurect
+    *continum plug in should save the session every 15 min
+-swap the panes: prefix+ctrl+o
+-copy paste: from tmux to system clipboard (windows), just press SHIFT and with the mouse select. Then go to windows and simply CTRL+v.
+

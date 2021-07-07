@@ -1,0 +1,22 @@
+To launch a jupyter notebook in google clous for ex. and use it from a laptop. Do:
+run 
+jupyter-notebook --generate-config
+Edit it the newly created file with:
+c=get_config()
+c.NotebookApp.ip='*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port =7000
+
+then run :
+jupyter-notebook --no-browser --port=7000
+
+filenally open in the laptop browser at the address:
+<ip address of the google cloud instance>:7000 (if 7000 is the port we want to use)
+
+After that: we can setup a password so that not everyone can connect to our notebook and use the computing power of our instance.
+
+Debug: to add debuggger in the middle of the execution of a cell, put inside the cell: import pdb; pdb.set_trace() 
+
+to make the ip address global:
+https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
+

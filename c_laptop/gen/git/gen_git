@@ -1,0 +1,31 @@
+- to commit use : git commit -a -m "sdfgs"
+- then push to github: git push
+
+
+to not track files:
+touch .gitignore
+add the type of files to not track or the file
+and check in the file
+
+
+to list the files that are tracked in git:
+git ls-tree -r master --name-only
+
+
+
+#create a repo tracked with git
+#this creates a git repo and check in the content locally
+git init
+git add .
+git commit -m "first commit"
+
+#to push it to github
+#open a new repo on git hub, then:
+git remote add origin https://github.com/milkywayg/coq_train.git
+git branch -M main
+git push -u origin main
+
+#good explanation, for remote repo etc..
+https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository
+git push tahes 2 arguments, remote name, and branch name
+

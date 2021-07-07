@@ -1,0 +1,24 @@
+copy paste with keyboard:
+    enter copy mode: prefix+[
+    start selecting: <space>
+    copy: enter
+    go elsewhere and paste: prefix+]
+
+copy paste with mouse:
+    copy using mouse as usual selecting something
+    go elsewhere and paste: prefix+]
+
+this works with vim also: inside vim enter copy mode and do the same as usual
+with mouse, need to enter first copy mode prefix+[, then select with mouse, finally paste as usual
+
+copy from tmux to windows (maybe works also in term without tmux)
+hold shift key and select with the mouse )delect with enter key)
+
+prefix+d: to detach
+outside tmux: tmux attach " to reattach
+
+- every stuff selected by the mouse is autom. copied in the clipboard 
+and you are positionned to the prompt. to paste just do prefix+]
+
+
+

@@ -1,0 +1,68 @@
+:qa -> close all panes at once
+:wqa -> save and close all panes at once
+:sp -> split horiz
+:vsp -> split vertically
+f12 see buffers
+in normal mode: s-1 and s-2 -> to swicth between buffers
+
+
+
+nnoremap     <Leader>R : %s/
+nnoremap     <Leader>r : .,$s/
+nnoremap     <Leader>c :bd<CR>
+nnoremap     <F5> :ls<CR>:b
+nnoremap     <Leader>u :noh<CR>
+nnoremap     <F8> :diffupdate<CR>
+nnoremap     <F6> :diffthis<CR>
+nnoremap     <F7> :diffoff<CR>
+"comment-uncomment
+vnoremap <Leader>9 :norm i#<CR>
+vnoremap <Leader>8 :norm ^x<CR>
+
+" toggle easily paste mode
+nnoremap <silent><Leader>0:set invpaste paste?<CR>
+set pastetoggle=<Leader>0
+set showmode
+
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+nnoremap <silent> <F12> :BufExplorer<CR>
+nnoremap <silent> ! :bp<CR>
+nnoremap <silent> @ :bn<CR>
+nnoremap <silent> <Leader>1 :bp<CR>
+nnoremap <silent> <Leader>2 :bn<CR>
+
+s-a : go end of line and insert
+,-s : save
+''  : go last location in file
+,-0 : paste mode
+,-r : replace
+,-w : buffer prec
+,-e : buffer next
+,-9 : comment
+,-8 : uncomment
+,-c : kill the buffer
+,-h : highlight line
+,-g : unhighlight
+
+#open from remote server
+vim scp://root@10.100.55.3//root/test.py
+
+ctrl-p plugin: 
+    -to change seraching path :ctrlP <new path>
+
+
+*to install a new plugin in vundle, need to open vimrc on vim with sudo
+*to use vim-slime in a REPL:
+    *to send a buffer use : <C-c><C-c>
+
+
+
+
+
+
+
+
+
+
+
+

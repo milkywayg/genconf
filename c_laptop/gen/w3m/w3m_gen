@@ -1,0 +1,19 @@
+go back s-b
+enter to go to a hyperlink
+tab to browse the links
+s-t to open a new tab
+s-[/] to change the tab
+U:go to url
+ESC-M:open to external browser
+
+Navigation operations
+    B: Back
+    s: Show history in popup selection menu and go to selected page
+    R: Reload the current document
+    Esc-a: Add current page to bookmarks
+    Esc-b: Open a bookmarked page
+    Cltr-h: View history
+
+
+
+
