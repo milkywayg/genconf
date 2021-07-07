@@ -4,4 +4,8 @@
 *install git
 *clean up the favorite in ubuntu
 *import the bookmarks or setup new ones
+*suspend does not work properly when closing the lid:
+https://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
+it will still not work even after. close the lib and then suspend manually
+
 
