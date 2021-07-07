@@ -25,4 +25,7 @@ git remote add origin https://github.com/milkywayg/coq_train.git
 git branch -M main
 git push -u origin main
 
+#good explanation, for remote repo etc..
+https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository
+git push tahes 2 arguments, remote name, and branch name
 
