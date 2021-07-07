@@ -1,0 +1,85 @@
+add shortcuts for git
+configure tmux with mouse and shorcut to ctrl+b -- done
+write intsall script
+powerline
+config zsh
+    -see two last folders of a hierarchy
+    -aliases --done
+fidn replacement for gitk in console mode
+pyenv
+pyenv virtualenv plugin
+tensorflow
+copy paste --done
+basic git push -- done
+vim:
+    add my vim shortcuts (diff..)
+    learn to use the folder manager plugin in vim- merdtree
+    check the other plugins
+    add vertical line
+    add ctrl+s in vim--done
+    add ctrl+s in zsh support adding the same command in some .zsh file
+    add plugin that helps to edit word like files : org mode in emacs
+    add vimmagit
+    nerdtree see dot file hidden
+    resize the panes with mouse
+    plug in markers
+    reload          -- done
+    code completion -- done
+    align-- done
+    org mode
+    tabs
+    tags --done
+    snippets
+    go over the 2 vimrc file:
+        https://github.com/xmementoit/vim-ide/blob/master/vimrc#L131
+        https://github.com/ets-labs/python-vimrc/blob/master/vimrc
+    multiple cursors
+tmux:
+    copy paste with and without mouse inside tmux
+    share history
+    add powerline
+git:
+    do a shortcut "git prel" for git commit -a -m && git push
+    do a way to not have to write the cerdentials everytime
+urgent:
+    prompt                                        -- done
+    copy paste tmux                               -- done
+    powerline
+    git prel                                      -- done
+    github credentials                            -- done
+    vim highlight select                          -- done
+    vim all my shortcuts                          -- done
+    chnage color of ll for folders                -- done
+    share history+++
+    vim reload                                    -- no need change is automatic               -- done
+    copy paste with and without mouse inside tmux -- done
+    nerdtree see dot file hidden                  -- done
+    vim markers column                            -- done
+    vim buffer switching and displaying           -- done
+    vim highlight line                            -- done
+    less problems                                 -- no solutuon use vim key to go up/down     -- done
+    chck if we can remap esc to caps lock         -- add jj to move to normal mode from insert
+    youcompleteme                                 -- done
+    fix c-h in tmux                               -- done
+    minibuffer, configure airline to see active file in [] and see a clear bar that separate a horiz split -- done
+    vim git fugitive and vimagit
+    tmux color issue                              -- done
+    vim git gutter
+    tmux roll back in shell using mouse(copy mode) --done
+    tmux roll back faaaster with the mouse
+    vim scroll bar horizontal and vertical (horizontal before)
+    vim python check how to check error in ycm
+    vim plugins:    
+        -nerdocmmenter
+        -snoppets
+        -class viewer
+        -git
+        -debugger python
+        -toggle reltive/abs line numbering
+        -marker in margin
+        -remove red cursor on unused spaces
+        -chnage color of cursor brackets
+        -zsh autosuggestion display problem
+        -fast scrolling in copy mode in tmux
+
+

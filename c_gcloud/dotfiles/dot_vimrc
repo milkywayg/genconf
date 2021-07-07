@@ -1,0 +1,646 @@
+" Michael vimrc
+
+set nocompatible
+syntax on
+
+"========== Plug In management ========="
+" Vundle begins here; turn off filetype temporarily
+" set the runtime path to include Vundle and initialize
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-markdown'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'nvie/vim-flake8'
+" Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'leafgarland/typescript-vim'
+" Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'bling/vim-bufferline'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'Align'
+Plugin 'Lokaltog/powerline'   " Powerline fonts plugin
+Plugin 'majutsushi/tagbar'    " Class/module browser
+Plugin 'Valloric/YouCompleteMe' " autocomplete python and others
+Plugin 'jpalardy/vim-slime'
+Plugin 'whonore/Coqtail'
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+"========== End plug In management ======"
+
+
+"=========== General config ========"
+filetype plugin indent on
+
+set term=screen-256color
+" colorscheme PaperColor
+
+let python_highlight_all=1
+
+set autoindent
+set smartindent
+set bg=dark
+set backspace=indent,eol,start
+set ignorecase
+set incsearch
+set laststatus=2
+set linebreak
+set nobackup
+set noerrorbells
+set nolist
+set noswapfile
+set novb
+set nowrap
+set number
+set relativenumber
+set ruler
+set scrolloff=10
+set showmatch
+set shortmess=I
+set showcmd
+"set showmode
+set sidescroll=1
+set sidescrolloff=7
+set smartcase
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set undolevels=1000
+set nrformats-=octal
+set title
+" set background=dark
+set ttyfast
+set lazyredraw
+set shortmess=a "this avoids the text hit enter to continue when saving
+set autoread
+
+"https://vi.stackexchange.com/questions/444/how-do-i-reload-the-current-file/13092#13092
+"For additional goodness, adding the following to your vimrc will trigger autoread when changing buffers inside while inside vim:
+au FocusGained,BufEnter * :checktime
+
+
+highlight ColorColumn ctermbg=black
+"will try to remove the color column to see if its better
+"set colorcolumn=80
+
+"CtrlP
+let g:ctrlp_map = '<c-p>'
+
+" " ========================================================================================
+" " VIM-airline  plugin
+" " https://github.com/bling/vim-airline   
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#branch#format = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#close_symbol = ''
+let g:airline#extensions#hunks#non_zero_only = 1
+let g:airline#extensions#tabline#show_close_button = 1
+let airline#extensions#tabline#middle_click_preserves_windows = 1
+let g:airline_theme = 'bubblegum'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
+set encoding=utf-8
+" set term=screen-256color
+" set term=rxvt-unicode-256
+" set t_Co=256
+" colorscheme inkpot 
+
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.space = "\ua0"
+" " ========================================================================================
+" PlugIn config ntpeters/vim-better-whitespace
+let g:better_whitespace_enabled=0
+let g:strip_whitespace_on_save=0
+
+"NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+"nerd-commenter settings
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code
+" indentation
+let g:NERDDefaultAlign = 'left'
+
+" Allow commenting and inverting empty lines (useful when commenting a
+" region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 0
+
+
+"see hidden files in nerdtree
+let NERDTreeShowHidden=1
+
+
+" WARNING: no need for the bwlo mappingm they are dealt inside 
+" christoomey/vim-tmux-navigator plugin which is included here.
+" " map c-hjkl to move inside win panes
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
+
+" nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+" nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+" nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+" nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+
+
+" Remove all trailing whitespace by pressing F4
+noremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" Set ctrl+S as save
+" inoremap <c-s> <c-o>:update<CR>
+
+" my addings
+" Highlight search results
+"  set hlsearch
+
+" Mappings
+let mapleader=","
+" nnoremap     <M-l> : so %<CR>
+nnoremap <Leader>R             : %s/
+nnoremap <Leader>r             : .,$s/
+nnoremap <silent> <leader>c    : lclose<bar>b#<bar>bw #<CR>
+nnoremap <F5>                  : ls<CR>: b
+nnoremap <Leader>u             : noh<CR>
+nnoremap <silent> <Leader>h ml : execute 'match Search /\%'.line('.').'l/'<CR>
+nnoremap <silent> <Leader>g    : call clearmatches()<CR>
+nnoremap <F8>                  : diffupdate<CR>
+nnoremap <F6>                  : diffthis<CR>
+nnoremap <F7>                  : diffoff<CR>
+nnoremap <M-g>                 : %!grep
+"comment-uncomment
+vnoremap <Leader>9             : norm i#<CR>
+vnoremap <Leader>8             : norm ^x<CR>
+
+" toggle easily paste mode
+nnoremap <silent><Leader>;:set invpaste paste?<CR>
+set pastetoggle=<Leader>;
+set showmode
+
+" remap :w save with Leader s
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <C-c>:w<cr>
+" remap :q save with Leader q
+nnoremap <leader>q :wqa<cr>
+inoremap <leader>q <C-c>:wqa<cr> 
+
+"Align Current Paragraph with Leader + a
+noremap <leader>a =ip
+
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+nnoremap <silent> <F12>     : BufExplorer<CR>
+nnoremap <silent> !         : bp<CR>
+nnoremap <silent> @         : bn<CR>
+nnoremap <silent> <Leader>w : bp<CR>
+nnoremap <silent> <Leader>e : bn<CR>
+
+" quick select in normla mode with 8
+noremap  8 *<S-n>
+nnoremap <F2> : /\<<C-r><C-w>\><CR>N
+
+" noremap <silent> <C-S>      :update<CR>
+" vnoremap <silent><C-S>     <C-C>:update<CR>
+" inoremap <silent><C-S>     <C-O>:update<CR>
+
+" Map ESC to jj
+imap jj <ESC>
+" Map ESC to jj
+imap kk <ESC>
+" Map ESC to jj
+"imap ll <ESC>
+""remove this one since there words with 
+" Map ESC to jj
+imap hh <ESC>
+" Map ESC to ff
+imap fff <ESC>
+
+" resize the panes with alt-0 
+noremap <M-0> <C-w>>
+noremap <M-9> <C-w><
+noremap <M-7> <C-w>+
+noremap <M-8> <C-w>-
+
+
+"search selected text in visual mode
+noremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+"apply macro on visually selected lines
+vnoremap <leader>m :normal @
+
+"quick copy
+noremap 44 yiw
+
+"cut a word
+noremap 33 diw
+
+"quickly jump to a file
+noremap ff <c-w>f
+
+"quick jump
+noremap <leader>w ^
+noremap <leader>e $
+vnoremap <leader>w ^
+vnoremap <leader>e $
+
+nnoremap <leader>b :b 
+"quick move
+nnoremap  <M-j>  10jzz
+nnoremap  <M-k>  10kzz
+" nnoremap  <A-j>  10jzz
+" nnoremap  <A-k>  10kzz
+
+""copy and find
+nnoremap \\ viwy/\V<C-R>=escape(@",'/\')<CR><CR>N
+
+
+ " Wildmenu
+set wildmenu
+set wildmode=longest,list,full
+if has("wildmenu")
+   set wildignore+=*.a,*.o
+   set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+   set wildignore+=.DS_Store,.git,.hg,.svn
+   set wildignore+=*~,*.swp,*.tmp
+   " set wildmode=list:longest
+   set wildignore+=.hg,.git,.svn " Version Controls"
+   set wildignore+=*.aux,*.out,*.toc "Latex Indermediate files"
+   set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg "Binary Imgs"
+   set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest "Compiled Object files"
+   set wildignore+=*.spl "Compiled speolling world list"
+   set wildignore+=*.sw? "Vim swap files"
+   set wildignore+=*.DS_Store "OSX SHIT"
+   set wildignore+=*.luac "Lua byte code"
+   set wildignore+=migrations "Django migrations"
+   set wildignore+=*.pyc "Python Object codes"
+   set wildignore+=*.orig,*.rej "Merge resolution files"
+endif
+
+" Add possibility to resize the panes with mouse
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
+
+"go to new pane after aplitting
+set splitbelow
+set splitright
+
+" hyphen part of a word
+set iskeyword+=-
+
+" Yank in the system clipboard -- dont know if this does something
+set clipboard=unnamedplus
+
+" =========== Gvim Settings =============
+
+" Removing scrollbars
+if has("gui_running")
+    set guitablabel=%-0.12t%M
+    set guioptions-=T
+    set guioptions-=r
+    set guioptions-=L
+    set guioptions+=a
+    set guioptions-=m
+    "colo badwolf
+    colo desert
+    set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
+else
+    set t_Co=256
+    " colorscheme desert
+    colorscheme inkpot
+    " colorschem badwolf
+    " colorscheme iceberg
+endif
+" ========== END Gvim Settings ==========
+
+"==========================================================================="
+" Set vim to save the file on focus out.
+au FocusLost * :wa
+"==========================================================================="
+" Redraw screen every time when focus gained
+" au FocusGained * :redraw!
+"==========================================================================="
+
+"==========================================================================="
+" Working with split screen nicely
+" Resize Split When the window is resized"
+au VimResized * :wincmd =
+"==========================================================================="
+
+"==========================================================================="
+" Make Sure that Vim returns to the same line when we reopen a file"
+augroup line_return
+    au!
+    au BufReadPost *
+                \ if line("'\"") > 0 && line("'\"") <= line("$") |
+                \ execute 'normal! g`"zvzz' |
+                \ endif
+augroup END
+"==========================================================================="
+
+"
+"==========================================================================="
+" Map copy delete and paste to system clipboard
+"
+" vmap <Leader>y "+y
+" vmap <Leader>d "+d
+"
+" nmap <Leader>p "+p
+" nmap <Leader>P "+P
+" vmap <Leader>p "+p
+" vmap <Leader>P "+P
+
+"==========================================================================="
+" double leader for selection whole line
+nmap <leader>v v
+"==========================================================================="
+
+"=====================================================
+"" TagBar settings
+"=====================================================
+let g:tagbar_autofocus=0
+let g:tagbar_width=42
+" autocmd BufEnter *.py :call tagbar#autoopen(0)
+" autocmd BufWinLeave *.py :TagbarClose
+
+
+"================================
+" Fix color issue in tmux
+"================================
+" set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+" set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
+
+
+"==========================================================================="
+" Save and load session
+"
+" map <leader>ss :SessionSaveAs user_auto_saved_session<cr>:NERDTree .<cr>
+" map <leader>so :SessionOpen user_auto_saved_session<cr><C-d><C-d>,n:NERDTree .<cr>
+
+"==========================================================================="
+
+
+"===================================================================================================
+" Commenting blocks of code.
+autocmd FileType c,cppva,scala    let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> <leader>cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> <leader>cx :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
+" ====================================================================================================
+
+
+" " ====================================================================================================
+" " configure vim bufferline
+" " ====================================================================================================
+" let g:bufferline_active_buffer_left  = '['
+" let g:bufferline_active_buffer_right = ']'
+" " let g:bufferline_echo = 1
+" " let g:bufferline_modified = '+'
+" " " let g:bufferline_echo = 0
+" " autocmd VimEnter *
+" "   \ let &statusline='%{bufferline#refresh_status()}'
+" "     \ .bufferline#get_status_string()
+
+" ========================================================================================
+" " Resize split window horizontally and vertically
+" Shortcuts to Shift-Alt-Up - Alt is mapped as M in vim
+" nmap <S-M-Up> :2winc+<cr>
+" imap <S-M-Up> <Esc>:2winc+<cr>i
+" nmap <S-M-Down> :2winc-<cr>
+" imap <S-M-Down> <Esc>:2winc-<cr>i
+"
+" nmap <S-M-Left> :2winc><cr>
+" imap <S-M-Left> <Esc>:2winc><cr>i
+" nmap <S-M-Right> :2winc<<cr>
+" imap <S-M-Right> <Esc>:2winc<<cr>i
+" ========================================================================================
+
+
+" ========================================================================================
+" " Automatically go to the end of pasted text
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+" ========================================================================================
+
+
+" " ========================================================================================
+" " VIM-airline  plugin
+" " https://github.com/bling/vim-airline   
+" let g:airline#extensions#tabline#enabled = 1 
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|' 
+" 
+" function! AirlineInit()
+"   " let g:airline_section_a = airline#section#create(['mode'])
+"   let g:airline_section_c = airline#section#create(['%F'])
+" endfunction
+" autocmd VimEnter * call AirlineInit()
+" 
+" let g:airline_theme_patch_func = 'AirlineThemePatch'
+" function! AirlineThemePatch(palette)
+"   if g:airline_theme == 'badwolf'
+"     for colors in values(a:palette.inactive)
+"       let colors[3] = 245
+"     endfor
+"   endif
+" endfunction
+" " ========================================================================================
+
+
+" ========================================================================================
+" vimdiff options
+" Always use vertical diffs 
+set diffopt+=vertical
+if &diff
+    colorscheme badwolf_diff
+endif
+" ========================================================================================
+
+" ========================================================================================
+" Share clipboards between vim and tmux without xsel or xclip (which require X and
+" X forwarding with SSH) and without changing tmux shortcuts. Requires only tail.
+" 
+" Great for an ssh session to you linode or droplet.
+" 
+" Uses z buffer in vim and writes output to ~/.clipboard and then to tmux's paste
+" buffer, and reads it back in cleanly for putting (puddin').
+"
+" NOTE: tmux has an undocumented command limit! https://github.com/tmux/tmux/issues/254
+"       this means if you mean to copy larger bits of code (entire functions) tmux will
+"       not copy the data into its buffer. In those cases, it's better to read from the
+"       ~/.clipboard file.
+"       IE: Python interactive shell: def put(): exec(open('~/.clipboard').read());
+
+" Example vimrc mappings
+" Visual mode yank selected area to tmux paste buffer (clipboard)
+vnoremap <leader>y "zy:silent! call SendZBufferToHomeDotClipboard()<cr>
+" Put from tmux clipboard
+map <leader>p :silent! call HomeDotClipboardPut()<cr>
+
+function! SendZBufferToHomeDotClipboard()
+    " Yank the contents buffer z to file ~/.clipboard and tmux paste buffer
+    " For use with HomeDotClipboardPut()
+    silent! redir! > ~/.clipboard
+    silent! echo @z
+    silent! redir END 
+    " the redir has a newline in front, so tail -n+2 skips first line
+    silent! !tail -n+2 ~/.clipboard > ~/.clipboard.1;mv ~/.clipboard.1 ~/.clipboard
+    silent! !tmux load-buffer ~/.clipboard
+    silent! redraw!
+endfunction
+function! HomeDotClipboardPut()
+    " Paste/Put the contents of file ~/.clipboard
+    " For use with SendZBufferToHomeDotClipboard()
+    silent! !tmux save-buffer ~/.clipboard
+    silent! redraw!
+    silent! let @z = system("cat ~/.clipboard")
+    " put the z buffer on the line below
+    silent! exe "norm o\<ESC>\"zp"
+endfunction
+
+" =====================================
+" Highlight search results
+set hlsearch
+" =====================================
+
+
+" =====================================
+" youcompleteme config
+" =====================================
+
+let g:ycm_python_binary_path = 'python3'
+
+" =====================================
+" ctrlp plugin add support hidden files
+" =====================================
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_follow_symlinks = 1
+" let g:ctrlp_working_path_mode = 0 "this search not only on the active path
+
+
+" =====================================
+" define the indentation
+" =====================================
+" set sts=4
+" set ts=2
+" set sw=8
+
+" =====================================
+" syntastic config
+" =====================================
+function Py2()
+  let g:syntastic_python_python_exec = '/usr/bin/python'
+endfunction
+
+function Py3()
+  let g:syntastic_python_python_exec = '/usr/bin/python3'
+endfunction
+
+call Py3()   " default to Py3 because I try to use it when possible
+
+
+
+
+" ==========================================
+" reload when the file is modified outside
+" =========================================
+
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
+
+
+" " =========================================
+" " absolute and relative linue numbering
+" " =========================================
+" 
+" set number relativenumber
+" 
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" augroup END
+
+" "other option
+" set number
+" autocmd InsertEnter * :set norelativenumber
+" autocmd InsertLeave * :set relativenumber
+
+" "====================================
+" Merlin support for Ocaml
+" "====================================
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+set rtp^="/home/miki/.opam/default/share/ocp-indent/vim"
+
+"==============================
+" Merlin for reactive ML
+" =============================
+" au Syntax rml  runtime! syntax/ocaml.vim
+autocmd BufNewFile,BufRead *.rml set syntax=ocaml
+
+
+"====================
+"vim-slime
+"===================
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+
+
+
+
+
+
+
+

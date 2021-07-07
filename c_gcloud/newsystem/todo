@@ -1,0 +1,12 @@
+Check how to save the typing history in git
+copy paste from vim to tmux
+fix ctrl-hjkl movments between panes in vim sometimes works empty buffer, sometimes does not
+    - I work on this one and the problem is for vim on pipenv only, there is thread with a work around. Let's wait (28/11/2019) for an official update of the
+    -christoomey/vim-tmux-navigator#195 plugin
+    -issue described in https://github.com/pypa/pipenv/issues/1407
+    -in the meantime use <c-w>h ...
+    -seems that it works quite well on moba-x that if we unset (or maybe set) in terminal settings the ctrl-h as backspace
+install plugin: vim-signature to show markers in margin
+add in vim the plug-in that show the bookmarks of lines in the margin
+
+

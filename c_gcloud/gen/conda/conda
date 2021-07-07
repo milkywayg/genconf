@@ -1,0 +1,14 @@
+- pipenv is a way to create a virtual env to develop an application with python and be able to recreate it exactly with the same package, same version etc..
+- It permits to run simultenously on the same system different versions of python and of package. It's an isolated environmeement
+- Anaconda is more than that
+- one can think of it to be the matlab of data science and ML and AI
+- miniconda install is only the "conda" command without packages
+- this permits to download after through the conda command the needed packages only
+- anaconda has conda + tons of pre installed packages.
+- it also work with virtual environment
+- the best way to think of it is matlab like with data processing packages env where python is the programming language of this env
+- a virtual env in conda is apparently a set of env variables not a folder
+- when a new env is open it opens a new folder under anacondaroot/envs/<new env>, like  /home/miki/anaconda3/envs/cs231n, where is stores all the needed piece to reconstruct the env.
+
+
+

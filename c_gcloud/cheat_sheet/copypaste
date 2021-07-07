@@ -1,0 +1,18 @@
+-to copy in tmux term, selct the line with the mouse to copy
+-`+] to paste
+- to copy on windows: copy as usual
+-to paste on putty, shift+ins
+
+- Copy from tmux to windows:
+I use putty v0.62 and tmux v1.8.
+tmux config: setw -g mode-mouse on
+I want to copy some text from tmux to system clipboard, I press and hold SHIFT and select the text by mouse, then click left-button of mouse.
+I want to paste some text into tmux, press SHIFT and click right-button of mouse.
+
+
+
+
+
+
+
+

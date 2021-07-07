@@ -1,0 +1,15 @@
+#update the upbuntu packages
+sudo apt-get update && sudo apt-get upgrade
+
+#update pipenv?
+
+#update conda
+conda update conda
+#problem in updating upbuntu:
+sudo killall apt-get
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+
+
+
