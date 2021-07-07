@@ -7,5 +7,8 @@
 *suspend does not work properly when closing the lid:
 https://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
 it will still not work even after. close the lib and then suspend manually
+*fix power issues too fast drain
+https://linuxhint.com/monitor-_health-_laptop_battery_ubuntu/
+
 
 
