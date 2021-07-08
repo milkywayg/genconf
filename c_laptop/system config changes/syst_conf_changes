@@ -1,12 +1,22 @@
 *bluetooth disabled permanently:
-/etc/bluetooth/main.conf
+/etc/bluetooth/main.conf  #do it exec
 change change to : AutoEnable=false
 
 *powertop autotune to optimize the power consumption
 first check that the laptop is stable with it:
 sudo powertop --auto-tune
 then if its ok, do that as config permanent:
-in: sudo gedit /etc/rc.local
+in: sudo gedit /etc/rc.local   #do it exec
 sudo powertop --auto-tune
 above the 'exit 0' line, or add the individual tuning options.
+
+*do suspend when the lid is closed
+/etc/systemd/logind.conf 
+uncomment these lines:
+HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=suspend
+
+************ rq: i leave these changes but they does not work
+need to remind to disable bluetooth after each startup.
+
 

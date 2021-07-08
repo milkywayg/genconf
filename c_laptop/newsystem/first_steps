@@ -23,15 +23,25 @@ check that also: https://www.reddit.com/r/archlinux/comments/nq2lul/i_dont_under
 ***then check if the system is stable first with optimization, if yes do it permanent.
 sudo powertop --auto-tune
 above the 'exit 0' line, or add the individual tuning options.
+need to do: sudo chmod +x /etc/rc.local
+
+*-**-* check why the startup scripts are not executed
+https://askubuntu.com/questions/299792/why-is-the-command-in-etc-rc-local-not-executed-during-startup
+sudo systemctl status rc-local.service
 
 
 *bluetooth is enabled by default and will be reenabed at each reboot
 https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup
 change that
+need to do the file executable: sudo chmod +x /etc/bluetooth/main.conf
 
 *for networking
 **ifconfig
 **wireshark (https://linuxhint.com/install_configure_wireshark_ubuntu/)
 we can start it also with sudo wireshark
+
+************* 
+rq: changing all the startup scripts and changing them to exec does not work, nothing is executable at startup. so need to remind to disable bluetooth. this is the most important.
+3 things fail: 1- bluetooth, 2- going to suspend when the lid is closed 3- run the powertop optimizations
 
 
