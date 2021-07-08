@@ -11,5 +11,27 @@ it will still not work even after. close the lib and then suspend manually
 https://linuxhint.com/monitor-_health-_laptop_battery_ubuntu/
 *install syncthings
 **configure to work on start
+*for optimizing power consumption
+**powertop
+**tlp
+**https://support.system76.com/articles/battery  (good article, simply follow it)
+https://linrunner.de/tlp/installation/ubuntu.html
+https://linrunner.de/tlp/usage/index.html#start
+***the flow is first install and run TLP the default is very good as claimed. start it (or it will start alone at the next reboot) to start: sudo tlp start. and check that it is running tlp-stat -s
+check that also: https://www.reddit.com/r/archlinux/comments/nq2lul/i_dont_understand_these_paragraphs_of_tlp_from/
+***then use powertop, first calibrate it as it should: reboot the device and run only powertp -c with no other programs and leave the laptop as is.
+***then check if the system is stable first with optimization, if yes do it permanent.
+sudo powertop --auto-tune
+above the 'exit 0' line, or add the individual tuning options.
+
+
+*bluetooth is enabled by default and will be reenabed at each reboot
+https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup
+change that
+
+*for networking
+**ifconfig
+**wireshark (https://linuxhint.com/install_configure_wireshark_ubuntu/)
+we can start it also with sudo wireshark
 
 

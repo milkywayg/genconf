@@ -1,0 +1,12 @@
+*bluetooth disabled permanently:
+/etc/bluetooth/main.conf
+change change to : AutoEnable=false
+
+*powertop autotune to optimize the power consumption
+first check that the laptop is stable with it:
+sudo powertop --auto-tune
+then if its ok, do that as config permanent:
+in: sudo gedit /etc/rc.local
+sudo powertop --auto-tune
+above the 'exit 0' line, or add the individual tuning options.
+
