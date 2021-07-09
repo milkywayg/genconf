@@ -1,0 +1,15 @@
+*vim
+sudo apt install vim
+
+* aliases
+
+copy
+/home/miko/Documents/Perso_c/36-Aux/configs/genconf/c_laptop/dotfiles
+
+create a link in home (source it)
+.bash_aliases -> /home/miko/Documents/Perso_c/36-Aux/configs/genconf/c_laptop/dotfiles/dot_bash_aliases
+add to aliases ssss to suspend and hhhh to hibernate
+
+
+
+

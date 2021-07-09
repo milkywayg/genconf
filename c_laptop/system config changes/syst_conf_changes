@@ -1,6 +1,10 @@
 *bluetooth disabled permanently:
 /etc/bluetooth/main.conf  #do it exec
 change change to : AutoEnable=false
+we return it to true
+This does not work. to do that run (it nteracts with systemd and do the change on next reboot. we can reenable it by running the same command with enable)
+sudo systemctl disable bluetooth
+
 
 *powertop autotune to optimize the power consumption
 first check that the laptop is stable with it:
@@ -15,8 +19,44 @@ above the 'exit 0' line, or add the individual tuning options.
 uncomment these lines:
 HandleLidSwitch=suspend
 HandleLidSwitchExternalPower=suspend
+-- this does not work, I leave this change but try this also: 
+
+https://askubuntu.com/questions/1239397/20-04-lts-since-upgrade-from-19-10-laptop-doesnt-suspend-anymore-after-lid-clos
+Create a file called /etc/acpi/events/laptop-lid-close with the following content:
+
+event=button/lid LID close
+action=/etc/acpi/laptop-lid-close.sh
+And create a file /etc/acpi/laptop-lid-close.sh with the following content and gave it execute rights (chmod +x /etc/acpi/laptop-lid-close.sh):
+
+#!/bin/sh
+
+systemctl suspend
+
+did not work either, so i remove these files.
+
+
+*around hibernation
+
+I edit: sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes
+
+to hibernate: works
+systemctl hibernate
+
+
+
 
 ************ rq: i leave these changes but they does not work
 need to remind to disable bluetooth after each startup.
+bluetooth is fixed
 
 

@@ -4,9 +4,22 @@
 *install git
 *clean up the favorite in ubuntu
 *import the bookmarks or setup new ones
+
 *suspend does not work properly when closing the lid:
 https://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
 it will still not work even after. close the lib and then suspend manually
+HandleLidSwitch=hibernate
+HandleLidSwitchExternalPower=suspend
+this is my config, does not work
+
+debug:
+https://askubuntu.com/questions/1239397/20-04-lts-since-upgrade-from-19-10-laptop-doesnt-suspend-anymore-after-lid-clos
+sudo systemctl suspend # this works
+I enable this:/etc/systemd/logind.conf 
+LidSwitchIgnoreInhibited=yes  #I comment out it since it did not help
+i implement the work around proposes did not work so i remove the files.
+
+
 *fix power issues too fast drain
 https://linuxhint.com/monitor-_health-_laptop_battery_ubuntu/
 *install syncthings
@@ -34,14 +47,87 @@ sudo systemctl status rc-local.service
 https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup
 change that
 need to do the file executable: sudo chmod +x /etc/bluetooth/main.conf
+This does not work. 
+https://www.youtube.com/watch?v=0YDvgPdkWYE
+To do that run (it interacts with systemd and do the change on next reboot. we can reenable it by running the same command with enable)
+sudo systemctl disable bluetooth
+then reboot. the button of bluetooth in the menu is off but proposes to turn off!! weird but seems to be a bug, the bluetooth is actually off
 
 *for networking
 **ifconfig
 **wireshark (https://linuxhint.com/install_configure_wireshark_ubuntu/)
 we can start it also with sudo wireshark
 
-************* 
+
+*enable hibernation
+https://www.how2shout.com/linux/how-to-hibernate-ubuntu-20-04-lts-focal-fossa/
+
+I edit: sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes
+
+to hibernate: works
+systemctl hibernate
+
+
+
+
+
+*issue no suspend when close lid:
+https://askubuntu.com/questions/1239397/20-04-lts-since-upgrade-from-19-10-laptop-doesnt-suspend-anymore-after-lid-clos
+
+
+Create a file called /etc/acpi/events/laptop-lid-close with the following content:
+
+event=button/lid LID close
+action=/etc/acpi/laptop-lid-close.sh
+And create a file /etc/acpi/laptop-lid-close.sh with the following content and gave it execute rights (chmod +x /etc/acpi/laptop-lid-close.sh):
+
+#!/bin/sh
+
+systemctl suspend
+
+
+
+**********	*** 
 rq: changing all the startup scripts and changing them to exec does not work, nothing is executable at startup. so need to remind to disable bluetooth. this is the most important.
 3 things fail: 1- bluetooth, 2- going to suspend when the lid is closed 3- run the powertop optimizations
+
+*************
+*todo:
+-mouse scroll speed
+-fix powertop optimisation at startup
+-fix close lid
+-enable hibernation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
