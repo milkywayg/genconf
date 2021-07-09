@@ -106,7 +106,7 @@ rq: changing all the startup scripts and changing them to exec does not work, no
 -mouse scroll speed
 -fix powertop optimisation at startup
 -fix close lid
--enable hibernation
+-enable hibernation ....I think done with term shortcut
 
 
 
