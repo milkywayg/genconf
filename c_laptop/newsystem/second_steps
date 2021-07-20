@@ -18,7 +18,21 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install neovim
 
-*neovim
+**plug ins: vim-plug
+https://www.chrisatmachine.com/Neovim/01-vim-plug/
+
+***all should be already in the /.config/nvim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+this command builds under ~/.config/nvim the dir autoload to put all the plug ins there. It starts to put its own plug ins inside it.
+We will manage our plugins in a separate file for the sake of my own sanity
+mkdir -p ~/.config/nvim/autoload
+touch ~/.config/nvim/vim-plug/plugins.vim
+
+*****when adding the Nerdtree (or any ther plug in) they may contain .git files which can create some issue, need to remove them first before proceeding to git add.
+
+
+
+*meld
 https://www.unixmen.com/install-meld-on-ubuntu-and-mint-linux/
 sudo apt-get install meld
 
