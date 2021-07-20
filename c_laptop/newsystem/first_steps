@@ -111,9 +111,23 @@ rq: changing all the startup scripts and changing them to exec does not work, no
 
 
 
+*printer
+sudo apt  install nmap
 
 
 
+https://www.cyberciti.biz/faq/how-to-install-networked-hp-printer-and-scanner-on-ubuntu-linux/
+
+apt-cache search hplip
+sudo apt install hplip hplip-gui
+
+find ip address of the printer and add it manually to hplip toolbox
+
+*whatsapp
+https://websiteforstudents.com/how-to-install-whatsapp-on-ubuntu/
+sudo apt update 
+sudo apt install snapd
+sudo snap install whatsapp-for-linux
 
 
 

@@ -7,9 +7,19 @@ copy
 /home/miko/Documents/Perso_c/36-Aux/configs/genconf/c_laptop/dotfiles
 
 create a link in home (source it)
-.bash_aliases -> /home/miko/Documents/Perso_c/36-Aux/configs/genconf/c_laptop/dotfiles/dot_bash_aliases
+.bash_aliases -> /home/miko/Documents/Perso_c/36-Aux/configs/genconf/c_laptop/dotfiles/aliases/dot_bash_aliases
 add to aliases ssss to suspend and hhhh to hibernate
 
 
+*install nvim
+
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install neovim
+
+*neovim
+https://www.unixmen.com/install-meld-on-ubuntu-and-mint-linux/
+sudo apt-get install meld
 
 
