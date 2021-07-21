@@ -30,7 +30,29 @@ touch ~/.config/nvim/vim-plug/plugins.vim
 
 *****when adding the Nerdtree (or any ther plug in) they may contain .git files which can create some issue, need to remove them first before proceeding to git add.
 
+***powerline vim-airline
+there is a need to install beautiful fonts: (https://medium.com/@praveendhawan/vim-airline-powerful-status-line-4dda605adae5)
 
+****install the fonts for beautiful arrows in the line
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+****to enable the font in the system (chck if this is really needed)
+install python and pip
+then:
+pip install neovim
+
+****change the fonts used by the terminal to use the powerline fonts (define a current profile and do that there)
+the default ones are: Monospace regular
+change to: Hack Regular
+**** chnage also the colors used by the terminal to background black and fonts white
+
+**** read this page for airline (https://medium.com/@praveendhawan/vim-airline-powerful-status-line-4dda605adae5)
 
 *meld
 https://www.unixmen.com/install-meld-on-ubuntu-and-mint-linux/

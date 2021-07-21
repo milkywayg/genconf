@@ -12,7 +12,7 @@ alias s='source'
 alias gs='git status'
 alias gl='git log --graph --abbrev-commit --pretty=oneline --decorate'
 alias ll='ls -lha'
-alias vv='vim'
+alias vv='nvim'
 alias h='history'
 alias wl='wc -l'
 alias py='python3'
@@ -27,7 +27,7 @@ alias cl='vim ~/cl'
 alias ssss='systemctl suspend'
 alias hhhh='systemctl hibernate'
 alias ggc='cd ~/Documents/Perso_c/36-Aux/configs/genconf/c_laptop' 
-alias ggt='cat ~/Documents/Perso_c/36-Aux/github/tkn' 
+alias tk='cat ~/Documents/Perso_c/36-Aux/github/tkn' 
 
 #git prel
 function gprel() {

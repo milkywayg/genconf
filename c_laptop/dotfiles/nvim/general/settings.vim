@@ -3,6 +3,8 @@ let g:mapleader = ","
 syntax enable                           " Enables syntax highlighing
 set cursorline                          " show the line of the cursor
 set cursorcolumn                        " show the column of the cursor
+hi CursorLine cterm=NONE ctermbg=242    " change the way the cursorline looks
+set relativenumber                      " set relative numbers
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed

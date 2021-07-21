@@ -1,5 +1,7 @@
-nnoremap <Leader>w :bp<CR>
-nnoremap <Leader>e :bn<CR>
+" nnoremap <Leader>w :bp<CR>
+" nnoremap <Leader>e :bn<CR>
+nnoremap <Leader>1 :bp<CR>
+nnoremap <Leader>2 :bn<CR>
 nnoremap     <M-l> : so %<CR>
 nnoremap     <M-R> : %s/
 nnoremap     <M-r> : .,$s/

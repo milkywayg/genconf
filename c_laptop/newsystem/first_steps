@@ -129,6 +129,16 @@ sudo apt update
 sudo apt install snapd
 sudo snap install whatsapp-for-linux
 
+*gparted
+install gparted for all partition issue (format, etc..)
+sudo apt install gparted
+
+*install pip
+sudo apt install pip
+
+*install python
+pip install python
+
 
 
 

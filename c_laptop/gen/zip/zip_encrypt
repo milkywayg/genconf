@@ -1,0 +1,5 @@
+zip -r --encrypt file.zip files
+
+https://itsfoss.com/password-protect-zip-file/
+
+it does not encrypt the folder tree names but only the leafs files
