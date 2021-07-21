@@ -28,6 +28,7 @@ alias ssss='systemctl suspend'
 alias hhhh='systemctl hibernate'
 alias ggc='cd ~/Documents/Perso_c/36-Aux/configs/genconf/c_laptop' 
 alias tk='cat ~/Documents/Perso_c/36-Aux/github/tkn' 
+alias c='calcurse'
 
 #git prel
 function gprel() {

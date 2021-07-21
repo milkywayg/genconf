@@ -139,6 +139,13 @@ sudo apt install pip
 *install python
 pip install python
 
+*install calcurse
+sudo apt-get install -y calcurse
+
+*configuration
+**reduce the taskbar icon sizes
+**put it on the opposite side of the laptop so that it works better
+**disable dock
 
 
 
