@@ -13,8 +13,8 @@ nnoremap     <F6> :diffthis<CR>
 nnoremap     <F7> :diffoff<CR>
 nnoremap     <M-g> :%!grep 
 "comment-uncomment
-vnoremap <M-a> :norm i//<CR>
-vnoremap <M-d> :norm ^xx<CR>
+" vnoremap <M-a> :norm i//<CR>
+" vnoremap <M-d> :norm ^xx<CR>
 
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -97,10 +97,13 @@ autocmd BufNewFile,BufRead *.v let b:comment_leader = '// '
 autocmd BufNewFile,BufRead *.sv let b:comment_leader = '// '
 
 
-noremap <silent> <leader>cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
-noremap <silent> <leader>cx :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
+" noremap <silent> <leader>c :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+" noremap <silent> <leader>u :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
+" vnoremap <silent> <leader>cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+" vnoremap <silent> <leader>ee :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>'"'"
 
-
+noremap <silent> ,c :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,d :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
 "apply macro on visually selected lines
 vnoremap <leader>m :normal @
